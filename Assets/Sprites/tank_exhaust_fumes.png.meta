@@ -1,0 +1,568 @@
+fileFormatVersion: 2
+guid: d77c8ea2878f9495a9307205e9ed8316
+timeCreated: 1481810513
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: tank_exhaust_fumes_0
+    21300002: tank_exhaust_fumes_1
+    21300004: tank_exhaust_fumes_2
+    21300006: tank_exhaust_fumes_3
+    21300008: tank_exhaust_fumes_4
+    21300010: tank_exhaust_fumes_5
+    21300012: tank_exhaust_fumes_6
+    21300014: tank_exhaust_fumes_7
+    21300016: tank_exhaust_fumes_8
+    21300018: tank_exhaust_fumes_9
+    21300020: tank_exhaust_fumes_10
+    21300022: smoke3
+    21300024: tank_exhaust_fumes_12
+    21300026: tank_exhaust_fumes_13
+    21300028: smoke4
+    21300030: tank_exhaust_fumes_15
+    21300032: tank_exhaust_fumes_16
+    21300034: smoke7
+    21300036: smoke8
+    21300038: smoke1
+    21300040: tank_exhaust_fumes_20
+    21300042: tank_exhaust_fumes_21
+    21300044: tank_exhaust_fumes_22
+    21300046: smoke5
+    21300048: tank_exhaust_fumes_24
+    21300050: smoke6
+    21300052: smoke2
+    21300054: tank_exhaust_fumes_27
+    21300056: tank_exhaust_fumes_28
+    21300058: tank_exhaust_fumes_29
+    21300060: tank_exhaust_fumes_30
+    21300062: tank_exhaust_fumes_31
+    21300064: tank_exhaust_fumes_32
+    21300066: tank_exhaust_fumes_33
+    21300068: tank_exhaust_fumes_34
+    21300070: tank_exhaust_fumes_35
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_0
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 48
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_1
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 45
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_2
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 45
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_3
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 40
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_4
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 43
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_5
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 39
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_6
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 40
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_7
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 30
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 42
+        width: 10
+        height: 12
+      alignment: 9
+      pivot: {x: -1.3413622, y: 2.4064627}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_9
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 42
+        width: 8
+        height: 12
+      alignment: 9
+      pivot: {x: 0.7789936, y: 1.987971}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_10
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 32
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: smoke3
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 0
+        width: 74
+        height: 48
+      alignment: 9
+      pivot: {x: 1.0021899, y: -0.03372804}
+      border: {x: 0, y: 0, z: 0, w: 1}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_12
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 34
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_13
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 35
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: smoke4
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 0
+        width: 73
+        height: 54
+      alignment: 9
+      pivot: {x: 1.0044831, y: 0.0040103393}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_15
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 29
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_16
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 35
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: smoke7
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 0
+        width: 83
+        height: 54
+      alignment: 9
+      pivot: {x: 0.9974836, y: -0.016655907}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: smoke8
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 0
+        width: 87
+        height: 54
+      alignment: 9
+      pivot: {x: 1.0002652, y: 0.0040103393}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: smoke1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 59
+        height: 42
+      alignment: 9
+      pivot: {x: 1.0012441, y: 0.021724032}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_20
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 52
+        width: 15
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_21
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 28
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_22
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 28
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: smoke5
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 0
+        width: 85
+        height: 54
+      alignment: 9
+      pivot: {x: 1.0120368, y: -0.006322784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_24
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 26
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: smoke6
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1
+        width: 80
+        height: 53
+      alignment: 9
+      pivot: {x: 0.9742905, y: -0.015876237}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: smoke2
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 63
+        height: 42
+      alignment: 9
+      pivot: {x: 0.98713297, y: -0.057988632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_27
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_28
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 21
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_29
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 11
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_30
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 11
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_31
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_32
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 7
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_33
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 5
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_34
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 6
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tank_exhaust_fumes_35
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 5
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

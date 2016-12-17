@@ -1,0 +1,17 @@
+/Users/laurascully/Documents/UOC/IntroVideojuegos/PAC3/TanksWar/Temp/bin/Debug/UnityEngine.dll
+/Users/laurascully/Documents/UOC/IntroVideojuegos/PAC3/TanksWar/Temp/bin/Debug/UnityEditor.dll
+/Users/laurascully/Documents/UOC/IntroVideojuegos/PAC3/TanksWar/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/laurascully/Documents/UOC/IntroVideojuegos/PAC3/TanksWar/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/laurascully/Documents/UOC/IntroVideojuegos/PAC3/TanksWar/Temp/bin/Debug/Mono.Cecil.dll
+/Users/laurascully/Documents/UOC/IntroVideojuegos/PAC3/TanksWar/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/laurascully/Documents/UOC/IntroVideojuegos/PAC3/TanksWar/Temp/bin/Debug/Unity.DataContract.dll
+/Users/laurascully/Documents/UOC/IntroVideojuegos/PAC3/TanksWar/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/laurascully/Documents/UOC/IntroVideojuegos/PAC3/TanksWar/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/laurascully/Documents/UOC/IntroVideojuegos/PAC3/TanksWar/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/laurascully/Documents/UOC/IntroVideojuegos/PAC3/TanksWar/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/laurascully/Documents/UOC/IntroVideojuegos/PAC3/TanksWar/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/laurascully/Documents/UOC/IntroVideojuegos/PAC3/TanksWar/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/laurascully/Documents/UOC/IntroVideojuegos/PAC3/TanksWar/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/laurascully/Documents/UOC/IntroVideojuegos/PAC3/TanksWar/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/laurascully/Documents/UOC/IntroVideojuegos/PAC3/TanksWar/obj/Debug/Assembly-CSharp.dll
+/Users/laurascully/Documents/UOC/IntroVideojuegos/PAC3/TanksWar/obj/Debug/Assembly-CSharp.dll.mdb
