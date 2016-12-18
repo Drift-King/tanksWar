@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a78a9d51af0da46dc86515607321b014
+timeCreated: 1482067098
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - THE MINION
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3c95b67bc6f674a949e09c7982c0ee3c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

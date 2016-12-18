@@ -13,6 +13,8 @@ public class PlayerControl : MonoBehaviour {
 	private Rigidbody2D rigidBody;
 	protected float tilt;
 
+	protected GameObject turnIndicator;
+
 	void Awake () {
 		anim = GetComponent<Animator> ();
 		pivot = transform.FindChild ("Pivot");
@@ -45,6 +47,8 @@ public class PlayerControl : MonoBehaviour {
 				pivot.rotation = Quaternion.Euler (0, 0, tilt);
 			}
 		
+		} else {
+			
 		}
 	
 	

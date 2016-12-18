@@ -10,6 +10,9 @@ public class GamePlayManager : MonoBehaviour {
 	//public GameObject startButton;
 	//public GameObject attackButton;
 	public CameraFollow cameraFollow;
+	public GameObject gameOverScreen;
+	private GameObject playerTurnIndicator;
+	private GameObject enemyTurnIndicator;
 	//public GameObject UIRoot;
 	//private Text mainText;
 	//private int timeRemaining = 10;
@@ -17,8 +20,13 @@ public class GamePlayManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		gameOverScreen.SetActive (false);
 		enemy.GetComponentInChildren<Gun> ().gunFired += SwapTurn;
 		player.GetComponentInChildren<Gun> ().gunFired += SwapTurn;
+		player.GetComponent<PlayerHealth>().playerDied += PlayerHasDied;
+		enemy.GetComponent<PlayerHealth>().playerDied += EnemyHasDied;
+		playerTurnIndicator = player.gameObject.transform.FindChild ("currentTurn").gameObject;
+		enemyTurnIndicator = enemy.gameObject.transform.FindChild ("currentTurn").gameObject;
 		//mainText = startButton.GetComponentInChildren<Text> ();
 		//UIRoot.SetActive (false);
 
@@ -49,14 +57,39 @@ public class GamePlayManager : MonoBehaviour {
 		enemy.hasTurn = !enemy.hasTurn;
 	}
 
-	void FixedUpdate(){
-		if (!player.gameObject.GetComponent<PlayerHealth> ().isAlive) {
-			Debug.Log ("Player has died");
-		}
+	void PlayerHasDied(){
+		Debug.Log ("======== Player Has Died");
+		gameOverScreen.SetActive (true);
+		GameObject.FindGameObjectWithTag ("GameResult").GetComponent<Text>().text = "You Lose!";
 
-		if (!enemy.gameObject.GetComponent<PlayerHealth> ().isAlive) {
-			Debug.Log ("Enemy has died");
+	}
+
+	void EnemyHasDied(){
+		Debug.Log ("======== Enemy Has Died");
+		gameOverScreen.SetActive (true);
+		GameObject.FindGameObjectWithTag ("GameResult").GetComponent<Text>().text = "Victory!";
+	}
+
+	void setTurnIndicator() {
+		if (player.hasTurn) {
+			playerTurnIndicator.SetActive (true);
+			enemyTurnIndicator.SetActive (false);
+		} else {
+			playerTurnIndicator.SetActive (false);
+			enemyTurnIndicator.SetActive (true);
 		}
+	}
+
+	void FixedUpdate(){
+		setTurnIndicator ();
+//		if (!player.gameObject.GetComponent<PlayerHealth> ().isAlive) {
+//			Debug.Log ("Player has died");
+//			gameOverScreen.setActive (true);
+//		}
+//
+//		if (!enemy.gameObject.GetComponent<PlayerHealth> ().isAlive) {
+//			gameOverScreen.setActive (false);
+//		}
 	}
 
 //	void DecreaseTime(){

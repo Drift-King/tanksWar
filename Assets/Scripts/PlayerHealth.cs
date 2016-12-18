@@ -7,6 +7,8 @@ public class PlayerHealth : MonoBehaviour {
 	public float hurtForce = 20f;
 	public float damageAmount = 10f;
 	public bool isAlive = true;
+	public delegate void PlayerDied ();
+	public event PlayerDied playerDied;
 
 	private SpriteRenderer healthBar;
 	private Vector3 healthScale;
@@ -41,6 +43,7 @@ public class PlayerHealth : MonoBehaviour {
 		
 			else {
 				isAlive = false;
+				playerDied ();
 				anim.SetTrigger("Dies");
 				GetComponent<PlayerControl>().enabled = false;
 				GetComponentInChildren<Gun>().enabled = false;
