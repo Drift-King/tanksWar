@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 444abe2d45d9f4473a9f89970029b39c
-timeCreated: 1481971136
+timeCreated: 1482072792
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,7 +8,7 @@ TextureImporter:
     21300002: Tile_2
     21300004: Tile_3
     21300006: Tile_5
-    21300008: tileset_01_4
+    21300008: plain_tile
     21300010: Tile_4
     21300012: Tile_6
     21300014: Tile_7
@@ -119,13 +119,13 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: tileset_01_4
+      name: plain_tile
       rect:
         serializedVersion: 2
-        x: 400
-        y: 480
-        width: 400
-        height: 400
+        x: 0
+        y: 1027
+        width: 256
+        height: 253
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,7 +175,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 768
+        y: 11
         width: 512
         height: 256
       alignment: 0

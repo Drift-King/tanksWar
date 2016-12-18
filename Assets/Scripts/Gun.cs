@@ -13,35 +13,28 @@ public class Gun : MonoBehaviour
 	private float targetSpeed = 0f;
 	private Rigidbody2D bulletInstance;
 	private PlayerControl playerCtrl;
+	private GameObject attackBarInstance;
+	private Vector3 attackScale;
+	private GameObject UIAttackBar;
 
-	//private Animator anim;				
-
-	void Awake()
-	{
-		// Setting up the references.
-		//anim = transform.root.gameObject.GetComponent<Animator>();
+	void Awake() {
 		playerCtrl = transform.root.GetComponent<PlayerControl>();
+		UIAttackBar = GameObject.Find ("UIAttackPower");
 	}
-
-
-	void FixedUpdate ()
-	{
-		if(Input.GetButtonDown("Fire1") && playerCtrl.tag == "Player")
-		{	
+		
+	void FixedUpdate () {
+		if(Input.GetButtonDown("Fire1") && playerCtrl.tag == "Player") {	
+			UIAttackBar.GetComponentInChildren<Animator> ().SetBool("Attack", true);
 			fireTime = Time.time;
+
 		}
 
 		if(Input.GetButtonUp("Fire1") && playerCtrl.tag == "Player"){
 			attackPower = Time.time - fireTime;
+			UIAttackBar.GetComponentInChildren<Animator> ().SetBool ("Attack", false);
 			Fire ();
 		}
-
-		if (rocket.velocity.y < 0) {
-		}
-
-		if (bulletInstance) {
-			//bulletInstance.transform.rotation = Quaternion.LookRotation(bulletInstance.velocity);
-		}
+			
 	}
 
 	public void Fire() {
@@ -60,8 +53,6 @@ public class Gun : MonoBehaviour
 		if (gunFired != null) {
 			gunFired ();
 		}
-
-		//bulletInstance.transform.rotation = Quaternion.LookRotation(bulletInstance.velocity);
 	}
 
 	public void Fire(float targetSpeed) {

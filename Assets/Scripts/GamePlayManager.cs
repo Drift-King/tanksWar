@@ -7,16 +7,11 @@ public class GamePlayManager : MonoBehaviour {
 
 	public EnemyAI enemy;
 	public PlayerControl player;
-	//public GameObject startButton;
-	//public GameObject attackButton;
 	public CameraFollow cameraFollow;
 	public GameObject gameOverScreen;
+	public GameObject attackIndicator;
 	private GameObject playerTurnIndicator;
 	private GameObject enemyTurnIndicator;
-	//public GameObject UIRoot;
-	//private Text mainText;
-	//private int timeRemaining = 10;
-	//private GameObject[] UI;
 
 	// Use this for initialization
 	void Start () {
@@ -27,16 +22,13 @@ public class GamePlayManager : MonoBehaviour {
 		enemy.GetComponent<PlayerHealth>().playerDied += EnemyHasDied;
 		playerTurnIndicator = player.gameObject.transform.FindChild ("currentTurn").gameObject;
 		enemyTurnIndicator = enemy.gameObject.transform.FindChild ("currentTurn").gameObject;
-		//mainText = startButton.GetComponentInChildren<Text> ();
-		//UIRoot.SetActive (false);
+		attackIndicator.SetActive (false);
 
 		StartGame ();
 	}
 
 	public void StartGame(){
-		//startButton.GetComponent<Button> ().enabled = false;
 		enemy.hasTurn = true;
-		//InvokeRepeating ("DecreaseTime", 0, 1);
 		SwapTurn ();
 	}
 		
@@ -45,9 +37,7 @@ public class GamePlayManager : MonoBehaviour {
 	}
 
 	IEnumerator SwapTurnCoroutine(){
-		//timeRemaining = 10;
 		player.hasTurn = !player.hasTurn;
-		//UIRoot.SetActive (player.hasTurn);
 		cameraFollow.SetPlayerToFollow (player.hasTurn ? player.transform : enemy.transform);
 
 		if (!enemy.hasTurn) {
@@ -58,23 +48,25 @@ public class GamePlayManager : MonoBehaviour {
 	}
 
 	void PlayerHasDied(){
-		Debug.Log ("======== Player Has Died");
+		attackIndicator.SetActive (false);
 		gameOverScreen.SetActive (true);
 		GameObject.FindGameObjectWithTag ("GameResult").GetComponent<Text>().text = "You Lose!";
 
 	}
 
 	void EnemyHasDied(){
-		Debug.Log ("======== Enemy Has Died");
+		attackIndicator.SetActive (false);
 		gameOverScreen.SetActive (true);
 		GameObject.FindGameObjectWithTag ("GameResult").GetComponent<Text>().text = "Victory!";
 	}
 
 	void setTurnIndicator() {
-		if (player.hasTurn) {
+		if (player.hasTurn && player.GetComponent<PlayerHealth>().isAlive) {
+			attackIndicator.SetActive (true);
 			playerTurnIndicator.SetActive (true);
 			enemyTurnIndicator.SetActive (false);
 		} else {
+			attackIndicator.SetActive (false);
 			playerTurnIndicator.SetActive (false);
 			enemyTurnIndicator.SetActive (true);
 		}
@@ -82,25 +74,5 @@ public class GamePlayManager : MonoBehaviour {
 
 	void FixedUpdate(){
 		setTurnIndicator ();
-//		if (!player.gameObject.GetComponent<PlayerHealth> ().isAlive) {
-//			Debug.Log ("Player has died");
-//			gameOverScreen.setActive (true);
-//		}
-//
-//		if (!enemy.gameObject.GetComponent<PlayerHealth> ().isAlive) {
-//			gameOverScreen.setActive (false);
-//		}
 	}
-
-//	void DecreaseTime(){
-//		timeRemaining--;
-//		if (timeRemaining < 0)
-//			SwapTurn ();
-//		mainText.text = timeRemaining.ToString();
-//		//		foreach(Text t in mainText){
-//		//			t.text = "" + timeRemaining;
-//		//		}
-//
-//	}
-
 }

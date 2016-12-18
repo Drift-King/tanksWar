@@ -3,9 +3,9 @@ using System.Collections;
 
 public class PlayerHealth : MonoBehaviour {
 	
-	public float health = 100f;
+	public float health = 50f;
 	public float hurtForce = 20f;
-	public float damageAmount = 10f;
+	public float damageAmount = 20f;
 	public bool isAlive = true;
 	public delegate void PlayerDied ();
 	public event PlayerDied playerDied;
@@ -15,8 +15,6 @@ public class PlayerHealth : MonoBehaviour {
 	private PlayerControl playerControl;
 	private Animator anim;
 
-
-	// Use this for initialization
 	void Awake () {
 		playerControl = GetComponent<PlayerControl>();
 		healthBar = getHealthBar ();
@@ -36,14 +34,13 @@ public class PlayerHealth : MonoBehaviour {
 	void OnCollisionEnter2D (Collision2D col) {
 
 		if (col.gameObject.tag == "ExplosionFX") {
-			Debug.Log ("Explosion FX Collision");
 			if(health > 0f) {
 				TakeDamage(col.transform); 
 			}
 		
 			else {
-				isAlive = false;
 				playerDied ();
+				isAlive = false;
 				anim.SetTrigger("Dies");
 				GetComponent<PlayerControl>().enabled = false;
 				GetComponentInChildren<Gun>().enabled = false;

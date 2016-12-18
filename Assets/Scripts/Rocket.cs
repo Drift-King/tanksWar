@@ -3,18 +3,16 @@ using System.Collections;
 
 public class Rocket : MonoBehaviour {
 
-	public GameObject explosion;		// Prefab of explosion effect.
+	public GameObject explosion;
 	public string ignoreTag;
 
 
-	// Use this for initialization
 	void Start () {
 
 		Destroy(gameObject, 5);
 	}
 
-	void OnExplode()
-	{
+	void OnExplode() {
 		// Create a quaternion with a random rotation in the z-axis.
 		Quaternion randomRotation = Quaternion.Euler(0f, 0f, Random.Range(0f, 360f));
 
@@ -32,7 +30,6 @@ public class Rocket : MonoBehaviour {
 			 explosion.layer = 12;
 			 Destroy (explosion, 0.5f);
 			 CircleCollider2D explosionRadius = explosion.AddComponent<CircleCollider2D> ();
-
 
 			 explosionRadius.radius = 1.0f;
 

@@ -39,7 +39,7 @@ public class PlayerControl : MonoBehaviour {
 					tilt -= 1.0f;
 				}
 
-				tilt = Mathf.Clamp (tilt, 0, 180);
+				tilt = Mathf.Clamp (tilt, 20, 180);
 				pivot.rotation = Quaternion.Euler (0, 0, tilt);
 			
 			} else {

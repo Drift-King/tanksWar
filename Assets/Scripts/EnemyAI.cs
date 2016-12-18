@@ -29,30 +29,9 @@ public class EnemyAI : PlayerControl {
 	void LateUpdate () {
 		
 		if (hasTurn) {
-			//tilt -= 20;
-			//pivot.rotation = Quaternion.Euler (0, 0, tilt);
 			shootAngle = 180 - tilt;
 			gun.Fire (CalculateAttackPower (player, shootAngle));
-
-//			if (tilt != shootAngle) {
-//				if (tilt < shootAngle) {
-//					shootAngle -= 10.0f;
-//					tilt = shootAngle;
-//					gun.Fire (CalculateAttackPower (player, shootAngle));
-//				} else {
-//					shootAngle += 10.0f;
-//					tilt = shootAngle;
-//					gun.Fire (CalculateAttackPower (player, shootAngle));
-//				}
-//			} else {
-//				gun.Fire (CalculateAttackPower (player, shootAngle));
-//			}
-
-		} else {
-			
-			//tilt += Random.Range (-60, 60);
-
-		}
+		} 
 
 	}
 
