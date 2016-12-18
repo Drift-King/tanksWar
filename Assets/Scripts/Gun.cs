@@ -28,7 +28,6 @@ public class Gun : MonoBehaviour
 	{
 		if(Input.GetButtonDown("Fire1") && playerCtrl.tag == "Player")
 		{	
-			Debug.Log ("Down");
 			fireTime = Time.time;
 		}
 
@@ -38,7 +37,6 @@ public class Gun : MonoBehaviour
 		}
 
 		if (rocket.velocity.y < 0) {
-			Debug.Log ("Falling");
 		}
 
 		if (bulletInstance) {
@@ -47,7 +45,6 @@ public class Gun : MonoBehaviour
 	}
 
 	public void Fire() {
-		Debug.Log ("Fire");
 
 		bulletInstance = Instantiate (rocket, transform.position, transform.rotation) as Rigidbody2D;
 
@@ -68,7 +65,6 @@ public class Gun : MonoBehaviour
 	}
 
 	public void Fire(float targetSpeed) {
-		Debug.Log ("Target Speed" + targetSpeed);
 		this.targetSpeed = targetSpeed;
 		Fire ();
 	}

@@ -29,10 +29,12 @@ public class Rocket : MonoBehaviour {
 			 GameObject explosion = new GameObject ("Explosion");
 			 explosion.transform.position = transform.position;
 			 explosion.tag = "ExplosionFX";
+			 explosion.layer = 12;
 			 Destroy (explosion, 0.5f);
 			 CircleCollider2D explosionRadius = explosion.AddComponent<CircleCollider2D> ();
 
-			 explosionRadius.radius = 2.5f;
+
+			 explosionRadius.radius = 1.0f;
 
 			// Call the explosion instantiation
 			OnExplode ();

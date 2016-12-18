@@ -49,6 +49,16 @@ public class GamePlayManager : MonoBehaviour {
 		enemy.hasTurn = !enemy.hasTurn;
 	}
 
+	void FixedUpdate(){
+		if (!player.gameObject.GetComponent<PlayerHealth> ().isAlive) {
+			Debug.Log ("Player has died");
+		}
+
+		if (!enemy.gameObject.GetComponent<PlayerHealth> ().isAlive) {
+			Debug.Log ("Enemy has died");
+		}
+	}
+
 //	void DecreaseTime(){
 //		timeRemaining--;
 //		if (timeRemaining < 0)
