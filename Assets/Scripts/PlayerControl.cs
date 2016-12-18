@@ -3,9 +3,7 @@ using System.Collections;
 
 public class PlayerControl : MonoBehaviour {
 
-	public float moveForce = 3f;
-	public float maxSpeed = 5f;
-	public float velocity = 2f;
+	public float velocity = 0.1f;
 
 	private float hSpeed = 0f;
 	private Animator anim;
