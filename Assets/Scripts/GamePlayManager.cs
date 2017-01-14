@@ -33,6 +33,11 @@ public class GamePlayManager : MonoBehaviour {
 	}
 		
 	void SwapTurn(){
+		//Invoke ("startSwapTurn", 1f);
+		StartCoroutine (SwapTurnCoroutine());
+	}
+
+	void startSwapTurn(){
 		StartCoroutine (SwapTurnCoroutine());
 	}
 
@@ -40,11 +45,13 @@ public class GamePlayManager : MonoBehaviour {
 		player.hasTurn = !player.hasTurn;
 		cameraFollow.SetPlayerToFollow (player.hasTurn ? player.transform : enemy.transform);
 
-		if (!enemy.hasTurn) {
+		if (!player.hasTurn) {
 			yield
 			return new WaitForSeconds (2f);
 		}
+
 		enemy.hasTurn = !enemy.hasTurn;
+
 	}
 
 	void PlayerHasDied(){

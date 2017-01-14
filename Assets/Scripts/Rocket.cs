@@ -5,7 +5,7 @@ public class Rocket : MonoBehaviour {
 
 	public GameObject explosion;
 	public string ignoreTag;
-
+	public Gun gun;
 
 	void Start () {
 
@@ -13,9 +13,9 @@ public class Rocket : MonoBehaviour {
 	}
 
 	void OnExplode() {
+		gun.FinishFire ();
 		// Create a quaternion with a random rotation in the z-axis.
 		Quaternion randomRotation = Quaternion.Euler(0f, 0f, Random.Range(0f, 360f));
-
 		// Instantiate the explosion where the rocket is with the random rotation.
 		Instantiate(explosion, transform.position, randomRotation);
 	}
@@ -31,8 +31,8 @@ public class Rocket : MonoBehaviour {
 			 Destroy (explosion, 0.5f);
 			 CircleCollider2D explosionRadius = explosion.AddComponent<CircleCollider2D> ();
 
-			 explosionRadius.radius = 1.0f;
-
+			explosionRadius.radius = 1.0f;
+	
 			// Call the explosion instantiation
 			OnExplode ();
 
