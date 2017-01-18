@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerControl : MonoBehaviour {
 
@@ -28,11 +29,22 @@ public class PlayerControl : MonoBehaviour {
 			if (gameObject.tag == "Player") {
 			
 				hSpeed = Input.GetAxis ("Horizontal");
+				hSpeed = CrossPlatformInputManager.GetAxis ("Horizontal");
 				anim.SetFloat ("Speed", Mathf.Abs (hSpeed));
 				rigidBody.velocity = new Vector2 (hSpeed * velocity, rigidBody.velocity.y);	
 
 				if (Input.GetKey (KeyCode.Z)) {
 					tilt += 1.0f;
+				}
+
+				if (CrossPlatformInputManager.GetAxis ("Vertical") > 0) {
+					Debug.Log ("Tilt UP");
+					tilt += 1.0f;
+				}
+
+				if (CrossPlatformInputManager.GetAxis ("Vertical") < 0) {
+					Debug.Log ("Tilt DOWN");
+					tilt -= 1.0f;
 				}
 
 				if (Input.GetKey (KeyCode.X)) {

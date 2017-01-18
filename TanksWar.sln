@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{CE1D5836-8ED2-93DC-FDAC-A919D3E1F61A}") = "TanksWar", "Assembly-CSharp.csproj", "{5A8E5FE6-044F-3ED5-A254-7C3DCAF460CF}"
 EndProject
+Project("{CE1D5836-8ED2-93DC-FDAC-A919D3E1F61A}") = "TanksWar", "Assembly-CSharp-Editor.csproj", "{0ADA235C-F3E7-1EE9-0C16-784BB507FFB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{5A8E5FE6-044F-3ED5-A254-7C3DCAF460CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A8E5FE6-044F-3ED5-A254-7C3DCAF460CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A8E5FE6-044F-3ED5-A254-7C3DCAF460CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ADA235C-F3E7-1EE9-0C16-784BB507FFB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ADA235C-F3E7-1EE9-0C16-784BB507FFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ADA235C-F3E7-1EE9-0C16-784BB507FFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ADA235C-F3E7-1EE9-0C16-784BB507FFB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

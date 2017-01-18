@@ -9,9 +9,9 @@ public class GamePlayManager : MonoBehaviour {
 	public PlayerControl player;
 	public CameraFollow cameraFollow;
 	public GameObject gameOverScreen;
-	public GameObject attackIndicator;
 	private GameObject playerTurnIndicator;
 	private GameObject enemyTurnIndicator;
+	public Transform gameResult;
 
 	// Use this for initialization
 	void Start () {
@@ -22,7 +22,6 @@ public class GamePlayManager : MonoBehaviour {
 		enemy.GetComponent<PlayerHealth>().playerDied += EnemyHasDied;
 		playerTurnIndicator = player.gameObject.transform.FindChild ("currentTurn").gameObject;
 		enemyTurnIndicator = enemy.gameObject.transform.FindChild ("currentTurn").gameObject;
-		attackIndicator.SetActive (false);
 
 		StartGame ();
 	}
@@ -55,25 +54,32 @@ public class GamePlayManager : MonoBehaviour {
 	}
 
 	void PlayerHasDied(){
-		attackIndicator.SetActive (false);
-		gameOverScreen.SetActive (true);
-		GameObject.FindGameObjectWithTag ("GameResult").GetComponent<Text>().text = "You Lose!";
+		//GameObject.Find("Result").GetComponent<Text>().text = "You Lose!";
+		gameResult.GetComponent<Text>().text = "You Lose!";
+		StartCoroutine (GameOverShowScreenCoroutine());
+		//gameOverScreen.SetActive (true);
+		//GameObject.FindGameObjectWithTag ("GameResult").GetComponent<Text>().text = "You Lose!";
 
 	}
 
-	void EnemyHasDied(){
-		attackIndicator.SetActive (false);
+	IEnumerator GameOverShowScreenCoroutine(){
+		yield return new WaitForSeconds (1);
 		gameOverScreen.SetActive (true);
-		GameObject.FindGameObjectWithTag ("GameResult").GetComponent<Text>().text = "Victory!";
+	}
+
+	void EnemyHasDied(){
+		//GameObject.Find("Result").GetComponent<Text>().text = "Victory!";
+		gameResult.GetComponent<Text>().text = "Victory!";
+		StartCoroutine (GameOverShowScreenCoroutine());
+		//gameOverScreen.SetActive (true);
+		//GameObject.FindGameObjectWithTag ("GameResult").GetComponent<Text>().text = "Victory!";
 	}
 
 	void setTurnIndicator() {
 		if (player.hasTurn && player.GetComponent<PlayerHealth>().isAlive) {
-			attackIndicator.SetActive (true);
 			playerTurnIndicator.SetActive (true);
 			enemyTurnIndicator.SetActive (false);
 		} else {
-			attackIndicator.SetActive (false);
 			playerTurnIndicator.SetActive (false);
 			enemyTurnIndicator.SetActive (true);
 		}

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class Gun : MonoBehaviour
 {
@@ -15,19 +16,21 @@ public class Gun : MonoBehaviour
 	public Rigidbody2D bulletInstance;
 	private PlayerControl playerCtrl;
 	private GameObject attackBarInstance;
-	private Vector3 attackScale;
-	private GameObject UIAttackBar;
+//	private Vector3 attackScale;
+//	private GameObject UIAttackBar;
+	private Animator attackBarAnim;
 
 	void Awake() {
 		playerCtrl = transform.root.GetComponent<PlayerControl>();
-		UIAttackBar = GameObject.Find ("UIAttackPower");
+		attackBarAnim = GameObject.Find ("AttackBarSprite").GetComponent<Animator> ();
+		//UIAttackBar = GameObject.Find ("UIAttackPower");
 	}
 		
 		
 	void FixedUpdate () {
 		
 		if (playerCtrl.hasTurn) {
-
+			
 			if (bulletInstance != null) {
 				attackTriggered = true;
 			}
@@ -38,15 +41,29 @@ public class Gun : MonoBehaviour
 
 			if (attackTriggered == false) {
 
-				if(Input.GetButtonDown("Fire1") && playerCtrl.tag == "Player") {	
-					UIAttackBar.GetComponentInChildren<Animator> ().SetBool("Attack", true);
+				if(CrossPlatformInputManager.GetButtonDown("Shoot")){
+					//UIAttackBar.GetComponentInChildren<Animator> ().SetBool("Attack", true);
+					attackBarAnim.SetTime (1);
+					attackBarAnim.SetBool ("Attacking", true);
+					fireTime = Time.time;
+
+				}
+				if (CrossPlatformInputManager.GetButtonUp ("Shoot")) {
+					attackPower = Time.time - fireTime;
+					//UIAttackBar.GetComponentInChildren<Animator> ().SetBool ("Attack", false);
+					attackBarAnim.SetBool ("Attacking", false);
+					Fire ();
+				}
+				
+				if(Input.GetKeyDown(KeyCode.Space) && playerCtrl.tag == "Player") {	
+					//UIAttackBar.GetComponentInChildren<Animator> ().SetBool("Attack", true);
 					fireTime = Time.time;
 
 				}
 
-				if(Input.GetButtonUp("Fire1") && playerCtrl.tag == "Player"){
+				if(Input.GetKeyUp(KeyCode.Space) && playerCtrl.tag == "Player"){
 					attackPower = Time.time - fireTime;
-					UIAttackBar.GetComponentInChildren<Animator> ().SetBool ("Attack", false);
+					//UIAttackBar.GetComponentInChildren<Animator> ().SetBool ("Attack", false);
 					Fire ();
 				}
 
