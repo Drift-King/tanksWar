@@ -11,19 +11,19 @@ public class Gun : MonoBehaviour
 	public delegate void GunFired ();
 	public event GunFired gunFired;
 	public bool attackTriggered = false;
+	public AudioClip fireSound;
 
 	private float targetSpeed = 0f;
 	public Rigidbody2D bulletInstance;
 	private PlayerControl playerCtrl;
 	private GameObject attackBarInstance;
-//	private Vector3 attackScale;
-//	private GameObject UIAttackBar;
 	private Animator attackBarAnim;
+	private AudioSource audioSource;
 
 	void Awake() {
 		playerCtrl = transform.root.GetComponent<PlayerControl>();
 		attackBarAnim = GameObject.Find ("AttackBarSprite").GetComponent<Animator> ();
-		//UIAttackBar = GameObject.Find ("UIAttackPower");
+		audioSource = GetComponent<AudioSource> ();
 	}
 		
 		
@@ -42,7 +42,6 @@ public class Gun : MonoBehaviour
 			if (attackTriggered == false) {
 
 				if(CrossPlatformInputManager.GetButtonDown("Shoot")){
-					//UIAttackBar.GetComponentInChildren<Animator> ().SetBool("Attack", true);
 					attackBarAnim.SetTime (1);
 					attackBarAnim.SetBool ("Attacking", true);
 					fireTime = Time.time;
@@ -50,20 +49,17 @@ public class Gun : MonoBehaviour
 				}
 				if (CrossPlatformInputManager.GetButtonUp ("Shoot")) {
 					attackPower = Time.time - fireTime;
-					//UIAttackBar.GetComponentInChildren<Animator> ().SetBool ("Attack", false);
 					attackBarAnim.SetBool ("Attacking", false);
 					Fire ();
 				}
 				
 				if(Input.GetKeyDown(KeyCode.Space) && playerCtrl.tag == "Player") {	
-					//UIAttackBar.GetComponentInChildren<Animator> ().SetBool("Attack", true);
 					fireTime = Time.time;
 
 				}
 
 				if(Input.GetKeyUp(KeyCode.Space) && playerCtrl.tag == "Player"){
 					attackPower = Time.time - fireTime;
-					//UIAttackBar.GetComponentInChildren<Animator> ().SetBool ("Attack", false);
 					Fire ();
 				}
 
@@ -74,7 +70,6 @@ public class Gun : MonoBehaviour
 	}
 
 	public void FinishFire(){
-		Debug.Log ("Finish Fire");
 		if (gunFired != null) {
 			gunFired ();
 		}
@@ -83,7 +78,7 @@ public class Gun : MonoBehaviour
 	public void Fire() {
 
 		if (playerCtrl.hasTurn && attackTriggered == false) {
-
+			audioSource.PlayOneShot (fireSound);
 			attackTriggered = true;
 
 			bulletInstance = Instantiate (rocket, transform.position, transform.rotation) as Rigidbody2D;

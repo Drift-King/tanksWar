@@ -32,7 +32,6 @@ public class GamePlayManager : MonoBehaviour {
 	}
 		
 	void SwapTurn(){
-		//Invoke ("startSwapTurn", 1f);
 		StartCoroutine (SwapTurnCoroutine());
 	}
 
@@ -54,12 +53,8 @@ public class GamePlayManager : MonoBehaviour {
 	}
 
 	void PlayerHasDied(){
-		//GameObject.Find("Result").GetComponent<Text>().text = "You Lose!";
 		gameResult.GetComponent<Text>().text = "You Lose!";
 		StartCoroutine (GameOverShowScreenCoroutine());
-		//gameOverScreen.SetActive (true);
-		//GameObject.FindGameObjectWithTag ("GameResult").GetComponent<Text>().text = "You Lose!";
-
 	}
 
 	IEnumerator GameOverShowScreenCoroutine(){
@@ -68,11 +63,8 @@ public class GamePlayManager : MonoBehaviour {
 	}
 
 	void EnemyHasDied(){
-		//GameObject.Find("Result").GetComponent<Text>().text = "Victory!";
 		gameResult.GetComponent<Text>().text = "Victory!";
 		StartCoroutine (GameOverShowScreenCoroutine());
-		//gameOverScreen.SetActive (true);
-		//GameObject.FindGameObjectWithTag ("GameResult").GetComponent<Text>().text = "Victory!";
 	}
 
 	void setTurnIndicator() {

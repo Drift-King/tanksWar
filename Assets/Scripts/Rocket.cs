@@ -8,7 +8,6 @@ public class Rocket : MonoBehaviour {
 	public Gun gun;
 
 	void Start () {
-
 		Destroy(gameObject, 5);
 	}
 

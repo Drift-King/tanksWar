@@ -18,7 +18,10 @@ namespace UnityStandardAssets.CrossPlatformInput
 		public AxisOption axesToUse = AxisOption.Both; // The options for the axes that the still will use
 		public string horizontalAxisName = "Horizontal"; // The name given to the horizontal axis for the cross platform input
 		public string verticalAxisName = "Vertical"; // The name given to the vertical axis for the cross platform input
+		public bool backToOrigin = true;
+		public AudioClip movementSound;
 
+		private AudioSource audioSource;
 		Vector3 m_StartPos;
 		bool m_UseX; // Toggle for using the x axis
 		bool m_UseY; // Toggle for using the Y axis
@@ -27,6 +30,7 @@ namespace UnityStandardAssets.CrossPlatformInput
 
         void Start()
         {
+			audioSource = GetComponent<AudioSource> ();
 			m_StartPos = transform.position;
 			CreateVirtualAxes();
       
@@ -71,12 +75,12 @@ namespace UnityStandardAssets.CrossPlatformInput
 		public void OnDrag(PointerEventData data)
 		{
 			Vector3 newPos = Vector3.zero;
+			audioSource.PlayOneShot (movementSound);
 
 			if (m_UseX)
 			{
 				Debug.Log ("Dragging Joystick HOR" + data.position.x);
 				int delta = (int)(data.position.x - m_StartPos.x);
-				//delta = Mathf.Clamp(delta, - MovementRange, MovementRange);
 				newPos.x = delta;
 			}
 
@@ -84,7 +88,6 @@ namespace UnityStandardAssets.CrossPlatformInput
 			{
 				Debug.Log ("Dragging Joystick VERT" + data.position.x);
 				int delta = (int)(data.position.y - m_StartPos.y);
-				//delta = Mathf.Clamp(delta, -MovementRange, MovementRange);
 				newPos.y = delta;
 			}
 			transform.position = Vector3.ClampMagnitude(new Vector3(newPos.x, newPos.y, newPos.z),MovementRange) + m_StartPos;
@@ -93,9 +96,13 @@ namespace UnityStandardAssets.CrossPlatformInput
 
 
 		public void OnPointerUp(PointerEventData data)
-		{
-			transform.position = m_StartPos;
-			UpdateVirtualAxes(m_StartPos);
+		{	
+			audioSource.Stop ();
+
+			if (backToOrigin) {
+				transform.position = m_StartPos;
+				UpdateVirtualAxes (m_StartPos);
+			}
 		}
 
 

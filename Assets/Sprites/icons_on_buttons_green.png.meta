@@ -1,0 +1,414 @@
+fileFormatVersion: 2
+guid: a42ac88e929c44e0795e130c4eee6052
+timeCreated: 1484787132
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: icons_on_buttons_green_0
+    21300002: icons_on_buttons_green_1
+    21300004: icons_on_buttons_green_2
+    21300006: icons_on_buttons_green_3
+    21300008: icons_on_buttons_green_4
+    21300010: icons_on_buttons_green_5
+    21300012: icons_on_buttons_green_6
+    21300014: icons_on_buttons_green_7
+    21300016: icons_on_buttons_green_8
+    21300018: icons_on_buttons_green_9
+    21300020: icons_on_buttons_green_10
+    21300022: icons_on_buttons_green_11
+    21300024: icons_on_buttons_green_12
+    21300026: icons_on_buttons_green_13
+    21300028: icons_on_buttons_green_14
+    21300030: icons_on_buttons_green_15
+    21300032: icons_on_buttons_green_16
+    21300034: icons_on_buttons_green_17
+    21300036: icons_on_buttons_green_18
+    21300038: icons_on_buttons_green_19
+    21300040: icons_on_buttons_green_20
+    21300042: icons_on_buttons_green_21
+    21300044: icons_on_buttons_green_22
+    21300046: icons_on_buttons_green_23
+    21300048: icons_on_buttons_green_24
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: icons_on_buttons_green_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 778
+        width: 85
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_1
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 769
+        width: 99
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_2
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 764
+        width: 74
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_3
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 770
+        width: 117
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_4
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 782
+        width: 70
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_5
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 598
+        width: 85
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_6
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 596
+        width: 83
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_7
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 588
+        width: 111
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_8
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 597
+        width: 96
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_9
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 590
+        width: 84
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_10
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 414
+        width: 65
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_11
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 414
+        width: 65
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_12
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 408
+        width: 41
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_13
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 409
+        width: 55
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_14
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 411
+        width: 70
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_15
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 252
+        width: 93
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_16
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 244
+        width: 93
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_17
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 230
+        width: 100
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_18
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 235
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_19
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 235
+        width: 97
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_20
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 49
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_21
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 82
+        width: 70
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_22
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 45
+        width: 65
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_23
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 48
+        width: 78
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icons_on_buttons_green_24
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 55
+        width: 110
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

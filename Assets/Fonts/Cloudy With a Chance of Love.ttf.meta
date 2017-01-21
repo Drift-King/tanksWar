@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: c9ce2b55fc2a04e9ab9aa2a484a090e9
+timeCreated: 1484834574
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Cloudy With a Chance of Love
+  fontNames:
+  - Cloudy With a Chance of Love
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
