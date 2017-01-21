@@ -5,21 +5,45 @@ using System.Collections.Generic;
 
 public class GamePlayManager : MonoBehaviour {
 
+
 	public EnemyAI enemy;
 	public PlayerControl player;
 	public CameraFollow cameraFollow;
 	public GameObject gameOverScreen;
+	public GameObject pauseMenuScreen;
 	private GameObject playerTurnIndicator;
 	private GameObject enemyTurnIndicator;
+	private AudioSource audioSource;
 	public Transform gameResult;
 
+	public bool isPaused = false;
+
+
+	private static GamePlayManager _instance;
+
+	public static GamePlayManager Instance { get { return _instance; } }
+
+
+	private void Awake()
+	{
+		if (_instance != null && _instance != this)
+		{
+			Destroy(this.gameObject);
+		} else {
+			_instance = this;
+		}
+	}
 	// Use this for initialization
 	void Start () {
+		audioSource = GetComponent<AudioSource> ();
+		audioSource.loop = true;
 		gameOverScreen.SetActive (false);
+		pauseMenuScreen.SetActive (false);
 		enemy.GetComponentInChildren<Gun> ().gunFired += SwapTurn;
 		player.GetComponentInChildren<Gun> ().gunFired += SwapTurn;
 		player.GetComponent<PlayerHealth>().playerDied += PlayerHasDied;
 		enemy.GetComponent<PlayerHealth>().playerDied += EnemyHasDied;
+		GlobalSettings.Instance.musicToggled += ToggleMusic;
 		playerTurnIndicator = player.gameObject.transform.FindChild ("currentTurn").gameObject;
 		enemyTurnIndicator = enemy.gameObject.transform.FindChild ("currentTurn").gameObject;
 
@@ -27,6 +51,10 @@ public class GamePlayManager : MonoBehaviour {
 	}
 
 	public void StartGame(){
+		if (GlobalSettings.Instance.musicOn) {
+			audioSource.Play ();
+		}
+		Time.timeScale = 1;
 		enemy.hasTurn = true;
 		SwapTurn ();
 	}
@@ -51,6 +79,7 @@ public class GamePlayManager : MonoBehaviour {
 		enemy.hasTurn = !enemy.hasTurn;
 
 	}
+		
 
 	void PlayerHasDied(){
 		gameResult.GetComponent<Text>().text = "You Lose!";
@@ -75,6 +104,24 @@ public class GamePlayManager : MonoBehaviour {
 			playerTurnIndicator.SetActive (false);
 			enemyTurnIndicator.SetActive (true);
 		}
+	}
+
+	void ToggleMusic() {
+		if (GlobalSettings.Instance.musicOn) {
+			audioSource.Play ();
+		} else if (GlobalSettings.Instance.musicOn == false) {
+			audioSource.Stop ();
+		}
+	}
+
+	void Update() {
+
+		if (isPaused) {
+			Time.timeScale = 0;	
+		} else if (isPaused == false) {
+			Time.timeScale = 1;
+		}
+
 	}
 
 	void FixedUpdate(){

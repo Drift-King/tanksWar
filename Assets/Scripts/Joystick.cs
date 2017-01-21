@@ -75,7 +75,9 @@ namespace UnityStandardAssets.CrossPlatformInput
 		public void OnDrag(PointerEventData data)
 		{
 			Vector3 newPos = Vector3.zero;
-			audioSource.PlayOneShot (movementSound);
+			if (GlobalSettings.Instance.soundsOn) {
+				audioSource.PlayOneShot (movementSound);
+			}
 
 			if (m_UseX)
 			{
@@ -97,8 +99,9 @@ namespace UnityStandardAssets.CrossPlatformInput
 
 		public void OnPointerUp(PointerEventData data)
 		{	
-			audioSource.Stop ();
-
+			if (GlobalSettings.Instance.soundsOn) {
+				audioSource.Stop ();
+			}
 			if (backToOrigin) {
 				transform.position = m_StartPos;
 				UpdateVirtualAxes (m_StartPos);

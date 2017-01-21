@@ -78,7 +78,10 @@ public class Gun : MonoBehaviour
 	public void Fire() {
 
 		if (playerCtrl.hasTurn && attackTriggered == false) {
-			audioSource.PlayOneShot (fireSound);
+
+			if (GlobalSettings.Instance.soundsOn) {
+				audioSource.PlayOneShot (fireSound);
+			}
 			attackTriggered = true;
 
 			bulletInstance = Instantiate (rocket, transform.position, transform.rotation) as Rigidbody2D;
