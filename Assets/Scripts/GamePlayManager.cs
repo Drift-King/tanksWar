@@ -12,6 +12,7 @@ public class GamePlayManager : MonoBehaviour {
 	public GameObject victorySummary;
 	public GameObject defeatSummary;
 	public GameObject pauseMenuScreen;
+	public Text shotsCounter;
 	public PlayerStatistics playerStatistics = new PlayerStatistics();
 
 	// GameObjects to represent Final Score on Victory Summary Screen
@@ -81,6 +82,7 @@ public class GamePlayManager : MonoBehaviour {
 	IEnumerator SwapTurnCoroutine(){
 		if (player.hasTurn) {
 			playerStatistics.totalShots += 1;
+			shotsCounter.text = playerStatistics.totalShots.ToString();
 			Debug.Log ("Player shooted " + playerStatistics.totalShots + " times");
 		}
 		player.hasTurn = !player.hasTurn;

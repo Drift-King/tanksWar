@@ -10,6 +10,7 @@ public class PauseGame : MonoBehaviour {
 	public void Pause() {
 		pauseMenu.SetActive (true);
 		GamePlayManager.Instance.isPaused = true;
+
 	}
 
 	public void Resume() {
@@ -20,7 +21,5 @@ public class PauseGame : MonoBehaviour {
 
 	public void Settings() {
 		settingsMenu.SetActive (true);
-		//GamePlayManager.Instance.isPaused = false;
-		//pauseMenu.SetActive (false);
 	}
 }
