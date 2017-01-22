@@ -11,7 +11,7 @@ public class EnemyAI : PlayerControl {
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player").transform;
 		gun = GetComponentInChildren<Gun> ();
-		tilt = 140;
+		tilt = 160;
 	}
 
 	float CalculateAttackPower(Transform target, float angle) {
@@ -24,7 +24,9 @@ public class EnemyAI : PlayerControl {
 		dist += h / Mathf.Tan (a);
 
 		return Mathf.Sqrt (dist * Physics.gravity.magnitude / Mathf.Sin (2 * a)) * Random.Range (1.2f, 1.8f);
+
 	}
+
 
 	void LateUpdate () {
 		

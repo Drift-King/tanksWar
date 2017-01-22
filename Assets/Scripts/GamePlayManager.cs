@@ -82,6 +82,7 @@ public class GamePlayManager : MonoBehaviour {
 
 	IEnumerator SwapTurnCoroutine(){
 		if (player.hasTurn) {
+			enemy.tilt = Random.Range (170, 140);
 			playerStatistics.totalShots += 1;
 			shotsCounter.text = playerStatistics.totalShots.ToString();
 			Debug.Log ("Player shooted " + playerStatistics.totalShots + " times");
@@ -95,7 +96,6 @@ public class GamePlayManager : MonoBehaviour {
 		}
 
 		enemy.hasTurn = !enemy.hasTurn;
-
 	}
 		
 

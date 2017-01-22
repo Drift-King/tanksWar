@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\Gun.cs" />
      <Compile Include="Assets\Scripts\InactiveObject.cs" />
      <Compile Include="Assets\Scripts\Joystick.cs" />
+     <Compile Include="Assets\Scripts\MissionSelector.cs" />
      <Compile Include="Assets\Scripts\MobileInput.cs" />
      <Compile Include="Assets\Scripts\NewGame.cs" />
      <Compile Include="Assets\Scripts\PauseGame.cs" />

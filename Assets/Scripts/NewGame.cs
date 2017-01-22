@@ -6,7 +6,7 @@ public class NewGame : MonoBehaviour {
 
 
 	public void startNewGame() {
-		SceneManager.LoadScene (GlobalSettings.Instance.sceneToLoadName());
+		SceneManager.LoadScene (GlobalSettings.Instance.sceneToLoad);
 	}
 
 	public void MainMenu() {	
@@ -16,5 +16,9 @@ public class NewGame : MonoBehaviour {
 	public void Exit() {
 		Application.Quit ();
 	}
-		
+
+
+	public void MissionSelection(){
+		SceneManager.LoadScene ("MissionSelection");
+	}
 }
