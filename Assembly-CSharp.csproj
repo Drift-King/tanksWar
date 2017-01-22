@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\PauseGame.cs" />
      <Compile Include="Assets\Scripts\PlayerControl.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+     <Compile Include="Assets\Scripts\PlayerStatistics.cs" />
      <Compile Include="Assets\Scripts\Rocket.cs" />
      <Compile Include="Assets\Scripts\RocketExplosion.cs" />
      <Compile Include="Assets\Scripts\SettingsMenu.cs" />

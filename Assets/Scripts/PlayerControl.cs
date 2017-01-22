@@ -13,8 +13,30 @@ public class PlayerControl : MonoBehaviour {
 	[HideInInspector] public Transform pivot;
 	private Rigidbody2D rigidBody;
 	protected float tilt;
-
+	public bool _showBox = true;
 	protected GameObject turnIndicator;
+
+	public Renderer rend;
+
+//	void OnDrawGizmos(){
+//		Debug.Log ("Draw Gizmos...");
+//		if(_showBox){
+//			OnDrawGizmosSelected ();	
+//		}
+//	} 
+
+	void OnDrawGizmosSelected(){
+		Gizmos.color = Color.red;
+//		Gizmos.DrawSphere (transform.position, 0.1f);
+//		Gizmos.DrawWireCube (transform.position, transform.position);
+		Vector3 center = rend.bounds.center;
+		float radius = rend.bounds.extents.magnitude;
+		Gizmos.DrawWireSphere (center, radius);
+	}
+	void Start(){
+
+		rend = GetComponent<Renderer> ();
+	}
 
 	void Awake () {
 		anim = GetComponent<Animator> ();

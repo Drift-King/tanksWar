@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerHealth : MonoBehaviour {
 	
-	public float health = 50f;
+	public float health = 60f;
 	public float hurtForce = 20f;
 	public float damageAmount = 20f;
 	public bool isAlive = true;
@@ -39,12 +39,7 @@ public class PlayerHealth : MonoBehaviour {
 			}
 		
 			else {
-				playerDied ();
-				isAlive = false;
-				anim.SetTrigger("Dies");
-				GetComponent<PlayerControl>().enabled = false;
-				GetComponentInChildren<Gun>().enabled = false;
-
+				PlayerDies ();
 			}
 		}	
 	
@@ -57,10 +52,27 @@ public class PlayerHealth : MonoBehaviour {
 		// Add a force to the player in the direction of the vector and multiply by the hurtForce.
 		GetComponent<Rigidbody2D>().AddForce(hurtVector * hurtForce);
 
+		if (gameObject.tag == "Enemy") {
+			GamePlayManager.Instance.playerStatistics.shotsToEnemy += 1;
+			Debug.Log ("Enemy shooted " + GamePlayManager.Instance.playerStatistics.shotsToEnemy + " times");
+		}
+
 		health -= damageAmount;
 		Debug.Log ("Health: " + gameObject.tag + " -->> " + health);
 
+		if (health <= 0) {
+			PlayerDies ();
+		}
+
 		UpdateHealthBar();
+	}
+
+	private void PlayerDies() {
+		playerDied ();
+		isAlive = false;
+		anim.SetTrigger("Dies");
+		GetComponent<PlayerControl>().enabled = false;
+		GetComponentInChildren<Gun>().enabled = false;
 	}
 
 	public void UpdateHealthBar () {

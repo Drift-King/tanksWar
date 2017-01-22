@@ -8,6 +8,10 @@ public class NewGame : MonoBehaviour {
 		SceneManager.LoadScene ("Level1");
 	}
 
+	public void MainMenu() {	
+		SceneManager.LoadScene ("Main Menu");
+	}
+
 	public void Exit() {
 		Application.Quit ();
 	}
