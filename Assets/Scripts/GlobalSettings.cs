@@ -15,6 +15,10 @@ public class GlobalSettings : MonoBehaviour {
 	public delegate void MusicToggled();
 	public event MusicToggled musicToggled;
 
+	public delegate void VolumeChanged();
+	public event VolumeChanged volumeChanged;
+
+
 	void Awake () {
 		
 		if (Instance == null) {
@@ -29,5 +33,11 @@ public class GlobalSettings : MonoBehaviour {
 		if (musicToggled != null) {
 			musicToggled ();
 		}
+	}
+
+	public void updateVolume(){
+		if (volumeChanged != null) {
+			volumeChanged ();
+		}	
 	}
 }

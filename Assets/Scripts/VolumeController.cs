@@ -13,9 +13,6 @@ public class VolumeController : MonoBehaviour {
 	private float scale = 0f;
 	public Transform volIndicator;
 
-	public delegate void VolumeChanged();
-	public event VolumeChanged volumeChanged;
-
 	void Awake () {
 
 		if (Instance == null) {
@@ -28,7 +25,6 @@ public class VolumeController : MonoBehaviour {
 		
 	void Start(){
 		UpdateVolumeBar ();
-		Debug.Log ("Updating Volume Bar on Start... " + GlobalSettings.Instance.volume);
 	}
 
 	void UpdateVolumeBar(){
@@ -70,9 +66,9 @@ public class VolumeController : MonoBehaviour {
 			scale = 0.5f;
 		}
 
-		GlobalSettings.Instance.volume = scale;
-		//volIndicator.GetComponent<Transform> ().localScale = new Vector3 (scale, 1f, 1f);
 		UpdateVolumeBar ();
+		GlobalSettings.Instance.volume = scale;
+		GlobalSettings.Instance.updateVolume ();
 	}
 		
 }

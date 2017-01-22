@@ -54,6 +54,7 @@ public class GamePlayManager : MonoBehaviour {
 		player.GetComponent<PlayerHealth>().playerDied += PlayerHasDied;
 		enemy.GetComponent<PlayerHealth>().playerDied += EnemyHasDied;
 		GlobalSettings.Instance.musicToggled += ToggleMusic;
+		GlobalSettings.Instance.volumeChanged += UpdateMusicVolume;
 		playerTurnIndicator = player.gameObject.transform.FindChild ("currentTurn").gameObject;
 		enemyTurnIndicator = enemy.gameObject.transform.FindChild ("currentTurn").gameObject;
 
@@ -157,6 +158,10 @@ public class GamePlayManager : MonoBehaviour {
 		} else if (GlobalSettings.Instance.musicOn == false) {
 			audioSource.Stop ();
 		}
+	}
+
+	void UpdateMusicVolume(){
+		audioSource.volume = GlobalSettings.Instance.volume;
 	}
 
 	void Update() {
