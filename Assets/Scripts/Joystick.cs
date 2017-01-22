@@ -15,6 +15,8 @@ namespace UnityStandardAssets.CrossPlatformInput
 		}
 
 		public int MovementRange = 100;
+		public float minPosX = 0;
+		public float maxPosX = 0;
 		public AxisOption axesToUse = AxisOption.Both; // The options for the axes that the still will use
 		public string horizontalAxisName = "Horizontal"; // The name given to the horizontal axis for the cross platform input
 		public string verticalAxisName = "Vertical"; // The name given to the vertical axis for the cross platform input
@@ -92,7 +94,20 @@ namespace UnityStandardAssets.CrossPlatformInput
 				int delta = (int)(data.position.y - m_StartPos.y);
 				newPos.y = delta;
 			}
-			transform.position = Vector3.ClampMagnitude(new Vector3(newPos.x, newPos.y, newPos.z),MovementRange) + m_StartPos;
+			if (minPosX != 0) {
+				if (newPos.x <= minPosX) {
+					transform.localPosition = new Vector3 (minPosX, newPos.y, newPos.z);
+					//transform.position = Vector3.ClampMagnitude (new Vector3 (minPosX, newPos.y, newPos.z), MovementRange) + m_StartPos;
+				} else if (newPos.x >= maxPosX) {
+					transform.localPosition = new Vector3 (maxPosX, newPos.y, newPos.z);
+					//transform.position = Vector3.ClampMagnitude(new Vector3 (maxPosX, newPos.y, newPos.z), MovementRange) + m_StartPos;
+				} else if (newPos.x > minPosX && newPos.x < maxPosX) {
+					transform.localPosition = new Vector3 (newPos.x, newPos.y, newPos.z);
+					//transform.position = Vector3.ClampMagnitude(new Vector3(newPos.x, newPos.y, newPos.z), MovementRange) + m_StartPos;
+				}
+			} else {
+				transform.position = Vector3.ClampMagnitude (new Vector3 (newPos.x, newPos.y, newPos.z), MovementRange) + m_StartPos;
+			}
 			UpdateVirtualAxes(transform.position);
 		}
 

@@ -10,11 +10,10 @@ public class GlobalSettings : MonoBehaviour {
 
 	public bool musicOn = true;
 	public bool soundsOn = true;
-	public float volume = 1f;
+	public float volume = 0.5f;
 
 	public delegate void MusicToggled();
 	public event MusicToggled musicToggled;
-
 
 	void Awake () {
 		
