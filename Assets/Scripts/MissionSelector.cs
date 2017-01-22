@@ -4,31 +4,35 @@ using UnityEngine;
 
 public class MissionSelector : MonoBehaviour {
 
-	public void HideAllSelectors() {
-		
+	public GameObject missionOneSelector;
+	public GameObject missionTwoSelector;
 
-		GameObject[] selectors = GameObject.FindGameObjectsWithTag ("MissionSelector");
+	void Start() {
+		HideAllSelectors ();
 
-		if (selectors != null) {
-			foreach (GameObject item in selectors) {
-				item.SetActive (false);
-			}
+		if (GlobalSettings.Instance.sceneToLoad == "Level1") {
+			missionOneSelector.SetActive (true);
+		} else if(GlobalSettings.Instance.sceneToLoad == "Level2") {
+			missionTwoSelector.SetActive (true);
 		}
+
 	}
 
-	public void SelectMission() {
+	public void HideAllSelectors() {
+		missionOneSelector.SetActive (false);
+		missionTwoSelector.SetActive (false);
+	}
 		
-		if (gameObject.tag == "Mission1") {
-			GlobalSettings.Instance.sceneToLoad = "Level1";
-			HideAllSelectors ();
-			transform.Find ("Selector").gameObject.SetActive (true);
-			
-		} else if (gameObject.tag == "Mission2") {
-			GlobalSettings.Instance.sceneToLoad = "Level2";
-			HideAllSelectors ();
-			transform.Find ("Selector").gameObject.SetActive (true);
+	public void SelectMissionOne(){
+		GlobalSettings.Instance.sceneToLoad = "Level1";
+		HideAllSelectors ();
+		missionOneSelector.SetActive (true);
+	}
 
-		}
+	public void SelectMissionTwo(){
+		GlobalSettings.Instance.sceneToLoad = "Level2";
+		HideAllSelectors ();
+		missionTwoSelector.SetActive (true);
 	}
 
 }

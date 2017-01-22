@@ -11132,7 +11132,8 @@ extern "C" void InactiveObject__ctor_m3533399521 ();
 extern "C" void InactiveObject_Start_m688887633 ();
 extern "C" void MissionSelector__ctor_m1810040822 ();
 extern "C" void MissionSelector_HideAllSelectors_m3586241565 ();
-extern "C" void MissionSelector_SelectMission_m3652384716 ();
+extern "C" void MissionSelector_SelectMissionOne_m1584870450 ();
+extern "C" void MissionSelector_SelectMissionTwo_m2976525968 ();
 extern "C" void NewGame__ctor_m4113796501 ();
 extern "C" void NewGame_startNewGame_m3560566951 ();
 extern "C" void NewGame_MainMenu_m1016296781 ();
@@ -11345,7 +11346,7 @@ extern "C" void VolumeController_Awake_m700837934 ();
 extern "C" void VolumeController_Start_m2527877471 ();
 extern "C" void VolumeController_UpdateVolumeBar_m3948430583 ();
 extern "C" void VolumeController_MoveVolume_m2198246158 ();
-extern const Il2CppMethodPointer g_MethodPointers[11334] = 
+extern const Il2CppMethodPointer g_MethodPointers[11335] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -22468,7 +22469,8 @@ extern const Il2CppMethodPointer g_MethodPointers[11334] =
 	InactiveObject_Start_m688887633,
 	MissionSelector__ctor_m1810040822,
 	MissionSelector_HideAllSelectors_m3586241565,
-	MissionSelector_SelectMission_m3652384716,
+	MissionSelector_SelectMissionOne_m1584870450,
+	MissionSelector_SelectMissionTwo_m2976525968,
 	NewGame__ctor_m4113796501,
 	NewGame_startNewGame_m3560566951,
 	NewGame_MainMenu_m1016296781,

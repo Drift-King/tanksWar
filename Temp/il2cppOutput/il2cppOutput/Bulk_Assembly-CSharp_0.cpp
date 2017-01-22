@@ -3047,76 +3047,57 @@ IL_0032:
 		return;
 	}
 }
-// System.Void MissionSelector::SelectMission()
-extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral210244961;
+// System.Void MissionSelector::SelectMissionOne()
 extern Il2CppCodeGenString* _stringLiteral4084037367;
 extern Il2CppCodeGenString* _stringLiteral1736259269;
-extern Il2CppCodeGenString* _stringLiteral1776328902;
-extern Il2CppCodeGenString* _stringLiteral192354598;
-extern const uint32_t MissionSelector_SelectMission_m3652384716_MetadataUsageId;
-extern "C"  void MissionSelector_SelectMission_m3652384716 (MissionSelector_t1631497811 * __this, const MethodInfo* method)
+extern const uint32_t MissionSelector_SelectMissionOne_m1584870450_MetadataUsageId;
+extern "C"  void MissionSelector_SelectMissionOne_m1584870450 (MissionSelector_t1631497811 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (MissionSelector_SelectMission_m3652384716_MetadataUsageId);
+		il2cpp_codegen_initialize_method (MissionSelector_SelectMissionOne_m1584870450_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		GameObject_t1756533147 * L_0 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		GlobalSettings_t4218635622 * L_0 = GlobalSettings_get_Instance_m4257028846(NULL /*static, unused*/, /*hidden argument*/NULL);
 		NullCheck(L_0);
-		String_t* L_1 = GameObject_get_tag_m1425941094(L_0, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_2 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_1, _stringLiteral210244961, /*hidden argument*/NULL);
-		if (!L_2)
-		{
-			goto IL_004f;
-		}
-	}
-	{
-		GlobalSettings_t4218635622 * L_3 = GlobalSettings_get_Instance_m4257028846(NULL /*static, unused*/, /*hidden argument*/NULL);
+		L_0->set_sceneToLoad_8(_stringLiteral4084037367);
+		MissionSelector_HideAllSelectors_m3586241565(__this, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Transform_t3275118058 * L_2 = Transform_Find_m3323476454(L_1, _stringLiteral1736259269, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		GameObject_t1756533147 * L_3 = Component_get_gameObject_m3105766835(L_2, /*hidden argument*/NULL);
 		NullCheck(L_3);
-		L_3->set_sceneToLoad_8(_stringLiteral4084037367);
+		GameObject_SetActive_m2887581199(L_3, (bool)1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void MissionSelector::SelectMissionTwo()
+extern Il2CppCodeGenString* _stringLiteral192354598;
+extern Il2CppCodeGenString* _stringLiteral1736259269;
+extern const uint32_t MissionSelector_SelectMissionTwo_m2976525968_MetadataUsageId;
+extern "C"  void MissionSelector_SelectMissionTwo_m2976525968 (MissionSelector_t1631497811 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (MissionSelector_SelectMissionTwo_m2976525968_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		GlobalSettings_t4218635622 * L_0 = GlobalSettings_get_Instance_m4257028846(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		L_0->set_sceneToLoad_8(_stringLiteral192354598);
 		MissionSelector_HideAllSelectors_m3586241565(__this, /*hidden argument*/NULL);
-		Transform_t3275118058 * L_4 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		NullCheck(L_4);
-		Transform_t3275118058 * L_5 = Transform_Find_m3323476454(L_4, _stringLiteral1736259269, /*hidden argument*/NULL);
-		NullCheck(L_5);
-		GameObject_t1756533147 * L_6 = Component_get_gameObject_m3105766835(L_5, /*hidden argument*/NULL);
-		NullCheck(L_6);
-		GameObject_SetActive_m2887581199(L_6, (bool)1, /*hidden argument*/NULL);
-		goto IL_0099;
-	}
-
-IL_004f:
-	{
-		GameObject_t1756533147 * L_7 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
-		NullCheck(L_7);
-		String_t* L_8 = GameObject_get_tag_m1425941094(L_7, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_9 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_8, _stringLiteral1776328902, /*hidden argument*/NULL);
-		if (!L_9)
-		{
-			goto IL_0099;
-		}
-	}
-	{
-		GlobalSettings_t4218635622 * L_10 = GlobalSettings_get_Instance_m4257028846(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_10);
-		L_10->set_sceneToLoad_8(_stringLiteral192354598);
-		MissionSelector_HideAllSelectors_m3586241565(__this, /*hidden argument*/NULL);
-		Transform_t3275118058 * L_11 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		NullCheck(L_11);
-		Transform_t3275118058 * L_12 = Transform_Find_m3323476454(L_11, _stringLiteral1736259269, /*hidden argument*/NULL);
-		NullCheck(L_12);
-		GameObject_t1756533147 * L_13 = Component_get_gameObject_m3105766835(L_12, /*hidden argument*/NULL);
-		NullCheck(L_13);
-		GameObject_SetActive_m2887581199(L_13, (bool)1, /*hidden argument*/NULL);
-	}
-
-IL_0099:
-	{
+		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Transform_t3275118058 * L_2 = Transform_Find_m3323476454(L_1, _stringLiteral1736259269, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		GameObject_t1756533147 * L_3 = Component_get_gameObject_m3105766835(L_2, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		GameObject_SetActive_m2887581199(L_3, (bool)1, /*hidden argument*/NULL);
 		return;
 	}
 }

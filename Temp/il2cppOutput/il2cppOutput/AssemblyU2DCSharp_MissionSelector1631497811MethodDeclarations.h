@@ -21,5 +21,7 @@ struct MissionSelector_t1631497811;
 extern "C"  void MissionSelector__ctor_m1810040822 (MissionSelector_t1631497811 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void MissionSelector::HideAllSelectors()
 extern "C"  void MissionSelector_HideAllSelectors_m3586241565 (MissionSelector_t1631497811 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void MissionSelector::SelectMission()
-extern "C"  void MissionSelector_SelectMission_m3652384716 (MissionSelector_t1631497811 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void MissionSelector::SelectMissionOne()
+extern "C"  void MissionSelector_SelectMissionOne_m1584870450 (MissionSelector_t1631497811 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void MissionSelector::SelectMissionTwo()
+extern "C"  void MissionSelector_SelectMissionTwo_m2976525968 (MissionSelector_t1631497811 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

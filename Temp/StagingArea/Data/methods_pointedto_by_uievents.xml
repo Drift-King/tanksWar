@@ -1,10 +1,10 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="ToggleButton">
-			<method name="ToggleOff"/>
 			<method name="ToggleOn"/>
 			<method name="ToggleOff"/>
 			<method name="ToggleOn"/>
+			<method name="ToggleOff"/>
 			<method name="ToggleOn"/>
 			<method name="ToggleOff"/>
 			<method name="ToggleOn"/>
@@ -26,13 +26,6 @@
 			<method name="startNewGame"/>
 			<method name="MainMenu"/>
 			<method name="MainMenu"/>
-			<method name="startNewGame"/>
-			<method name="Exit"/>
-			<method name="startNewGame"/>
-			<method name="startNewGame"/>
-			<method name="startNewGame"/>
-			<method name="MainMenu"/>
-			<method name="MainMenu"/>
 			<method name="MainMenu"/>
 			<method name="startNewGame"/>
 			<method name="Exit"/>
@@ -40,12 +33,23 @@
 			<method name="startNewGame"/>
 			<method name="startNewGame"/>
 			<method name="MainMenu"/>
+			<method name="MainMenu"/>
+			<method name="MainMenu"/>
+			<method name="startNewGame"/>
+			<method name="Exit"/>
+			<method name="startNewGame"/>
+			<method name="startNewGame"/>
+			<method name="startNewGame"/>
 			<method name="MainMenu"/>
 		</type>
 		<type fullname="VolumeController">
 			<method name="MoveVolume"/>
 			<method name="MoveVolume"/>
 			<method name="MoveVolume"/>
+		</type>
+		<type fullname="MissionSelector">
+			<method name="SelectMissionOne"/>
+			<method name="SelectMissionTwo"/>
 		</type>
 		<type fullname="UnityStandardAssets.CrossPlatformInput.ButtonHandler">
 			<method name="SetDownState"/>
@@ -64,10 +68,6 @@
 			<method name="Settings"/>
 			<method name="Resume"/>
 			<method name="Pause"/>
-		</type>
-		<type fullname="MissionSelector">
-			<method name="SelectMission"/>
-			<method name="SelectMission"/>
 		</type>
 	</assembly>
 </linker>
