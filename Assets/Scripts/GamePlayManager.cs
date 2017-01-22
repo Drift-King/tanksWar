@@ -9,12 +9,12 @@ public class GamePlayManager : MonoBehaviour {
 	public EnemyAI enemy;
 	public PlayerControl player;
 	public CameraFollow cameraFollow;
-	public GameObject gameOverScreen;
+	public GameObject victorySummary;
+	public GameObject defeatSummary;
 	public GameObject pauseMenuScreen;
 	private GameObject playerTurnIndicator;
 	private GameObject enemyTurnIndicator;
 	private AudioSource audioSource;
-	public Transform gameResult;
 
 	public bool isPaused = false;
 
@@ -33,11 +33,12 @@ public class GamePlayManager : MonoBehaviour {
 			_instance = this;
 		}
 	}
-	// Use this for initialization
+
 	void Start () {
 		audioSource = GetComponent<AudioSource> ();
 		audioSource.loop = true;
-		gameOverScreen.SetActive (false);
+		victorySummary.SetActive (false);
+		defeatSummary.SetActive (false);
 		pauseMenuScreen.SetActive (false);
 		enemy.GetComponentInChildren<Gun> ().gunFired += SwapTurn;
 		player.GetComponentInChildren<Gun> ().gunFired += SwapTurn;
@@ -82,18 +83,21 @@ public class GamePlayManager : MonoBehaviour {
 		
 
 	void PlayerHasDied(){
-		gameResult.GetComponent<Text>().text = "You Lose!";
-		StartCoroutine (GameOverShowScreenCoroutine());
+		StartCoroutine (DefeatSummaryCoroutine());
 	}
 
-	IEnumerator GameOverShowScreenCoroutine(){
+	IEnumerator VictorySummaryCoroutine(){
 		yield return new WaitForSeconds (1);
-		gameOverScreen.SetActive (true);
+		victorySummary.SetActive (true);
+	}
+
+	IEnumerator DefeatSummaryCoroutine(){
+		yield return new WaitForSeconds (1);
+		defeatSummary.SetActive (true);
 	}
 
 	void EnemyHasDied(){
-		gameResult.GetComponent<Text>().text = "Victory!";
-		StartCoroutine (GameOverShowScreenCoroutine());
+		StartCoroutine (VictorySummaryCoroutine());
 	}
 
 	void setTurnIndicator() {
