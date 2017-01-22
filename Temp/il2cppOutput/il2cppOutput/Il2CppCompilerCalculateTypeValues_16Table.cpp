@@ -748,7 +748,7 @@ extern const int32_t g_FieldOffsetTable1692[2] =
 	FollowPlayer_t1961594028::get_offset_of_offset_3(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1693 = { sizeof (GamePlayManager_t85684135), -1, sizeof(GamePlayManager_t85684135_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1693[16] = 
+extern const int32_t g_FieldOffsetTable1693[17] = 
 {
 	GamePlayManager_t85684135::get_offset_of_enemy_2(),
 	GamePlayManager_t85684135::get_offset_of_player_3(),
@@ -756,16 +756,17 @@ extern const int32_t g_FieldOffsetTable1693[16] =
 	GamePlayManager_t85684135::get_offset_of_victorySummary_5(),
 	GamePlayManager_t85684135::get_offset_of_defeatSummary_6(),
 	GamePlayManager_t85684135::get_offset_of_pauseMenuScreen_7(),
-	GamePlayManager_t85684135::get_offset_of_playerStatistics_8(),
-	GamePlayManager_t85684135::get_offset_of_ZeroStars_9(),
-	GamePlayManager_t85684135::get_offset_of_OneStar_10(),
-	GamePlayManager_t85684135::get_offset_of_TwoStars_11(),
-	GamePlayManager_t85684135::get_offset_of_ThreeStars_12(),
-	GamePlayManager_t85684135::get_offset_of_playerTurnIndicator_13(),
-	GamePlayManager_t85684135::get_offset_of_enemyTurnIndicator_14(),
-	GamePlayManager_t85684135::get_offset_of_audioSource_15(),
-	GamePlayManager_t85684135::get_offset_of_isPaused_16(),
-	GamePlayManager_t85684135_StaticFields::get_offset_of__instance_17(),
+	GamePlayManager_t85684135::get_offset_of_shotsCounter_8(),
+	GamePlayManager_t85684135::get_offset_of_playerStatistics_9(),
+	GamePlayManager_t85684135::get_offset_of_ZeroStars_10(),
+	GamePlayManager_t85684135::get_offset_of_OneStar_11(),
+	GamePlayManager_t85684135::get_offset_of_TwoStars_12(),
+	GamePlayManager_t85684135::get_offset_of_ThreeStars_13(),
+	GamePlayManager_t85684135::get_offset_of_playerTurnIndicator_14(),
+	GamePlayManager_t85684135::get_offset_of_enemyTurnIndicator_15(),
+	GamePlayManager_t85684135::get_offset_of_audioSource_16(),
+	GamePlayManager_t85684135::get_offset_of_isPaused_17(),
+	GamePlayManager_t85684135_StaticFields::get_offset_of__instance_18(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1694 = { sizeof (U3CSwapTurnCoroutineU3Ec__Iterator0_t1401080897), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable1694[4] = 

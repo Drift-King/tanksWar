@@ -201,6 +201,7 @@ struct VolumeController_t3947347518;
 #include "UnityEngine_UI_UnityEngine_UI_Text356221433MethodDeclarations.h"
 #include "mscorlib_System_NotSupportedException1793819818MethodDeclarations.h"
 #include "mscorlib_System_NotSupportedException1793819818.h"
+#include "mscorlib_System_Int322071877448MethodDeclarations.h"
 #include "mscorlib_System_Delegate3022476291MethodDeclarations.h"
 #include "mscorlib_System_Delegate3022476291.h"
 #include "mscorlib_System_Threading_Interlocked1625106012MethodDeclarations.h"
@@ -272,7 +273,6 @@ struct VolumeController_t3947347518;
 #include "UnityEngine_UnityEngine_Application_LogCallback1867914413.h"
 #include "UnityEngine_UnityEngine_Texture2D3542995729.h"
 #include "UnityEngine_UnityEngine_Texture2243626319.h"
-#include "mscorlib_System_Int322071877448MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_GUIStyle1799908754MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_RectOffset3387826427MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_GUIStyleState3801000545MethodDeclarations.h"
@@ -840,7 +840,7 @@ extern "C"  void GamePlayManager__ctor_m236275662 (GamePlayManager_t85684135 * _
 	{
 		PlayerStatistics_t1841391070 * L_0 = (PlayerStatistics_t1841391070 *)il2cpp_codegen_object_new(PlayerStatistics_t1841391070_il2cpp_TypeInfo_var);
 		PlayerStatistics__ctor_m2355440129(L_0, /*hidden argument*/NULL);
-		__this->set_playerStatistics_8(L_0);
+		__this->set_playerStatistics_9(L_0);
 		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -857,7 +857,7 @@ extern "C"  GamePlayManager_t85684135 * GamePlayManager_get_Instance_m2021271410
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		GamePlayManager_t85684135 * L_0 = ((GamePlayManager_t85684135_StaticFields*)GamePlayManager_t85684135_il2cpp_TypeInfo_var->static_fields)->get__instance_17();
+		GamePlayManager_t85684135 * L_0 = ((GamePlayManager_t85684135_StaticFields*)GamePlayManager_t85684135_il2cpp_TypeInfo_var->static_fields)->get__instance_18();
 		return L_0;
 	}
 }
@@ -874,7 +874,7 @@ extern "C"  void GamePlayManager_Awake_m3160410151 (GamePlayManager_t85684135 * 
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		GamePlayManager_t85684135 * L_0 = ((GamePlayManager_t85684135_StaticFields*)GamePlayManager_t85684135_il2cpp_TypeInfo_var->static_fields)->get__instance_17();
+		GamePlayManager_t85684135 * L_0 = ((GamePlayManager_t85684135_StaticFields*)GamePlayManager_t85684135_il2cpp_TypeInfo_var->static_fields)->get__instance_18();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
 		if (!L_1)
@@ -883,7 +883,7 @@ extern "C"  void GamePlayManager_Awake_m3160410151 (GamePlayManager_t85684135 * 
 		}
 	}
 	{
-		GamePlayManager_t85684135 * L_2 = ((GamePlayManager_t85684135_StaticFields*)GamePlayManager_t85684135_il2cpp_TypeInfo_var->static_fields)->get__instance_17();
+		GamePlayManager_t85684135 * L_2 = ((GamePlayManager_t85684135_StaticFields*)GamePlayManager_t85684135_il2cpp_TypeInfo_var->static_fields)->get__instance_18();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		bool L_3 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_2, __this, /*hidden argument*/NULL);
 		if (!L_3)
@@ -900,7 +900,7 @@ extern "C"  void GamePlayManager_Awake_m3160410151 (GamePlayManager_t85684135 * 
 
 IL_0030:
 	{
-		((GamePlayManager_t85684135_StaticFields*)GamePlayManager_t85684135_il2cpp_TypeInfo_var->static_fields)->set__instance_17(__this);
+		((GamePlayManager_t85684135_StaticFields*)GamePlayManager_t85684135_il2cpp_TypeInfo_var->static_fields)->set__instance_18(__this);
 	}
 
 IL_0036:
@@ -931,8 +931,8 @@ extern "C"  void GamePlayManager_Start_m2758210818 (GamePlayManager_t85684135 * 
 	}
 	{
 		AudioSource_t1135106623 * L_0 = Component_GetComponent_TisAudioSource_t1135106623_m3920278003(__this, /*hidden argument*/Component_GetComponent_TisAudioSource_t1135106623_m3920278003_MethodInfo_var);
-		__this->set_audioSource_15(L_0);
-		AudioSource_t1135106623 * L_1 = __this->get_audioSource_15();
+		__this->set_audioSource_16(L_0);
+		AudioSource_t1135106623 * L_1 = __this->get_audioSource_16();
 		NullCheck(L_1);
 		AudioSource_set_loop_m313035616(L_1, (bool)1, /*hidden argument*/NULL);
 		GameObject_t1756533147 * L_2 = __this->get_victorySummary_5();
@@ -996,7 +996,7 @@ extern "C"  void GamePlayManager_Start_m2758210818 (GamePlayManager_t85684135 * 
 		Transform_t3275118058 * L_27 = Transform_FindChild_m2677714886(L_26, _stringLiteral2089363600, /*hidden argument*/NULL);
 		NullCheck(L_27);
 		GameObject_t1756533147 * L_28 = Component_get_gameObject_m3105766835(L_27, /*hidden argument*/NULL);
-		__this->set_playerTurnIndicator_13(L_28);
+		__this->set_playerTurnIndicator_14(L_28);
 		EnemyAI_t2110961122 * L_29 = __this->get_enemy_2();
 		NullCheck(L_29);
 		GameObject_t1756533147 * L_30 = Component_get_gameObject_m3105766835(L_29, /*hidden argument*/NULL);
@@ -1006,7 +1006,7 @@ extern "C"  void GamePlayManager_Start_m2758210818 (GamePlayManager_t85684135 * 
 		Transform_t3275118058 * L_32 = Transform_FindChild_m2677714886(L_31, _stringLiteral2089363600, /*hidden argument*/NULL);
 		NullCheck(L_32);
 		GameObject_t1756533147 * L_33 = Component_get_gameObject_m3105766835(L_32, /*hidden argument*/NULL);
-		__this->set_enemyTurnIndicator_14(L_33);
+		__this->set_enemyTurnIndicator_15(L_33);
 		GamePlayManager_StartGame_m3047174576(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -1024,17 +1024,17 @@ extern "C"  void GamePlayManager_StartGame_m3047174576 (GamePlayManager_t8568413
 		}
 	}
 	{
-		AudioSource_t1135106623 * L_2 = __this->get_audioSource_15();
+		AudioSource_t1135106623 * L_2 = __this->get_audioSource_16();
 		NullCheck(L_2);
 		AudioSource_Play_m353744792(L_2, /*hidden argument*/NULL);
 	}
 
 IL_001a:
 	{
-		PlayerStatistics_t1841391070 * L_3 = __this->get_playerStatistics_8();
+		PlayerStatistics_t1841391070 * L_3 = __this->get_playerStatistics_9();
 		NullCheck(L_3);
 		L_3->set_totalShots_0(0);
-		PlayerStatistics_t1841391070 * L_4 = __this->get_playerStatistics_8();
+		PlayerStatistics_t1841391070 * L_4 = __this->get_playerStatistics_9();
 		NullCheck(L_4);
 		L_4->set_shotsToEnemy_1(0);
 		Time_set_timeScale_m2194722837(NULL /*static, unused*/, (1.0f), /*hidden argument*/NULL);
@@ -1182,10 +1182,10 @@ extern "C"  void GamePlayManager_setTurnIndicator_m4006453220 (GamePlayManager_t
 		}
 	}
 	{
-		GameObject_t1756533147 * L_5 = __this->get_playerTurnIndicator_13();
+		GameObject_t1756533147 * L_5 = __this->get_playerTurnIndicator_14();
 		NullCheck(L_5);
 		GameObject_SetActive_m2887581199(L_5, (bool)1, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_6 = __this->get_enemyTurnIndicator_14();
+		GameObject_t1756533147 * L_6 = __this->get_enemyTurnIndicator_15();
 		NullCheck(L_6);
 		GameObject_SetActive_m2887581199(L_6, (bool)0, /*hidden argument*/NULL);
 		goto IL_005a;
@@ -1193,10 +1193,10 @@ extern "C"  void GamePlayManager_setTurnIndicator_m4006453220 (GamePlayManager_t
 
 IL_0042:
 	{
-		GameObject_t1756533147 * L_7 = __this->get_playerTurnIndicator_13();
+		GameObject_t1756533147 * L_7 = __this->get_playerTurnIndicator_14();
 		NullCheck(L_7);
 		GameObject_SetActive_m2887581199(L_7, (bool)0, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_8 = __this->get_enemyTurnIndicator_14();
+		GameObject_t1756533147 * L_8 = __this->get_enemyTurnIndicator_15();
 		NullCheck(L_8);
 		GameObject_SetActive_m2887581199(L_8, (bool)1, /*hidden argument*/NULL);
 	}
@@ -1219,7 +1219,7 @@ extern "C"  void GamePlayManager_ToggleMusic_m955571085 (GamePlayManager_t856841
 		}
 	}
 	{
-		AudioSource_t1135106623 * L_2 = __this->get_audioSource_15();
+		AudioSource_t1135106623 * L_2 = __this->get_audioSource_16();
 		NullCheck(L_2);
 		AudioSource_Play_m353744792(L_2, /*hidden argument*/NULL);
 		goto IL_0039;
@@ -1236,7 +1236,7 @@ IL_001f:
 		}
 	}
 	{
-		AudioSource_t1135106623 * L_5 = __this->get_audioSource_15();
+		AudioSource_t1135106623 * L_5 = __this->get_audioSource_16();
 		NullCheck(L_5);
 		AudioSource_Stop_m3452679614(L_5, /*hidden argument*/NULL);
 	}
@@ -1250,7 +1250,7 @@ IL_0039:
 extern "C"  void GamePlayManager_Update_m783774475 (GamePlayManager_t85684135 * __this, const MethodInfo* method)
 {
 	{
-		bool L_0 = __this->get_isPaused_16();
+		bool L_0 = __this->get_isPaused_17();
 		if (!L_0)
 		{
 			goto IL_001a;
@@ -1263,7 +1263,7 @@ extern "C"  void GamePlayManager_Update_m783774475 (GamePlayManager_t85684135 * 
 
 IL_001a:
 	{
-		bool L_1 = __this->get_isPaused_16();
+		bool L_1 = __this->get_isPaused_17();
 		if (L_1)
 		{
 			goto IL_002f;
@@ -1345,7 +1345,7 @@ IL_0021:
 		ObjectU5BU5D_t3614634134* L_3 = L_2;
 		GamePlayManager_t85684135 * L_4 = __this->get_U24this_0();
 		NullCheck(L_4);
-		PlayerStatistics_t1841391070 * L_5 = L_4->get_playerStatistics_8();
+		PlayerStatistics_t1841391070 * L_5 = L_4->get_playerStatistics_9();
 		NullCheck(L_5);
 		int32_t L_6 = L_5->get_totalShots_0();
 		int32_t L_7 = L_6;
@@ -1360,7 +1360,7 @@ IL_0021:
 		ObjectU5BU5D_t3614634134* L_10 = L_9;
 		GamePlayManager_t85684135 * L_11 = __this->get_U24this_0();
 		NullCheck(L_11);
-		PlayerStatistics_t1841391070 * L_12 = L_11->get_playerStatistics_8();
+		PlayerStatistics_t1841391070 * L_12 = L_11->get_playerStatistics_9();
 		NullCheck(L_12);
 		double L_13 = PlayerStatistics_accuracy_m1620413429(L_12, /*hidden argument*/NULL);
 		double L_14 = L_13;
@@ -1402,7 +1402,7 @@ IL_0095:
 		Text_t356221433 * L_22 = GameObject_GetComponent_TisText_t356221433_m1217399699(L_21, /*hidden argument*/GameObject_GetComponent_TisText_t356221433_m1217399699_MethodInfo_var);
 		GamePlayManager_t85684135 * L_23 = __this->get_U24this_0();
 		NullCheck(L_23);
-		PlayerStatistics_t1841391070 * L_24 = L_23->get_playerStatistics_8();
+		PlayerStatistics_t1841391070 * L_24 = L_23->get_playerStatistics_9();
 		NullCheck(L_24);
 		int32_t L_25 = L_24->get_totalShots_0();
 		int32_t L_26 = L_25;
@@ -1416,7 +1416,7 @@ IL_0095:
 		Text_t356221433 * L_30 = GameObject_GetComponent_TisText_t356221433_m1217399699(L_29, /*hidden argument*/GameObject_GetComponent_TisText_t356221433_m1217399699_MethodInfo_var);
 		GamePlayManager_t85684135 * L_31 = __this->get_U24this_0();
 		NullCheck(L_31);
-		PlayerStatistics_t1841391070 * L_32 = L_31->get_playerStatistics_8();
+		PlayerStatistics_t1841391070 * L_32 = L_31->get_playerStatistics_9();
 		NullCheck(L_32);
 		double L_33 = PlayerStatistics_accuracy_m1620413429(L_32, /*hidden argument*/NULL);
 		double L_34 = L_33;
@@ -1519,11 +1519,11 @@ extern "C"  bool U3CSwapTurnCoroutineU3Ec__Iterator0_MoveNext_m674880538 (U3CSwa
 		}
 		if (L_1 == 1)
 		{
-			goto IL_011d;
+			goto IL_0148;
 		}
 	}
 	{
-		goto IL_0147;
+		goto IL_0172;
 	}
 
 IL_0021:
@@ -1535,13 +1535,13 @@ IL_0021:
 		bool L_4 = L_3->get_hasTurn_3();
 		if (!L_4)
 		{
-			goto IL_0077;
+			goto IL_00a2;
 		}
 	}
 	{
 		GamePlayManager_t85684135 * L_5 = __this->get_U24this_0();
 		NullCheck(L_5);
-		PlayerStatistics_t1841391070 * L_6 = L_5->get_playerStatistics_8();
+		PlayerStatistics_t1841391070 * L_6 = L_5->get_playerStatistics_9();
 		PlayerStatistics_t1841391070 * L_7 = L_6;
 		NullCheck(L_7);
 		int32_t L_8 = L_7->get_totalShots_0();
@@ -1549,120 +1549,131 @@ IL_0021:
 		L_7->set_totalShots_0(((int32_t)((int32_t)L_8+(int32_t)1)));
 		GamePlayManager_t85684135 * L_9 = __this->get_U24this_0();
 		NullCheck(L_9);
-		PlayerStatistics_t1841391070 * L_10 = L_9->get_playerStatistics_8();
+		Text_t356221433 * L_10 = L_9->get_shotsCounter_8();
+		GamePlayManager_t85684135 * L_11 = __this->get_U24this_0();
+		NullCheck(L_11);
+		PlayerStatistics_t1841391070 * L_12 = L_11->get_playerStatistics_9();
+		NullCheck(L_12);
+		int32_t* L_13 = L_12->get_address_of_totalShots_0();
+		String_t* L_14 = Int32_ToString_m2960866144(L_13, /*hidden argument*/NULL);
 		NullCheck(L_10);
-		int32_t L_11 = L_10->get_totalShots_0();
-		int32_t L_12 = L_11;
-		Il2CppObject * L_13 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_12);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_14 = String_Concat_m2000667605(NULL /*static, unused*/, _stringLiteral3018655801, L_13, _stringLiteral2618666868, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
-		Debug_Log_m920475918(NULL /*static, unused*/, L_14, /*hidden argument*/NULL);
-	}
-
-IL_0077:
-	{
+		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_10, L_14);
 		GamePlayManager_t85684135 * L_15 = __this->get_U24this_0();
 		NullCheck(L_15);
-		PlayerControl_t792727354 * L_16 = L_15->get_player_3();
-		GamePlayManager_t85684135 * L_17 = __this->get_U24this_0();
-		NullCheck(L_17);
-		PlayerControl_t792727354 * L_18 = L_17->get_player_3();
-		NullCheck(L_18);
-		bool L_19 = L_18->get_hasTurn_3();
+		PlayerStatistics_t1841391070 * L_16 = L_15->get_playerStatistics_9();
 		NullCheck(L_16);
-		L_16->set_hasTurn_3((bool)((((int32_t)L_19) == ((int32_t)0))? 1 : 0));
-		GamePlayManager_t85684135 * L_20 = __this->get_U24this_0();
-		NullCheck(L_20);
-		CameraFollow_t1493855402 * L_21 = L_20->get_cameraFollow_4();
-		GamePlayManager_t85684135 * L_22 = __this->get_U24this_0();
-		NullCheck(L_22);
-		PlayerControl_t792727354 * L_23 = L_22->get_player_3();
+		int32_t L_17 = L_16->get_totalShots_0();
+		int32_t L_18 = L_17;
+		Il2CppObject * L_19 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_18);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_20 = String_Concat_m2000667605(NULL /*static, unused*/, _stringLiteral3018655801, L_19, _stringLiteral2618666868, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_Log_m920475918(NULL /*static, unused*/, L_20, /*hidden argument*/NULL);
+	}
+
+IL_00a2:
+	{
+		GamePlayManager_t85684135 * L_21 = __this->get_U24this_0();
+		NullCheck(L_21);
+		PlayerControl_t792727354 * L_22 = L_21->get_player_3();
+		GamePlayManager_t85684135 * L_23 = __this->get_U24this_0();
 		NullCheck(L_23);
-		bool L_24 = L_23->get_hasTurn_3();
-		G_B5_0 = L_21;
-		if (!L_24)
+		PlayerControl_t792727354 * L_24 = L_23->get_player_3();
+		NullCheck(L_24);
+		bool L_25 = L_24->get_hasTurn_3();
+		NullCheck(L_22);
+		L_22->set_hasTurn_3((bool)((((int32_t)L_25) == ((int32_t)0))? 1 : 0));
+		GamePlayManager_t85684135 * L_26 = __this->get_U24this_0();
+		NullCheck(L_26);
+		CameraFollow_t1493855402 * L_27 = L_26->get_cameraFollow_4();
+		GamePlayManager_t85684135 * L_28 = __this->get_U24this_0();
+		NullCheck(L_28);
+		PlayerControl_t792727354 * L_29 = L_28->get_player_3();
+		NullCheck(L_29);
+		bool L_30 = L_29->get_hasTurn_3();
+		G_B5_0 = L_27;
+		if (!L_30)
 		{
-			G_B6_0 = L_21;
-			goto IL_00cf;
+			G_B6_0 = L_27;
+			goto IL_00fa;
 		}
 	}
 	{
-		GamePlayManager_t85684135 * L_25 = __this->get_U24this_0();
-		NullCheck(L_25);
-		PlayerControl_t792727354 * L_26 = L_25->get_player_3();
-		NullCheck(L_26);
-		Transform_t3275118058 * L_27 = Component_get_transform_m2697483695(L_26, /*hidden argument*/NULL);
-		G_B7_0 = L_27;
-		G_B7_1 = G_B5_0;
-		goto IL_00df;
-	}
-
-IL_00cf:
-	{
-		GamePlayManager_t85684135 * L_28 = __this->get_U24this_0();
-		NullCheck(L_28);
-		EnemyAI_t2110961122 * L_29 = L_28->get_enemy_2();
-		NullCheck(L_29);
-		Transform_t3275118058 * L_30 = Component_get_transform_m2697483695(L_29, /*hidden argument*/NULL);
-		G_B7_0 = L_30;
-		G_B7_1 = G_B6_0;
-	}
-
-IL_00df:
-	{
-		NullCheck(G_B7_1);
-		CameraFollow_SetPlayerToFollow_m811732247(G_B7_1, G_B7_0, /*hidden argument*/NULL);
 		GamePlayManager_t85684135 * L_31 = __this->get_U24this_0();
 		NullCheck(L_31);
 		PlayerControl_t792727354 * L_32 = L_31->get_player_3();
 		NullCheck(L_32);
-		bool L_33 = L_32->get_hasTurn_3();
-		if (L_33)
+		Transform_t3275118058 * L_33 = Component_get_transform_m2697483695(L_32, /*hidden argument*/NULL);
+		G_B7_0 = L_33;
+		G_B7_1 = G_B5_0;
+		goto IL_010a;
+	}
+
+IL_00fa:
+	{
+		GamePlayManager_t85684135 * L_34 = __this->get_U24this_0();
+		NullCheck(L_34);
+		EnemyAI_t2110961122 * L_35 = L_34->get_enemy_2();
+		NullCheck(L_35);
+		Transform_t3275118058 * L_36 = Component_get_transform_m2697483695(L_35, /*hidden argument*/NULL);
+		G_B7_0 = L_36;
+		G_B7_1 = G_B6_0;
+	}
+
+IL_010a:
+	{
+		NullCheck(G_B7_1);
+		CameraFollow_SetPlayerToFollow_m811732247(G_B7_1, G_B7_0, /*hidden argument*/NULL);
+		GamePlayManager_t85684135 * L_37 = __this->get_U24this_0();
+		NullCheck(L_37);
+		PlayerControl_t792727354 * L_38 = L_37->get_player_3();
+		NullCheck(L_38);
+		bool L_39 = L_38->get_hasTurn_3();
+		if (L_39)
 		{
-			goto IL_011d;
+			goto IL_0148;
 		}
 	}
 	{
-		WaitForSeconds_t3839502067 * L_34 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
-		WaitForSeconds__ctor_m1990515539(L_34, (2.0f), /*hidden argument*/NULL);
-		__this->set_U24current_1(L_34);
-		bool L_35 = __this->get_U24disposing_2();
-		if (L_35)
+		WaitForSeconds_t3839502067 * L_40 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m1990515539(L_40, (2.0f), /*hidden argument*/NULL);
+		__this->set_U24current_1(L_40);
+		bool L_41 = __this->get_U24disposing_2();
+		if (L_41)
 		{
-			goto IL_0118;
+			goto IL_0143;
 		}
 	}
 	{
 		__this->set_U24PC_3(1);
 	}
 
-IL_0118:
+IL_0143:
 	{
-		goto IL_0149;
+		goto IL_0174;
 	}
 
-IL_011d:
+IL_0148:
 	{
-		GamePlayManager_t85684135 * L_36 = __this->get_U24this_0();
-		NullCheck(L_36);
-		EnemyAI_t2110961122 * L_37 = L_36->get_enemy_2();
-		GamePlayManager_t85684135 * L_38 = __this->get_U24this_0();
-		NullCheck(L_38);
-		EnemyAI_t2110961122 * L_39 = L_38->get_enemy_2();
-		NullCheck(L_39);
-		bool L_40 = ((PlayerControl_t792727354 *)L_39)->get_hasTurn_3();
-		NullCheck(L_37);
-		((PlayerControl_t792727354 *)L_37)->set_hasTurn_3((bool)((((int32_t)L_40) == ((int32_t)0))? 1 : 0));
+		GamePlayManager_t85684135 * L_42 = __this->get_U24this_0();
+		NullCheck(L_42);
+		EnemyAI_t2110961122 * L_43 = L_42->get_enemy_2();
+		GamePlayManager_t85684135 * L_44 = __this->get_U24this_0();
+		NullCheck(L_44);
+		EnemyAI_t2110961122 * L_45 = L_44->get_enemy_2();
+		NullCheck(L_45);
+		bool L_46 = ((PlayerControl_t792727354 *)L_45)->get_hasTurn_3();
+		NullCheck(L_43);
+		((PlayerControl_t792727354 *)L_43)->set_hasTurn_3((bool)((((int32_t)L_46) == ((int32_t)0))? 1 : 0));
 		__this->set_U24PC_3((-1));
 	}
 
-IL_0147:
+IL_0172:
 	{
 		return (bool)0;
 	}
 
-IL_0149:
+IL_0174:
 	{
 		return (bool)1;
 	}
@@ -1772,7 +1783,7 @@ IL_0021:
 		ObjectU5BU5D_t3614634134* L_3 = L_2;
 		GamePlayManager_t85684135 * L_4 = __this->get_U24this_1();
 		NullCheck(L_4);
-		PlayerStatistics_t1841391070 * L_5 = L_4->get_playerStatistics_8();
+		PlayerStatistics_t1841391070 * L_5 = L_4->get_playerStatistics_9();
 		NullCheck(L_5);
 		int32_t L_6 = L_5->get_totalShots_0();
 		int32_t L_7 = L_6;
@@ -1787,7 +1798,7 @@ IL_0021:
 		ObjectU5BU5D_t3614634134* L_10 = L_9;
 		GamePlayManager_t85684135 * L_11 = __this->get_U24this_1();
 		NullCheck(L_11);
-		PlayerStatistics_t1841391070 * L_12 = L_11->get_playerStatistics_8();
+		PlayerStatistics_t1841391070 * L_12 = L_11->get_playerStatistics_9();
 		NullCheck(L_12);
 		double L_13 = PlayerStatistics_accuracy_m1620413429(L_12, /*hidden argument*/NULL);
 		double L_14 = L_13;
@@ -1826,7 +1837,7 @@ IL_0095:
 		GameObject_SetActive_m2887581199(L_20, (bool)1, /*hidden argument*/NULL);
 		GamePlayManager_t85684135 * L_21 = __this->get_U24this_1();
 		NullCheck(L_21);
-		PlayerStatistics_t1841391070 * L_22 = L_21->get_playerStatistics_8();
+		PlayerStatistics_t1841391070 * L_22 = L_21->get_playerStatistics_9();
 		NullCheck(L_22);
 		double L_23 = PlayerStatistics_accuracy_m1620413429(L_22, /*hidden argument*/NULL);
 		__this->set_U3CaccuracyU3E__0_0(L_23);
@@ -1835,7 +1846,7 @@ IL_0095:
 		Text_t356221433 * L_25 = GameObject_GetComponent_TisText_t356221433_m1217399699(L_24, /*hidden argument*/GameObject_GetComponent_TisText_t356221433_m1217399699_MethodInfo_var);
 		GamePlayManager_t85684135 * L_26 = __this->get_U24this_1();
 		NullCheck(L_26);
-		PlayerStatistics_t1841391070 * L_27 = L_26->get_playerStatistics_8();
+		PlayerStatistics_t1841391070 * L_27 = L_26->get_playerStatistics_9();
 		NullCheck(L_27);
 		int32_t L_28 = L_27->get_totalShots_0();
 		int32_t L_29 = L_28;
@@ -1864,7 +1875,7 @@ IL_0095:
 		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral2086540134, /*hidden argument*/NULL);
 		GamePlayManager_t85684135 * L_39 = __this->get_U24this_1();
 		NullCheck(L_39);
-		GameObject_t1756533147 * L_40 = L_39->get_ThreeStars_12();
+		GameObject_t1756533147 * L_40 = L_39->get_ThreeStars_13();
 		NullCheck(L_40);
 		GameObject_SetActive_m2887581199(L_40, (bool)1, /*hidden argument*/NULL);
 		goto IL_01f7;
@@ -1890,7 +1901,7 @@ IL_014c:
 		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral2086573893, /*hidden argument*/NULL);
 		GamePlayManager_t85684135 * L_43 = __this->get_U24this_1();
 		NullCheck(L_43);
-		GameObject_t1756533147 * L_44 = L_43->get_TwoStars_11();
+		GameObject_t1756533147 * L_44 = L_43->get_TwoStars_12();
 		NullCheck(L_44);
 		GameObject_SetActive_m2887581199(L_44, (bool)1, /*hidden argument*/NULL);
 		goto IL_01f7;
@@ -1916,7 +1927,7 @@ IL_0194:
 		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral194052981, /*hidden argument*/NULL);
 		GamePlayManager_t85684135 * L_47 = __this->get_U24this_1();
 		NullCheck(L_47);
-		GameObject_t1756533147 * L_48 = L_47->get_OneStar_10();
+		GameObject_t1756533147 * L_48 = L_47->get_OneStar_11();
 		NullCheck(L_48);
 		GameObject_SetActive_m2887581199(L_48, (bool)1, /*hidden argument*/NULL);
 		goto IL_01f7;
@@ -1928,7 +1939,7 @@ IL_01dc:
 		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral2086645891, /*hidden argument*/NULL);
 		GamePlayManager_t85684135 * L_49 = __this->get_U24this_1();
 		NullCheck(L_49);
-		GameObject_t1756533147 * L_50 = L_49->get_ZeroStars_9();
+		GameObject_t1756533147 * L_50 = L_49->get_ZeroStars_10();
 		NullCheck(L_50);
 		GameObject_SetActive_m2887581199(L_50, (bool)1, /*hidden argument*/NULL);
 	}
@@ -2789,7 +2800,7 @@ extern "C"  void PauseGame_Pause_m3165672237 (PauseGame_t2280645372 * __this, co
 		GameObject_SetActive_m2887581199(L_0, (bool)1, /*hidden argument*/NULL);
 		GamePlayManager_t85684135 * L_1 = GamePlayManager_get_Instance_m2021271410(NULL /*static, unused*/, /*hidden argument*/NULL);
 		NullCheck(L_1);
-		L_1->set_isPaused_16((bool)1);
+		L_1->set_isPaused_17((bool)1);
 		return;
 	}
 }
@@ -2799,7 +2810,7 @@ extern "C"  void PauseGame_Resume_m2598781468 (PauseGame_t2280645372 * __this, c
 	{
 		GamePlayManager_t85684135 * L_0 = GamePlayManager_get_Instance_m2021271410(NULL /*static, unused*/, /*hidden argument*/NULL);
 		NullCheck(L_0);
-		L_0->set_isPaused_16((bool)0);
+		L_0->set_isPaused_17((bool)0);
 		GameObject_t1756533147 * L_1 = __this->get_pauseMenu_2();
 		NullCheck(L_1);
 		GameObject_SetActive_m2887581199(L_1, (bool)0, /*hidden argument*/NULL);
@@ -3330,7 +3341,7 @@ extern "C"  void PlayerHealth_TakeDamage_m1230312067 (PlayerHealth_t2894595013 *
 	{
 		GamePlayManager_t85684135 * L_16 = GamePlayManager_get_Instance_m2021271410(NULL /*static, unused*/, /*hidden argument*/NULL);
 		NullCheck(L_16);
-		PlayerStatistics_t1841391070 * L_17 = L_16->get_playerStatistics_8();
+		PlayerStatistics_t1841391070 * L_17 = L_16->get_playerStatistics_9();
 		PlayerStatistics_t1841391070 * L_18 = L_17;
 		NullCheck(L_18);
 		int32_t L_19 = L_18->get_shotsToEnemy_1();
@@ -3338,7 +3349,7 @@ extern "C"  void PlayerHealth_TakeDamage_m1230312067 (PlayerHealth_t2894595013 *
 		L_18->set_shotsToEnemy_1(((int32_t)((int32_t)L_19+(int32_t)1)));
 		GamePlayManager_t85684135 * L_20 = GamePlayManager_get_Instance_m2021271410(NULL /*static, unused*/, /*hidden argument*/NULL);
 		NullCheck(L_20);
-		PlayerStatistics_t1841391070 * L_21 = L_20->get_playerStatistics_8();
+		PlayerStatistics_t1841391070 * L_21 = L_20->get_playerStatistics_9();
 		NullCheck(L_21);
 		int32_t L_22 = L_21->get_shotsToEnemy_1();
 		int32_t L_23 = L_22;

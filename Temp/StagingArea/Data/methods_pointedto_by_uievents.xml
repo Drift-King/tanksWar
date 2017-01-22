@@ -1,14 +1,14 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="ToggleButton">
-			<method name="ToggleOff"/>
-			<method name="ToggleOn"/>
 			<method name="ToggleOn"/>
 			<method name="ToggleOff"/>
 			<method name="ToggleOn"/>
 			<method name="ToggleOff"/>
+			<method name="ToggleOff"/>
 			<method name="ToggleOn"/>
 			<method name="ToggleOff"/>
+			<method name="ToggleOn"/>
 		</type>
 		<type fullname="SettingsMenu">
 			<method name="hideSettingsMenu"/>
@@ -19,8 +19,8 @@
 			<method name="Exit"/>
 			<method name="startNewGame"/>
 			<method name="MainMenu"/>
-			<method name="MainMenu"/>
 			<method name="startNewGame"/>
+			<method name="MainMenu"/>
 			<method name="Exit"/>
 			<method name="startNewGame"/>
 			<method name="startNewGame"/>

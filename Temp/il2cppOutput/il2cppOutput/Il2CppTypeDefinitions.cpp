@@ -5822,6 +5822,7 @@ extern const Il2CppType Text_t356221433_0_0_0 = { (void*)1630, 0, IL2CPP_TYPE_CL
 extern const Il2CppType Text_t356221433_0_0_1 = { (void*)1630, 1, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType Text_t356221433_0_0_4 = { (void*)1630, 4, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType Text_t356221433_1_0_0 = { (void*)1630, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType Text_t356221433_0_0_6 = { (void*)1630, 6, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 
 Il2CppGenericClass Link_t2826872705_GenericClass = { 1167, { &GenInst_Text_t356221433_0_0_0, NULL }, NULL };
 extern const Il2CppType Link_t2826872705_0_0_0 = { &Link_t2826872705_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
@@ -14260,7 +14261,7 @@ extern const Il2CppType TypeTagU5BU5D_t582616213_0_0_0 = { (void*)&TypeTag_t1412
 
 extern const Il2CppType ITrackingHandler_t2759960940_0_0_0;
 extern const Il2CppType ITrackingHandlerU5BU5D_t194660197_0_0_0 = { (void*)&ITrackingHandler_t2759960940_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
-extern const Il2CppType* const  g_Il2CppTypeTable[7511] = 
+extern const Il2CppType* const  g_Il2CppTypeTable[7512] = 
 {
 	&IEnumerator_1_t164973122_0_0_0,
 	&Il2CppObject_0_0_0,
@@ -21589,6 +21590,7 @@ extern const Il2CppType* const  g_Il2CppTypeTable[7511] =
 	&EnemyAI_t2110961122_0_0_6,
 	&PlayerControl_t792727354_0_0_6,
 	&CameraFollow_t1493855402_0_0_6,
+	&Text_t356221433_0_0_6,
 	&PlayerStatistics_t1841391070_0_0_6,
 	&AudioSource_t1135106623_0_0_1,
 	&GamePlayManager_t85684135_0_0_17,
