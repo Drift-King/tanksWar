@@ -19,6 +19,22 @@ public class GlobalSettings : MonoBehaviour {
 	public event VolumeChanged volumeChanged;
 
 
+	public enum Scenes
+	{
+		Level1
+	}
+
+	public string sceneToLoadName() {
+		if (sceneToLoad == Scenes.Level1) {
+			return "Level1";
+		} else {
+			return "Level1";
+		}
+	}
+
+	public Scenes sceneToLoad = Scenes.Level1;
+
+
 	void Awake () {
 		
 		if (Instance == null) {

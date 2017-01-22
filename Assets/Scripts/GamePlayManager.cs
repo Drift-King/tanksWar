@@ -153,15 +153,22 @@ public class GamePlayManager : MonoBehaviour {
 	}
 
 	void ToggleMusic() {
+		Debug.Log ("Toogle Music ======");
 		if (GlobalSettings.Instance.musicOn) {
-			audioSource.Play ();
+			if (audioSource != null) {
+				audioSource.Play ();
+			}
 		} else if (GlobalSettings.Instance.musicOn == false) {
-			audioSource.Stop ();
+			if (audioSource != null) {
+				audioSource.Stop ();
+			}
 		}
 	}
 
 	void UpdateMusicVolume(){
-		audioSource.volume = GlobalSettings.Instance.volume;
+		if (audioSource != null) {
+			audioSource.volume = GlobalSettings.Instance.volume;
+		}
 	}
 
 	void Update() {
