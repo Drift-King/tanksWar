@@ -18194,12 +18194,12 @@ static void PlayerControl_t792727354_CustomAttributesCacheGenerator_pivot(Custom
 static void VirtualInput_t3347016329_CustomAttributesCacheGenerator_U3CvirtualMousePositionU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
-		DebuggerBrowsableAttribute_t1386379234 * tmp = (DebuggerBrowsableAttribute_t1386379234 *)cache->attributes[0];
-		DebuggerBrowsableAttribute__ctor_m3729055103(tmp, 0LL, NULL);
+		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[0];
+		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
 	}
 	{
-		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[1];
-		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
+		DebuggerBrowsableAttribute_t1386379234 * tmp = (DebuggerBrowsableAttribute_t1386379234 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_m3729055103(tmp, 0LL, NULL);
 	}
 }
 static void VirtualInput_t3347016329_CustomAttributesCacheGenerator_VirtualInput_get_virtualMousePosition_m769141270(CustomAttributesCache* cache)

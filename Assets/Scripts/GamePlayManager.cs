@@ -196,7 +196,9 @@ public class GamePlayManager : MonoBehaviour {
 			}
 		} else if (isPaused == false) {
 			Time.timeScale = 1;
-			audioSource.Play ();
+			if (GlobalSettings.Instance.musicOn) {
+				audioSource.Play ();
+			}
 		}
 
 	}

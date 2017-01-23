@@ -14,13 +14,20 @@
 
 // GamePlayManager
 struct GamePlayManager_t85684135;
+// GamePlayManager/PauseToggle
+struct PauseToggle_t1998472206;
 // System.Collections.IEnumerator
 struct IEnumerator_t1466026749;
 
 #include "codegen/il2cpp-codegen.h"
+#include "AssemblyU2DCSharp_GamePlayManager_PauseToggle1998472206.h"
 
 // System.Void GamePlayManager::.ctor()
 extern "C"  void GamePlayManager__ctor_m236275662 (GamePlayManager_t85684135 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void GamePlayManager::add_pauseToggle(GamePlayManager/PauseToggle)
+extern "C"  void GamePlayManager_add_pauseToggle_m2536600208 (GamePlayManager_t85684135 * __this, PauseToggle_t1998472206 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void GamePlayManager::remove_pauseToggle(GamePlayManager/PauseToggle)
+extern "C"  void GamePlayManager_remove_pauseToggle_m693719641 (GamePlayManager_t85684135 * __this, PauseToggle_t1998472206 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // GamePlayManager GamePlayManager::get_Instance()
 extern "C"  GamePlayManager_t85684135 * GamePlayManager_get_Instance_m2021271410 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GamePlayManager::Awake()
@@ -49,7 +56,9 @@ extern "C"  void GamePlayManager_setTurnIndicator_m4006453220 (GamePlayManager_t
 extern "C"  void GamePlayManager_ToggleMusic_m955571085 (GamePlayManager_t85684135 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GamePlayManager::UpdateMusicVolume()
 extern "C"  void GamePlayManager_UpdateMusicVolume_m3821671856 (GamePlayManager_t85684135 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void GamePlayManager::Update()
-extern "C"  void GamePlayManager_Update_m783774475 (GamePlayManager_t85684135 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void GamePlayManager::GamePausedToggleEvent()
+extern "C"  void GamePlayManager_GamePausedToggleEvent_m3534719026 (GamePlayManager_t85684135 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void GamePlayManager::PauseGameToggle()
+extern "C"  void GamePlayManager_PauseGameToggle_m3799986586 (GamePlayManager_t85684135 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GamePlayManager::FixedUpdate()
 extern "C"  void GamePlayManager_FixedUpdate_m2606068137 (GamePlayManager_t85684135 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

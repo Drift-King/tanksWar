@@ -7499,6 +7499,8 @@ extern "C" void AudioSource_set_volume_m2777308722 ();
 extern "C" void AudioSource_Play_m889724421 ();
 extern "C" void AudioSource_Play_m353744792 ();
 extern "C" void AudioSource_Stop_m3452679614 ();
+extern "C" void AudioSource_Pause_m71375470 ();
+extern "C" void AudioSource_INTERNAL_CALL_Pause_m835013885 ();
 extern "C" void AudioSource_PlayOneShot_m4118899740 ();
 extern "C" void AudioSource_PlayOneShot_m286472761 ();
 extern "C" void AudioSource_set_loop_m313035616 ();
@@ -11061,6 +11063,8 @@ extern "C" void EnemyAI_LateUpdate_m698474296 ();
 extern "C" void FollowPlayer__ctor_m3326522897 ();
 extern "C" void FollowPlayer_Update_m2891738010 ();
 extern "C" void GamePlayManager__ctor_m236275662 ();
+extern "C" void GamePlayManager_add_pauseToggle_m2536600208 ();
+extern "C" void GamePlayManager_remove_pauseToggle_m693719641 ();
 extern "C" void GamePlayManager_get_Instance_m2021271410 ();
 extern "C" void GamePlayManager_Awake_m3160410151 ();
 extern "C" void GamePlayManager_Start_m2758210818 ();
@@ -11075,7 +11079,8 @@ extern "C" void GamePlayManager_EnemyHasDied_m2530580598 ();
 extern "C" void GamePlayManager_setTurnIndicator_m4006453220 ();
 extern "C" void GamePlayManager_ToggleMusic_m955571085 ();
 extern "C" void GamePlayManager_UpdateMusicVolume_m3821671856 ();
-extern "C" void GamePlayManager_Update_m783774475 ();
+extern "C" void GamePlayManager_GamePausedToggleEvent_m3534719026 ();
+extern "C" void GamePlayManager_PauseGameToggle_m3799986586 ();
 extern "C" void GamePlayManager_FixedUpdate_m2606068137 ();
 extern "C" void U3CDefeatSummaryCoroutineU3Ec__Iterator2__ctor_m2136745353 ();
 extern "C" void U3CDefeatSummaryCoroutineU3Ec__Iterator2_MoveNext_m3326941611 ();
@@ -11095,6 +11100,10 @@ extern "C" void U3CVictorySummaryCoroutineU3Ec__Iterator1_System_Collections_Gen
 extern "C" void U3CVictorySummaryCoroutineU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m635849767 ();
 extern "C" void U3CVictorySummaryCoroutineU3Ec__Iterator1_Dispose_m3624252672 ();
 extern "C" void U3CVictorySummaryCoroutineU3Ec__Iterator1_Reset_m3915131698 ();
+extern "C" void PauseToggle__ctor_m2908110765 ();
+extern "C" void PauseToggle_Invoke_m2649200885 ();
+extern "C" void PauseToggle_BeginInvoke_m3954338092 ();
+extern "C" void PauseToggle_EndInvoke_m3988501935 ();
 extern "C" void GlobalSettings__ctor_m138951193 ();
 extern "C" void GlobalSettings_get_Instance_m4257028846 ();
 extern "C" void GlobalSettings_add_musicToggled_m1876689216 ();
@@ -11344,7 +11353,7 @@ extern "C" void VolumeController_Awake_m700837934 ();
 extern "C" void VolumeController_Start_m2527877471 ();
 extern "C" void VolumeController_UpdateVolumeBar_m3948430583 ();
 extern "C" void VolumeController_MoveVolume_m2198246158 ();
-extern const Il2CppMethodPointer g_MethodPointers[11333] = 
+extern const Il2CppMethodPointer g_MethodPointers[11342] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -18834,6 +18843,8 @@ extern const Il2CppMethodPointer g_MethodPointers[11333] =
 	AudioSource_Play_m889724421,
 	AudioSource_Play_m353744792,
 	AudioSource_Stop_m3452679614,
+	AudioSource_Pause_m71375470,
+	AudioSource_INTERNAL_CALL_Pause_m835013885,
 	AudioSource_PlayOneShot_m4118899740,
 	AudioSource_PlayOneShot_m286472761,
 	AudioSource_set_loop_m313035616,
@@ -22396,6 +22407,8 @@ extern const Il2CppMethodPointer g_MethodPointers[11333] =
 	FollowPlayer__ctor_m3326522897,
 	FollowPlayer_Update_m2891738010,
 	GamePlayManager__ctor_m236275662,
+	GamePlayManager_add_pauseToggle_m2536600208,
+	GamePlayManager_remove_pauseToggle_m693719641,
 	GamePlayManager_get_Instance_m2021271410,
 	GamePlayManager_Awake_m3160410151,
 	GamePlayManager_Start_m2758210818,
@@ -22410,7 +22423,8 @@ extern const Il2CppMethodPointer g_MethodPointers[11333] =
 	GamePlayManager_setTurnIndicator_m4006453220,
 	GamePlayManager_ToggleMusic_m955571085,
 	GamePlayManager_UpdateMusicVolume_m3821671856,
-	GamePlayManager_Update_m783774475,
+	GamePlayManager_GamePausedToggleEvent_m3534719026,
+	GamePlayManager_PauseGameToggle_m3799986586,
 	GamePlayManager_FixedUpdate_m2606068137,
 	U3CDefeatSummaryCoroutineU3Ec__Iterator2__ctor_m2136745353,
 	U3CDefeatSummaryCoroutineU3Ec__Iterator2_MoveNext_m3326941611,
@@ -22430,6 +22444,10 @@ extern const Il2CppMethodPointer g_MethodPointers[11333] =
 	U3CVictorySummaryCoroutineU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m635849767,
 	U3CVictorySummaryCoroutineU3Ec__Iterator1_Dispose_m3624252672,
 	U3CVictorySummaryCoroutineU3Ec__Iterator1_Reset_m3915131698,
+	PauseToggle__ctor_m2908110765,
+	PauseToggle_Invoke_m2649200885,
+	PauseToggle_BeginInvoke_m3954338092,
+	PauseToggle_EndInvoke_m3988501935,
 	GlobalSettings__ctor_m138951193,
 	GlobalSettings_get_Instance_m4257028846,
 	GlobalSettings_add_musicToggled_m1876689216,

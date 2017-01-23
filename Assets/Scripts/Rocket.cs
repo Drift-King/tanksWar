@@ -19,6 +19,11 @@ public class Rocket : MonoBehaviour {
 		Instantiate(explosion, transform.position, randomRotation);
 	}
 
+	void FixedUpdate(){
+		var dir = gameObject.GetComponent<Rigidbody2D> ().velocity;
+		var angle = Mathf.Atan2 (dir.y, dir.x) * Mathf.Rad2Deg;
+		transform.rotation = Quaternion.AngleAxis (angle, Vector3.forward);
+	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
 

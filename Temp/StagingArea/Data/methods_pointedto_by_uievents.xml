@@ -2,8 +2,6 @@
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="ToggleButton">
 			<method name="ToggleOff"/>
-			<method name="ToggleOff"/>
-			<method name="ToggleOn"/>
 			<method name="ToggleOn"/>
 			<method name="ToggleOff"/>
 			<method name="ToggleOn"/>
@@ -11,6 +9,8 @@
 			<method name="ToggleOn"/>
 			<method name="ToggleOff"/>
 			<method name="ToggleOn"/>
+			<method name="ToggleOn"/>
+			<method name="ToggleOff"/>
 			<method name="ToggleOff"/>
 			<method name="ToggleOn"/>
 		</type>
@@ -33,10 +33,10 @@
 			<method name="startNewGame"/>
 			<method name="startNewGame"/>
 			<method name="MainMenu"/>
-			<method name="MainMenu"/>
-			<method name="MainMenu"/>
 			<method name="startNewGame"/>
+			<method name="MainMenu"/>
 			<method name="Exit"/>
+			<method name="MainMenu"/>
 			<method name="startNewGame"/>
 			<method name="startNewGame"/>
 			<method name="startNewGame"/>

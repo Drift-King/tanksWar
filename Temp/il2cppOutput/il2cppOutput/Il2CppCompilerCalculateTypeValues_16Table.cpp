@@ -96,13 +96,13 @@
 #include "AssemblyU2DCSharp_EnemyAI2110961122.h"
 #include "AssemblyU2DCSharp_FollowPlayer1961594028.h"
 #include "AssemblyU2DCSharp_GamePlayManager85684135.h"
+#include "AssemblyU2DCSharp_GamePlayManager_PauseToggle1998472206.h"
 #include "AssemblyU2DCSharp_GamePlayManager_U3CSwapTurnCorou1401080897.h"
 #include "AssemblyU2DCSharp_GamePlayManager_U3CVictorySummar1918548334.h"
 #include "AssemblyU2DCSharp_GamePlayManager_U3CDefeatSummaryC398519032.h"
 #include "AssemblyU2DCSharp_GlobalSettings4218635622.h"
 #include "AssemblyU2DCSharp_GlobalSettings_MusicToggled4291538686.h"
 #include "AssemblyU2DCSharp_GlobalSettings_VolumeChanged2370380177.h"
-#include "AssemblyU2DCSharp_Gun1581089958.h"
 
 
 
@@ -737,38 +737,40 @@ extern const int32_t g_FieldOffsetTable1691[2] =
 	FollowPlayer_t1961594028::get_offset_of_offset_3(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1692 = { sizeof (GamePlayManager_t85684135), -1, sizeof(GamePlayManager_t85684135_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1692[19] = 
+extern const int32_t g_FieldOffsetTable1692[20] = 
 {
-	GamePlayManager_t85684135::get_offset_of_enemy_2(),
-	GamePlayManager_t85684135::get_offset_of_player_3(),
-	GamePlayManager_t85684135::get_offset_of_cameraFollow_4(),
-	GamePlayManager_t85684135::get_offset_of_victorySummary_5(),
-	GamePlayManager_t85684135::get_offset_of_defeatSummary_6(),
-	GamePlayManager_t85684135::get_offset_of_pauseMenuScreen_7(),
-	GamePlayManager_t85684135::get_offset_of_shotsCounter_8(),
-	GamePlayManager_t85684135::get_offset_of_playerStatistics_9(),
-	GamePlayManager_t85684135::get_offset_of_enemyMinTilt_10(),
-	GamePlayManager_t85684135::get_offset_of_enemyMaxTilt_11(),
-	GamePlayManager_t85684135::get_offset_of_ZeroStars_12(),
-	GamePlayManager_t85684135::get_offset_of_OneStar_13(),
-	GamePlayManager_t85684135::get_offset_of_TwoStars_14(),
-	GamePlayManager_t85684135::get_offset_of_ThreeStars_15(),
-	GamePlayManager_t85684135::get_offset_of_playerTurnIndicator_16(),
-	GamePlayManager_t85684135::get_offset_of_enemyTurnIndicator_17(),
-	GamePlayManager_t85684135::get_offset_of_audioSource_18(),
-	GamePlayManager_t85684135::get_offset_of_isPaused_19(),
-	GamePlayManager_t85684135_StaticFields::get_offset_of__instance_20(),
+	GamePlayManager_t85684135::get_offset_of_pauseToggle_2(),
+	GamePlayManager_t85684135::get_offset_of_enemy_3(),
+	GamePlayManager_t85684135::get_offset_of_player_4(),
+	GamePlayManager_t85684135::get_offset_of_cameraFollow_5(),
+	GamePlayManager_t85684135::get_offset_of_victorySummary_6(),
+	GamePlayManager_t85684135::get_offset_of_defeatSummary_7(),
+	GamePlayManager_t85684135::get_offset_of_pauseMenuScreen_8(),
+	GamePlayManager_t85684135::get_offset_of_shotsCounter_9(),
+	GamePlayManager_t85684135::get_offset_of_playerStatistics_10(),
+	GamePlayManager_t85684135::get_offset_of_enemyMinTilt_11(),
+	GamePlayManager_t85684135::get_offset_of_enemyMaxTilt_12(),
+	GamePlayManager_t85684135::get_offset_of_ZeroStars_13(),
+	GamePlayManager_t85684135::get_offset_of_OneStar_14(),
+	GamePlayManager_t85684135::get_offset_of_TwoStars_15(),
+	GamePlayManager_t85684135::get_offset_of_ThreeStars_16(),
+	GamePlayManager_t85684135::get_offset_of_playerTurnIndicator_17(),
+	GamePlayManager_t85684135::get_offset_of_enemyTurnIndicator_18(),
+	GamePlayManager_t85684135::get_offset_of_audioSource_19(),
+	GamePlayManager_t85684135::get_offset_of_isPaused_20(),
+	GamePlayManager_t85684135_StaticFields::get_offset_of__instance_21(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1693 = { sizeof (U3CSwapTurnCoroutineU3Ec__Iterator0_t1401080897), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1693[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1693 = { sizeof (PauseToggle_t1998472206), sizeof(Il2CppMethodPointer), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1694 = { sizeof (U3CSwapTurnCoroutineU3Ec__Iterator0_t1401080897), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1694[4] = 
 {
 	U3CSwapTurnCoroutineU3Ec__Iterator0_t1401080897::get_offset_of_U24this_0(),
 	U3CSwapTurnCoroutineU3Ec__Iterator0_t1401080897::get_offset_of_U24current_1(),
 	U3CSwapTurnCoroutineU3Ec__Iterator0_t1401080897::get_offset_of_U24disposing_2(),
 	U3CSwapTurnCoroutineU3Ec__Iterator0_t1401080897::get_offset_of_U24PC_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1694 = { sizeof (U3CVictorySummaryCoroutineU3Ec__Iterator1_t1918548334), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1694[5] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1695 = { sizeof (U3CVictorySummaryCoroutineU3Ec__Iterator1_t1918548334), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1695[5] = 
 {
 	U3CVictorySummaryCoroutineU3Ec__Iterator1_t1918548334::get_offset_of_U3CaccuracyU3E__0_0(),
 	U3CVictorySummaryCoroutineU3Ec__Iterator1_t1918548334::get_offset_of_U24this_1(),
@@ -776,16 +778,16 @@ extern const int32_t g_FieldOffsetTable1694[5] =
 	U3CVictorySummaryCoroutineU3Ec__Iterator1_t1918548334::get_offset_of_U24disposing_3(),
 	U3CVictorySummaryCoroutineU3Ec__Iterator1_t1918548334::get_offset_of_U24PC_4(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1695 = { sizeof (U3CDefeatSummaryCoroutineU3Ec__Iterator2_t398519032), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1695[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1696 = { sizeof (U3CDefeatSummaryCoroutineU3Ec__Iterator2_t398519032), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1696[4] = 
 {
 	U3CDefeatSummaryCoroutineU3Ec__Iterator2_t398519032::get_offset_of_U24this_0(),
 	U3CDefeatSummaryCoroutineU3Ec__Iterator2_t398519032::get_offset_of_U24current_1(),
 	U3CDefeatSummaryCoroutineU3Ec__Iterator2_t398519032::get_offset_of_U24disposing_2(),
 	U3CDefeatSummaryCoroutineU3Ec__Iterator2_t398519032::get_offset_of_U24PC_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1696 = { sizeof (GlobalSettings_t4218635622), -1, sizeof(GlobalSettings_t4218635622_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1696[7] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1697 = { sizeof (GlobalSettings_t4218635622), -1, sizeof(GlobalSettings_t4218635622_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1697[7] = 
 {
 	GlobalSettings_t4218635622_StaticFields::get_offset_of__instance_2(),
 	GlobalSettings_t4218635622::get_offset_of_musicOn_3(),
@@ -795,24 +797,8 @@ extern const int32_t g_FieldOffsetTable1696[7] =
 	GlobalSettings_t4218635622::get_offset_of_volumeChanged_7(),
 	GlobalSettings_t4218635622::get_offset_of_sceneToLoad_8(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1697 = { sizeof (MusicToggled_t4291538686), sizeof(Il2CppMethodPointer), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1698 = { sizeof (VolumeChanged_t2370380177), sizeof(Il2CppMethodPointer), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1699 = { sizeof (Gun_t1581089958), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1699[12] = 
-{
-	Gun_t1581089958::get_offset_of_rocket_2(),
-	Gun_t1581089958::get_offset_of_attackPower_3(),
-	Gun_t1581089958::get_offset_of_fireTime_4(),
-	Gun_t1581089958::get_offset_of_gunFired_5(),
-	Gun_t1581089958::get_offset_of_attackTriggered_6(),
-	Gun_t1581089958::get_offset_of_fireSound_7(),
-	Gun_t1581089958::get_offset_of_targetSpeed_8(),
-	Gun_t1581089958::get_offset_of_bulletInstance_9(),
-	Gun_t1581089958::get_offset_of_playerCtrl_10(),
-	Gun_t1581089958::get_offset_of_attackBarInstance_11(),
-	Gun_t1581089958::get_offset_of_attackBarAnim_12(),
-	Gun_t1581089958::get_offset_of_audioSource_13(),
-};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1698 = { sizeof (MusicToggled_t4291538686), sizeof(Il2CppMethodPointer), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1699 = { sizeof (VolumeChanged_t2370380177), sizeof(Il2CppMethodPointer), 0, 0 };
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

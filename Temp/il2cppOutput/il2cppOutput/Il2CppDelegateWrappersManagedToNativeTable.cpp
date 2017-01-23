@@ -32,11 +32,12 @@ extern "C" void DelegatePInvokeWrapper_WindowFunction_t3486805455 ();
 extern "C" void DelegatePInvokeWrapper_SkinChangedDelegate_t3594822336 ();
 extern "C" void DelegatePInvokeWrapper_UpdatedEventHandler_t3033456180 ();
 extern "C" void DelegatePInvokeWrapper_OnValidateInput_t1946318473 ();
+extern "C" void DelegatePInvokeWrapper_PauseToggle_t1998472206 ();
 extern "C" void DelegatePInvokeWrapper_MusicToggled_t4291538686 ();
 extern "C" void DelegatePInvokeWrapper_VolumeChanged_t2370380177 ();
 extern "C" void DelegatePInvokeWrapper_GunFired_t3156990485 ();
 extern "C" void DelegatePInvokeWrapper_PlayerDied_t2467274817 ();
-extern const Il2CppMethodPointer g_DelegateWrappersManagedToNative[25] = 
+extern const Il2CppMethodPointer g_DelegateWrappersManagedToNative[26] = 
 {
 	DelegatePInvokeWrapper_AppDomainInitializer_t3898244613,
 	DelegatePInvokeWrapper_Swapper_t2637371637,
@@ -59,6 +60,7 @@ extern const Il2CppMethodPointer g_DelegateWrappersManagedToNative[25] =
 	DelegatePInvokeWrapper_SkinChangedDelegate_t3594822336,
 	DelegatePInvokeWrapper_UpdatedEventHandler_t3033456180,
 	DelegatePInvokeWrapper_OnValidateInput_t1946318473,
+	DelegatePInvokeWrapper_PauseToggle_t1998472206,
 	DelegatePInvokeWrapper_MusicToggled_t4291538686,
 	DelegatePInvokeWrapper_VolumeChanged_t2370380177,
 	DelegatePInvokeWrapper_GunFired_t3156990485,

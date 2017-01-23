@@ -3113,6 +3113,23 @@ extern "C"  void AudioSource_Stop_m3452679614 (AudioSource_t1135106623 * __this,
 	_il2cpp_icall_func = (AudioSource_Stop_m3452679614_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AudioSource::Stop()");
 	_il2cpp_icall_func(__this);
 }
+// System.Void UnityEngine.AudioSource::Pause()
+extern "C"  void AudioSource_Pause_m71375470 (AudioSource_t1135106623 * __this, const MethodInfo* method)
+{
+	{
+		AudioSource_INTERNAL_CALL_Pause_m835013885(NULL /*static, unused*/, __this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.AudioSource::INTERNAL_CALL_Pause(UnityEngine.AudioSource)
+extern "C"  void AudioSource_INTERNAL_CALL_Pause_m835013885 (Il2CppObject * __this /* static, unused */, AudioSource_t1135106623 * ___self0, const MethodInfo* method)
+{
+	typedef void (*AudioSource_INTERNAL_CALL_Pause_m835013885_ftn) (AudioSource_t1135106623 *);
+	static AudioSource_INTERNAL_CALL_Pause_m835013885_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (AudioSource_INTERNAL_CALL_Pause_m835013885_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AudioSource::INTERNAL_CALL_Pause(UnityEngine.AudioSource)");
+	_il2cpp_icall_func(___self0);
+}
 // System.Void UnityEngine.AudioSource::PlayOneShot(UnityEngine.AudioClip,System.Single)
 extern "C"  void AudioSource_PlayOneShot_m4118899740 (AudioSource_t1135106623 * __this, AudioClip_t1932558630 * ___clip0, float ___volumeScale1, const MethodInfo* method)
 {

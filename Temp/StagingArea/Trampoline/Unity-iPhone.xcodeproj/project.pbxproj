@@ -9,34 +9,29 @@
 /* Begin PBXBuildFile section */
 		00000000008063A1000160D3 /* libiPhone-lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A1C72A0E8063A1000160D3 /* libiPhone-lib.a */; };
 		03F528631B447098000F4FB8 /* Il2CppOptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03F528621B447098000F4FB8 /* Il2CppOptions.cpp */; };
-		05B646D1B1001D5A5D6870F1 /* Bulk_Mono.Security_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C134A238C2879734D1FE61A /* Bulk_Mono.Security_0.cpp */; };
-		07244288948777F587B82489 /* LaunchScreen-iPhoneLandscape.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7544ED8CAB8E44D997103E /* LaunchScreen-iPhoneLandscape.png */; };
-		08F14D2189C92FFB926DA22A /* Bulk_Generics_6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC44E090A2DD0AE3129E88 /* Bulk_Generics_6.cpp */; };
-		0BFD41AB9CEDF277CA5C5E68 /* Il2CppMethodPointerTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CF44075B897CBEACF69B833 /* Il2CppMethodPointerTable.cpp */; };
-		0CF94D8C97EAC060EF49D8D3 /* Bulk_Generics_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0906412FA7B0FEA96811F2B0 /* Bulk_Generics_2.cpp */; };
-		0EFD483B8FD15509EBEC4A98 /* Bulk_Generics_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17174FBC810A258B24070C88 /* Bulk_Generics_4.cpp */; };
+		09FA4E71A6D2BA08E666EBDC /* Bulk_System_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A22A4E8A9F4F9D740014DFF9 /* Bulk_System_1.cpp */; };
+		0BBB4204BD4D73F351817A87 /* Bulk_Mono.Security_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 258646A0A12B9524BA72F192 /* Bulk_Mono.Security_1.cpp */; };
 		1859EA9B19214E7B0022C3D3 /* MetalHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1859EA9A19214E7B0022C3D3 /* MetalHelper.mm */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		216F4E6B95F05E8FF769C871 /* Il2CppGenericMethodPointerTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B9C43F6A27F22BCE3D79CCB /* Il2CppGenericMethodPointerTable.cpp */; };
-		25034AC298734979458ED608 /* UnityClassRegistration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7774D8DA33C37F3FD1A0BA7 /* UnityClassRegistration.cpp */; };
-		250B475F90721C10EF820245 /* GenericMethods1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 88B94CC7B93015E6E6E64A09 /* GenericMethods1.cpp */; };
-		25B14076B446316BEBEA95A0 /* Il2CppCompilerCalculateTypeValues_10Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 718F4DD7BC44644978EA9B60 /* Il2CppCompilerCalculateTypeValues_10Table.cpp */; };
-		2880493782171AAEB718DBD4 /* Il2CppCompilerCalculateTypeValues_3Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 611E496F8910CAB2DEF230F3 /* Il2CppCompilerCalculateTypeValues_3Table.cpp */; };
-		308A4364B297C2C07AB43952 /* Il2CppCompilerCalculateTypeValues_8Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E76E4517959D5C2F9528090E /* Il2CppCompilerCalculateTypeValues_8Table.cpp */; };
-		31144E75B07059866510378F /* Bulk_Generics_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6BF4C37B7805335ABA0DF5F /* Bulk_Generics_1.cpp */; };
-		31A746708071E7052D8D4AFE /* Il2CppCompilerCalculateTypeValues_0Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 468D4BA98C28E2912215253A /* Il2CppCompilerCalculateTypeValues_0Table.cpp */; };
-		3A424BA29A9B9FD4D25ADB5B /* UnresolvedVirtualCallStubs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75144EA69FBF673FF4BE5EA7 /* UnresolvedVirtualCallStubs.cpp */; };
-		3A5A4860B8C2BC43AB1AD78A /* GenericMethods0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC984BE3BF05C4A7481B84EE /* GenericMethods0.cpp */; };
-		3C104A3C84CC3D7596E8F9CD /* LaunchScreen-iPhonePortrait.png in Resources */ = {isa = PBXBuildFile; fileRef = CFCB4E5DA4B8A0B37E2B4E2E /* LaunchScreen-iPhonePortrait.png */; };
-		3C19404299EF573C255814CB /* Il2CppTypeDefinitions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECD346DD8D96995BAE26B785 /* Il2CppTypeDefinitions.cpp */; };
-		3C244B3095723C7DB9E96089 /* Il2CppInvokerTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C973478286BD462A3999A006 /* Il2CppInvokerTable.cpp */; };
-		3EE048098B3B2A12327769AD /* Il2CppCompilerCalculateTypeValues_17Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B498F84520A5023189B6D /* Il2CppCompilerCalculateTypeValues_17Table.cpp */; };
-		42A4472FBDC47459CFBD038A /* Il2CppMetadataRegistration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60B64BA1986B05734D63E7C0 /* Il2CppMetadataRegistration.cpp */; };
-		434F4175B5CA128BCDF05F23 /* Il2CppDelegateWrappersManagedToNativeTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09F848E3B7252A9E49379F22 /* Il2CppDelegateWrappersManagedToNativeTable.cpp */; };
-		435743AEB7F6113881A099CE /* Bulk_System.Core_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BCC494BA268E678ED8F302C /* Bulk_System.Core_0.cpp */; };
-		44E646E9919E177D94370835 /* Bulk_mscorlib_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA5A4979B441D096A4512477 /* Bulk_mscorlib_1.cpp */; };
-		52904D408E0D473FB727E919 /* Il2CppGenericInstDefinitions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 943E463181AE54F9C8EE395D /* Il2CppGenericInstDefinitions.cpp */; };
-		5618450D9A51ED69FE03C986 /* Il2CppGenericMethodTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6074DE78A1708DC7EFAF7FE /* Il2CppGenericMethodTable.cpp */; };
+		1E89404CA66B2A200FDE5F23 /* Il2CppCompilerCalculateTypeValues_1Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBDB4A3AAE09126B63AEC682 /* Il2CppCompilerCalculateTypeValues_1Table.cpp */; };
+		1EA84B64A1F2F906A4B569B2 /* Bulk_mscorlib_6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3814649837605BBC53075DB /* Bulk_mscorlib_6.cpp */; };
+		1EDB46EF93D2737844C67DC2 /* Bulk_mscorlib_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E4D487ABDE4C6BA7D118188 /* Bulk_mscorlib_0.cpp */; };
+		22744204887923E7A22503F9 /* Il2CppCompilerCalculateTypeValuesTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD4447048E9F0A1A4572D04C /* Il2CppCompilerCalculateTypeValuesTable.cpp */; };
+		22D444B5A272BA701C229D79 /* Il2CppCompilerCalculateTypeValues_8Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ABC941D696940BAF53FC0ACF /* Il2CppCompilerCalculateTypeValues_8Table.cpp */; };
+		25824F97A1AC273C74262745 /* Bulk_Generics_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20A4404193331AD932E96D0E /* Bulk_Generics_3.cpp */; };
+		289043828579C434E4B133C9 /* Il2CppCompilerCalculateTypeValues_17Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 563B4920B891D80D071175C7 /* Il2CppCompilerCalculateTypeValues_17Table.cpp */; };
+		2969439687242904FB95C193 /* UnityClassRegistration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F874463B1705D823DAC7A99 /* UnityClassRegistration.cpp */; };
+		2B7B4286A91C5A666406458A /* Bulk_mscorlib_5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D914FDF948BA49E7CA3DFDF /* Bulk_mscorlib_5.cpp */; };
+		348541B6A66F9FA2F9AFF99B /* Il2CppCompilerCalculateTypeValues_3Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A922495AB1A0147AB9FA590E /* Il2CppCompilerCalculateTypeValues_3Table.cpp */; };
+		37C84EEE874802472F9278C8 /* LaunchScreen-iPhonePortrait.png in Resources */ = {isa = PBXBuildFile; fileRef = A27A46E8A4FC755E0BE95A1B /* LaunchScreen-iPhonePortrait.png */; };
+		3BB148F99E009F7485BD1395 /* Bulk_mscorlib_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DE048B8A32110B33406A693 /* Bulk_mscorlib_1.cpp */; };
+		3F5C46AC9A89DB9526BDC8F9 /* Il2CppDelegateWrappersManagedToNativeTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 633D49AE95D743DBE3FEC8CF /* Il2CppDelegateWrappersManagedToNativeTable.cpp */; };
+		41344A65950E65F7412608D4 /* Il2CppMethodPointerTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E9D46F3BB97650F7307783C /* Il2CppMethodPointerTable.cpp */; };
+		430549EBBCD5874D10C04E0D /* Bulk_UnityEngine_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A471C8EC3AA6D37348524 /* Bulk_UnityEngine_0.cpp */; };
+		467B4474862F3B7C08E4FEF3 /* Il2CppCompilerCalculateTypeValues_7Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFB8467FA6EE7B989469844F /* Il2CppCompilerCalculateTypeValues_7Table.cpp */; };
+		4AA94F34B25D9200EB393914 /* LaunchScreen-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE54184830744BA357EC80C /* LaunchScreen-iPad.xib */; };
+		4C4344479D4BDE4CFB169A99 /* Bulk_Generics_5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 547D404B96CF51942C98A6DB /* Bulk_Generics_5.cpp */; };
+		50EE47D69E4686B258041D92 /* Il2CppCompilerCalculateTypeValues_2Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CACF409686644841E847B7BB /* Il2CppCompilerCalculateTypeValues_2Table.cpp */; };
 		5623C57617FDCB0800090B9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		5623C57717FDCB0800090B9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830B5C100E5ED4C100C7819F /* UIKit.framework */; };
 		5623C57D17FDCB0900090B9E = {isa = PBXBuildFile; fileRef = 5623C57B17FDCB0900090B9E /* InfoPlist.strings */; };
@@ -47,31 +42,36 @@
 		56B7960F1442E1770026B3DD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B795C11442E1100026B3DD /* CoreMotion.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		56BCBA390FCF049A0030C3B2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BCBA380FCF049A0030C3B2 /* SystemConfiguration.framework */; };
 		56C56C9817D6015200616839 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56C56C9717D6015100616839 /* Images.xcassets */; };
+		56D24A079214857702BAFF02 /* Il2CppGenericMethodPointerTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E8E4751A641B3CB5AB0C621 /* Il2CppGenericMethodPointerTable.cpp */; };
 		56DBF99D15E3CDC9007A4A8D /* iPhone_Sensors.mm in Sources */ = {isa = PBXBuildFile; fileRef = 56DBF99C15E3CDC9007A4A8D /* iPhone_Sensors.mm */; };
 		56FD43960ED4745200FE3770 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FD43950ED4745200FE3770 /* CFNetwork.framework */; };
-		5C8F4E6EB2EFBD797B716B29 /* UnityICallRegistration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75644909885EBFF724AADB49 /* UnityICallRegistration.cpp */; };
-		5E7040DDB6E9BCFBC212A366 /* LaunchScreen-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE34AA28AF39E308F4EAC3F /* LaunchScreen-iPad.xib */; };
-		6B024CFC9570573ED1FADE17 /* Bulk_UnityEngine_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBE84C86B148F5168251AEB6 /* Bulk_UnityEngine_0.cpp */; };
-		6E684C809D153265180DBDF4 /* Bulk_UnityEngine_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A434C892B3B20AB261FD7 /* Bulk_UnityEngine_1.cpp */; };
-		72A64EC8B066DE8F285AD82B /* Bulk_Mono.Security_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EF94715AA734D44A2DA4674 /* Bulk_Mono.Security_1.cpp */; };
-		76854DB9BA87A2D3F7A2C0F9 /* Bulk_Generics_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65F848C48E043701D95196A2 /* Bulk_Generics_3.cpp */; };
-		79BD4091AB8C8E02FD66A77B /* Bulk_UnityEngine_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91F24A05885EA2A861170160 /* Bulk_UnityEngine_2.cpp */; };
-		7CA546A8A2FF8672A65484CE /* Bulk_UnityEngine.UI_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 206346F18DA6656A905B35C1 /* Bulk_UnityEngine.UI_1.cpp */; };
-		7CD84F95B08E48D254EAF2E5 /* Il2CppGuids.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D17D4306ACEC04F5DAF478EF /* Il2CppGuids.cpp */; };
+		588640FC81121D5B2726461B /* UnresolvedVirtualCallStubs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02D1495F8083A8B2C5880E7D /* UnresolvedVirtualCallStubs.cpp */; };
+		5E99440DAF8C098F8329A897 /* Il2CppCompilerCalculateTypeValues_11Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF418BB64FABC9368BBD3B /* Il2CppCompilerCalculateTypeValues_11Table.cpp */; };
+		63CB42F8BE0DCA0CACAD9FC5 /* UnityICallRegistration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B619435B8CF74F27840ADA05 /* UnityICallRegistration.cpp */; };
+		649F4BD79266903D62D1797F /* Il2CppMarshalingFunctionsTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5575487E87C94AA619136457 /* Il2CppMarshalingFunctionsTable.cpp */; };
+		663B4986BC56067E4E57D2A1 /* GenericMethods0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99044EC6A942A983BDA62062 /* GenericMethods0.cpp */; };
+		663F47E993721CAD10A926BF /* Il2CppGenericMethodTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39FA4B38A4CF4DBAB5DE8DDD /* Il2CppGenericMethodTable.cpp */; };
+		78144B51AB9C79FFB3D0E515 /* Il2CppGenericClassTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6911481E9765550537EF1B42 /* Il2CppGenericClassTable.cpp */; };
+		79A44B089CEB4E2279D8987F /* Il2CppCompilerCalculateTypeValues_5Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EBD42979DB7A04DE409C2F8 /* Il2CppCompilerCalculateTypeValues_5Table.cpp */; };
+		7A7242FDA11F64306266E598 /* Bulk_Generics_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EFCB4DF78D30B2D14D7B0844 /* Bulk_Generics_0.cpp */; };
+		7BF4462485AA23632935A5B3 /* Bulk_Assembly-CSharp_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95B544AB81C041F9F461308C /* Bulk_Assembly-CSharp_0.cpp */; };
+		7EAD4CD5BE9CA64447D177A5 /* Il2CppCompilerCalculateTypeValues_6Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 789B4CB8B24956C0C5145CB6 /* Il2CppCompilerCalculateTypeValues_6Table.cpp */; };
+		7ECA41C3A62FB97E0ECC6E00 /* Il2CppInvokerTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27E6435EB2DC3AA415760889 /* Il2CppInvokerTable.cpp */; };
+		7F06446A985458D4F7B17F3C /* Bulk_Generics_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 070947148DC90E89A7284984 /* Bulk_Generics_2.cpp */; };
 		7F36C11113C5C673007FBDD9 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F36C10E13C5C673007FBDD9 /* CoreMedia.framework */; };
 		7F36C11213C5C673007FBDD9 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F36C10F13C5C673007FBDD9 /* CoreVideo.framework */; };
 		7F36C11313C5C673007FBDD9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F36C11013C5C673007FBDD9 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		7FF74668B74B4C59F3005490 /* Il2CppMetadataUsage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2194290A5488FDBF90393D3 /* Il2CppMetadataUsage.cpp */; };
 		830B5C110E5ED4C100C7819F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830B5C100E5ED4C100C7819F /* UIKit.framework */; };
 		8358D1B80ED1CC3700E3A684 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8358D1B70ED1CC3700E3A684 /* AudioToolbox.framework */; };
 		83B256E20E62FEA000468741 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B256E10E62FEA000468741 /* OpenGLES.framework */; };
 		83B2570B0E62FF8A00468741 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B2570A0E62FF8A00468741 /* QuartzCore.framework */; };
 		83B2574C0E63022200468741 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B2574B0E63022200468741 /* OpenAL.framework */; };
 		83B2574F0E63025400468741 /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B2574E0E63025400468741 /* libiconv.2.dylib */; };
-		841447929A17DD8188ACD003 /* Bulk_mscorlib_5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE044B3AB410BCC8590358D3 /* Bulk_mscorlib_5.cpp */; };
-		847F4813BC3FAA21460D631C /* LaunchScreen-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = F0924284A5188F1185B621F0 /* LaunchScreen-iPad.png */; };
 		848031E11C5160D700FCEAB7 /* UnityReplayKit_Scripting.mm in Sources */ = {isa = PBXBuildFile; fileRef = 848031E01C5160D700FCEAB7 /* UnityReplayKit_Scripting.mm */; };
 		84DC28F61C5137FE00BC67D7 /* UnityReplayKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84DC28F51C5137FE00BC67D7 /* UnityReplayKit.mm */; };
-		86F34634BBB5F30938163382 /* Il2CppCompilerCalculateTypeValues_16Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D6B403C93F241E22A351DF6 /* Il2CppCompilerCalculateTypeValues_16Table.cpp */; };
+		86324CD1AAFF6D5649D7F1BC /* Il2CppMetadataRegistration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07BD428B83518C343AEBBE84 /* Il2CppMetadataRegistration.cpp */; };
+		87A64B0AB44C8C5C329D9C60 /* Il2CppCompilerCalculateTypeValues_9Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C944565B0091DE2EEB44D96 /* Il2CppCompilerCalculateTypeValues_9Table.cpp */; };
 		8A0FED491649699200E9727D /* EAGLContextHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FED481649699200E9727D /* EAGLContextHelper.mm */; };
 		8A142DC61636943E00DD87CA /* Keyboard.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A142DC51636943E00DD87CA /* Keyboard.mm */; };
 		8A16150C1A8E4362006FA788 /* FullScreenVideoPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A16150B1A8E4362006FA788 /* FullScreenVideoPlayer.mm */; };
@@ -98,54 +98,54 @@
 		8ADCE38B19C87177006F04F6 /* CameraCapture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8ADCE38A19C87177006F04F6 /* CameraCapture.mm */; };
 		8AF7755D1799329100341121 /* LifeCycleListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A292A9817992CE100409BA4 /* LifeCycleListener.mm */; };
 		8AF7756017997D2700341121 /* AppDelegateListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8AF7755F17997D1300341121 /* AppDelegateListener.mm */; };
-		8BBE476FA4ED94C39D102C70 /* Il2CppCodeRegistration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E264D468EDBB13CECC14874 /* Il2CppCodeRegistration.cpp */; };
-		8C8D4E1997E7FA1C5BE5DF9A /* Il2CppCompilerCalculateTypeValues_12Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DE24BE0B6D64CB9F98BEC0F /* Il2CppCompilerCalculateTypeValues_12Table.cpp */; };
-		8D334FDFAB1EFCFA1C5E0F24 /* Bulk_Assembly-CSharp_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02D64E899613999865968C86 /* Bulk_Assembly-CSharp_0.cpp */; };
-		8E9147FB8D2B517D7D4FEA31 /* Il2CppCompilerCalculateTypeValues_1Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8624BD0B7BB42B1F2255525 /* Il2CppCompilerCalculateTypeValues_1Table.cpp */; };
-		96CD4691A877B7DEBE08E3BB /* Il2CppGenericMethodDefinitions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 950A40179A12AEA69E507978 /* Il2CppGenericMethodDefinitions.cpp */; };
+		8B554F0480F137EE3F536C6C /* Bulk_UnityEngine_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B387417BB8E8B5B2142CFFCB /* Bulk_UnityEngine_1.cpp */; };
+		90D94C61B400BD34378B296E /* Il2CppCompilerCalculateTypeValues_12Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E440CB03352F12A4DD032 /* Il2CppCompilerCalculateTypeValues_12Table.cpp */; };
+		97D3419A9488067F7FBADE4F /* Bulk_mscorlib_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 044B45BEBCA8A956EF186A01 /* Bulk_mscorlib_2.cpp */; };
 		999475201A7BC3AE00178130 /* UnityAdsUnityWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9994751F1A7BC3AE00178130 /* UnityAdsUnityWrapper.mm */; };
-		9A9B4C7783114203D6AF09D3 /* Il2CppCompilerCalculateTypeValues_4Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFFE451D8FF77245DB013302 /* Il2CppCompilerCalculateTypeValues_4Table.cpp */; };
-		9B4644179302E77591A51E56 /* Bulk_mscorlib_7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D694CF18F6CACF67E142DCD /* Bulk_mscorlib_7.cpp */; };
-		9F424E15984A2485185C6C2D /* Bulk_mscorlib_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B357403D8C255A922E5F31A9 /* Bulk_mscorlib_3.cpp */; };
-		A629485B92DB9FFEA7A1D9A8 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2C4CB7BDF98515129E3172 /* Metal.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		A9764F04A253309BA8B1D7BA /* Bulk_mscorlib_6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54A9433383C62C6E4DDC38EB /* Bulk_mscorlib_6.cpp */; };
+		9A0347AA8807E17AD39AC8B2 /* Bulk_Generics_6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DB943BBB90CE61F32E4CD86 /* Bulk_Generics_6.cpp */; };
+		9A48490E9A1A34C8E0F105BC /* Il2CppGuids.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6421406A820E725BC08AB2CA /* Il2CppGuids.cpp */; };
+		A2064C44906F8C9FCF7E5BBD /* Il2CppCompilerCalculateTypeValues_0Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59C24AE6BCC7CC0BD7A95BA5 /* Il2CppCompilerCalculateTypeValues_0Table.cpp */; };
+		A987415490DA12A977C486C1 /* Il2CppCompilerCalculateTypeValues_14Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2214097A2619F8F5AF6342F /* Il2CppCompilerCalculateTypeValues_14Table.cpp */; };
 		AA31BF971B55660D0013FB1B /* Data in Resources */ = {isa = PBXBuildFile; fileRef = AA31BF961B55660D0013FB1B /* Data */; };
 		AA5D99871AFAD3C800B27605 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5D99861AFAD3C800B27605 /* CoreText.framework */; };
 		AA6C5DF91A13842A0030E49A = {isa = PBXBuildFile; fileRef = AA6C5DF71A13842A0030E49A /* LaunchScreenImage-Landscape.png */; };
 		AA6C5DFA1A13842A0030E49A = {isa = PBXBuildFile; fileRef = AA6C5DF81A13842A0030E49A /* LaunchScreenImage-Portrait.png */; };
 		AA8F4B691BD917A10024E7E3 /* UnityViewControllerBaseiOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA8F4B661BD917A10024E7E3 /* UnityViewControllerBaseiOS.mm */; };
 		AA8F4B6A1BD917A10024E7E3 /* UnityViewControllerBaseTV.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA8F4B681BD917A10024E7E3 /* UnityViewControllerBaseTV.mm */; };
+		AAA842FDBAD3B77E2E5E8399 /* Il2CppGenericMethodDefinitions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6B34C518803EB508B1D6BD2 /* Il2CppGenericMethodDefinitions.cpp */; };
 		AAC3E38D1A68945900F6174A /* RegisterFeatures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAC3E38B1A68945900F6174A /* RegisterFeatures.cpp */; };
 		AAFE69D219F187C200638316 /* UnityViewControllerListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = AAFE69D119F187C200638316 /* UnityViewControllerListener.mm */; };
-		AE5342D2B282C88AA69DC307 /* Il2CppMarshalingFunctionsTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7811481A9DEA2B9AA2A8133B /* Il2CppMarshalingFunctionsTable.cpp */; };
-		B0644104818B8BC5858E156B /* Bulk_mscorlib_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D984AD1BB0422BAE6B421DD /* Bulk_mscorlib_4.cpp */; };
-		B09D4CEFA4EC06E68B9E079C /* Il2CppCompilerCalculateTypeValues_14Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E04FCBB17E32F786F4F6BC /* Il2CppCompilerCalculateTypeValues_14Table.cpp */; };
-		B3EC403182FDE809FC84FFF3 /* Bulk_mscorlib_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 082E47FEAEAFE2F15FF16856 /* Bulk_mscorlib_0.cpp */; };
-		B6894E77945024F9981AE9B4 /* Il2CppCompilerCalculateTypeValues_15Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E8C439A96E824DF9F9036B4 /* Il2CppCompilerCalculateTypeValues_15Table.cpp */; };
-		B8514E55ADF883C17F9C136C /* Il2CppCompilerCalculateTypeValues_2Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED4B4F84AB8DB99D8669D2FF /* Il2CppCompilerCalculateTypeValues_2Table.cpp */; };
-		B9AF47EEAAEF910681C0A3DA /* Il2CppCcwMarshalingFunctionsTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 937C44A6BB0F8E51B1641408 /* Il2CppCcwMarshalingFunctionsTable.cpp */; };
-		B9B84C1DB05679DBAE1B11EE /* Il2CppCompilerCalculateTypeValues_11Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B47645BAB8C670A39EAEAD7A /* Il2CppCompilerCalculateTypeValues_11Table.cpp */; };
-		BB97409F991DA94A6B6AB3A2 /* Il2CppCompilerCalculateTypeValues_5Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D57B4A559193C22D2B08CE80 /* Il2CppCompilerCalculateTypeValues_5Table.cpp */; };
-		BBF2483683A5E3AFA0642B54 /* Bulk_System_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E5284DB08396297B8C9D2B1B /* Bulk_System_1.cpp */; };
-		C166437E8075515964AADE32 /* LaunchScreen-iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 190F4A96B47D2B7F71C2A72F /* LaunchScreen-iPhone.xib */; };
-		C8C14765A982616A9956674F /* Il2CppCompilerCalculateTypeValues_13Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D304B81A0715A5CDEFD5B03 /* Il2CppCompilerCalculateTypeValues_13Table.cpp */; };
-		C92A47E0B08107C5924C974E /* Il2CppCompilerCalculateTypeValues_9Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98FA4884B31E8096895035BF /* Il2CppCompilerCalculateTypeValues_9Table.cpp */; };
-		CBC1456EA834297E8B742327 /* Bulk_mscorlib_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 925D40828094B316573F5386 /* Bulk_mscorlib_2.cpp */; };
-		CD8049F69FBA9ADB6A46EF8F /* Il2CppCompilerCalculateTypeValues_6Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02A44211A39C2514ECC21C56 /* Il2CppCompilerCalculateTypeValues_6Table.cpp */; };
-		CEA64781A9EFB262E04E66C2 /* Bulk_Generics_7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F4B8BBEA8CF9348F00CB0 /* Bulk_Generics_7.cpp */; };
-		D40F4E3B8258BC1E3CC5EFF3 /* Bulk_System_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7E649348FCB26CB0E7F84C1 /* Bulk_System_0.cpp */; };
+		AC9D431D8679CE332C893711 /* Bulk_Generics_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 175B4873B535BF8F6546B18B /* Bulk_Generics_1.cpp */; };
+		AD4E44B58BE769E924403698 /* Bulk_Generics_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6AC41AE9D2BE7986189AEBB /* Bulk_Generics_4.cpp */; };
+		B13C49D9990AAEC985E03D72 /* Il2CppCompilerCalculateTypeValues_4Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B4C0DBFBDBE5163FD16A5 /* Il2CppCompilerCalculateTypeValues_4Table.cpp */; };
+		B5CE428CA4357CCE5B5018C3 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A946EBBE00F376584F6EE7 /* Metal.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B7054B4E8D2D8C15D045E39F /* Il2CppCcwMarshalingFunctionsTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EDE4DB9ABAC2C7B505C93F8 /* Il2CppCcwMarshalingFunctionsTable.cpp */; };
+		B93148FF9D840C953F2F5BD8 /* Bulk_Generics_7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC0E45ECAA3E867A9373C9DF /* Bulk_Generics_7.cpp */; };
+		BBD54EAE9AD689EA310F498C /* Il2CppCodeRegistration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D73473198C79667C82B1746 /* Il2CppCodeRegistration.cpp */; };
+		BF6D41ACA7961B92E1EBD869 /* Il2CppCompilerCalculateTypeValues_15Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5777467A8B540C9A56BA7374 /* Il2CppCompilerCalculateTypeValues_15Table.cpp */; };
+		C04E493BA5A45FD5928C1E0C /* LaunchScreen-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B0943A88EC3B42011E36815 /* LaunchScreen-iPad.png */; };
+		C25C48178116396126679291 /* Bulk_UnityEngine.UI_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E054810A08C000A552DE109 /* Bulk_UnityEngine.UI_1.cpp */; };
+		C31B4F7BB24E281CCAA2AA2E /* Il2CppGenericInstDefinitions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A4574AFF285ABE749ED07 /* Il2CppGenericInstDefinitions.cpp */; };
+		C59B4D18864EBBCEF75A0639 /* LaunchScreen-iPhoneLandscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E834B18ADB3FF9EC1D3B947 /* LaunchScreen-iPhoneLandscape.png */; };
+		CB2D4DEE9A767589D06464CE /* Il2CppTypeDefinitions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 400E4C2E8E591DC9BCD1A5D4 /* Il2CppTypeDefinitions.cpp */; };
+		D15F404399D4C7CC25D4B390 /* Bulk_mscorlib_7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C87E4FC790779CF8B6915169 /* Bulk_mscorlib_7.cpp */; };
+		D2094B92BCB087501E4978A9 /* Il2CppCompilerCalculateTypeValues_13Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894D458467C7B5CCF56DD7 /* Il2CppCompilerCalculateTypeValues_13Table.cpp */; };
+		D6214DB582C4E515A6D2467C /* Il2CppCompilerCalculateTypeValues_10Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB4E408781EB48F7D296BE78 /* Il2CppCompilerCalculateTypeValues_10Table.cpp */; };
 		D82DCFC30E8000A5005D6AD8 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = D82DCFBB0E8000A5005D6AD8 /* main.mm */; };
 		D8A1C7280E80637F000160D3 /* RegisterMonoModules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8A1C7240E80637F000160D3 /* RegisterMonoModules.cpp */; };
-		E27247B9884BDA2BA0B01C53 /* Bulk_Generics_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD244338AABED1FE68FA34F3 /* Bulk_Generics_0.cpp */; };
-		E3624C6EA38F36F12BD12EEB /* Il2CppGenericClassTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D97D42AFA342171EB02AE130 /* Il2CppGenericClassTable.cpp */; };
-		E3F54DF5BAC45DFDEC9A207B /* Il2CppAttributes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8AA4A4EACC77108DB4ADFCF /* Il2CppAttributes.cpp */; };
-		EADB446787B153641D56E165 /* Il2CppMetadataUsage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 725142409D2794B56BC129F5 /* Il2CppMetadataUsage.cpp */; };
-		EDDB46089B12E86A6B8DB5C4 /* Bulk_Generics_5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C5D4D589EADD59323F5A443 /* Bulk_Generics_5.cpp */; };
-		F6BB4103B079D4ED133813E1 /* Il2CppCompilerCalculateTypeValuesTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59664A31B6BC707EE5C99386 /* Il2CppCompilerCalculateTypeValuesTable.cpp */; };
-		F92546499FCAE8F6C5C6E2C3 /* Bulk_UnityEngine.UI_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C86E403E9B94F623262466E7 /* Bulk_UnityEngine.UI_0.cpp */; };
-		F9DD4771A586B7907BC0476B /* Il2CppCompilerCalculateTypeValues_7Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E88A4DE7B0D3EDCAD89F0BA7 /* Il2CppCompilerCalculateTypeValues_7Table.cpp */; };
+		D9A6452BB74E741CB276D56B /* Il2CppCompilerCalculateTypeValues_16Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08114F4D8579C5F4CD1A9585 /* Il2CppCompilerCalculateTypeValues_16Table.cpp */; };
+		DE9343ED9BF7D56F9BF178D4 /* Bulk_Mono.Security_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E3B4BFDB59E032D8ED4C5C2 /* Bulk_Mono.Security_0.cpp */; };
+		E05B46FF88F8078608043C7A /* Bulk_mscorlib_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C734BF59F7A05185B5E0F44 /* Bulk_mscorlib_4.cpp */; };
+		E2F6439BA300BCDB1F01E109 /* Bulk_System.Core_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB5F44A1BF8A16AFA0CD2A7F /* Bulk_System.Core_0.cpp */; };
+		E4DA4D35A6DC4572A73C6D1B /* Bulk_UnityEngine.UI_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E447AACF8D186444DE0C5 /* Bulk_UnityEngine.UI_0.cpp */; };
+		E8ED42CABEABFBB7A3BECC2C /* Il2CppAttributes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18CB4428BA7A68E6FBCD6979 /* Il2CppAttributes.cpp */; };
+		ED8A4858AF44EB1BBB4A3EEB /* Bulk_mscorlib_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1D745FBA25AB3F6AA954490 /* Bulk_mscorlib_3.cpp */; };
+		FA0945D693F49FB092651FBB /* LaunchScreen-iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82D04E95BA85DB5B64D951BA /* LaunchScreen-iPhone.xib */; };
+		FB0B4B3FB3B9B3F504069599 /* GenericMethods1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4014A208B2A27CED01D24BD /* GenericMethods1.cpp */; };
 		FC0B20A21B7A4F0B00FDFC55 /* OnDemandResources.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC0B20A11B7A4F0B00FDFC55 /* OnDemandResources.mm */; };
 		FC85CCBB16C3ED8000BAF7C7 /* CrashReporter.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC85CCB916C3ED8000BAF7C7 /* CrashReporter.mm */; };
+		FCE34EE4BEC109C4B46EFAD8 /* Bulk_System_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 427A45C6B5EE303639B0E572 /* Bulk_System_0.cpp */; };
+		FFCC4821A0244688D3260AC8 /* Bulk_UnityEngine_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8676460A895AC4E37F660909 /* Bulk_UnityEngine_2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,36 +171,42 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		02A44211A39C2514ECC21C56 /* Il2CppCompilerCalculateTypeValues_6Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_6Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_6Table.cpp; sourceTree = SOURCE_ROOT; };
-		02D64E899613999865968C86 /* Bulk_Assembly-CSharp_0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Bulk_Assembly-CSharp_0.cpp"; path = "Classes/Native/Bulk_Assembly-CSharp_0.cpp"; sourceTree = SOURCE_ROOT; };
+		02D1495F8083A8B2C5880E7D /* UnresolvedVirtualCallStubs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnresolvedVirtualCallStubs.cpp; path = Classes/Native/UnresolvedVirtualCallStubs.cpp; sourceTree = SOURCE_ROOT; };
 		03F528621B447098000F4FB8 /* Il2CppOptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Il2CppOptions.cpp; sourceTree = "<group>"; };
-		082E47FEAEAFE2F15FF16856 /* Bulk_mscorlib_0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_mscorlib_0.cpp; path = Classes/Native/Bulk_mscorlib_0.cpp; sourceTree = SOURCE_ROOT; };
-		0906412FA7B0FEA96811F2B0 /* Bulk_Generics_2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Generics_2.cpp; path = Classes/Native/Bulk_Generics_2.cpp; sourceTree = SOURCE_ROOT; };
-		09F848E3B7252A9E49379F22 /* Il2CppDelegateWrappersManagedToNativeTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppDelegateWrappersManagedToNativeTable.cpp; path = Classes/Native/Il2CppDelegateWrappersManagedToNativeTable.cpp; sourceTree = SOURCE_ROOT; };
-		0CF44075B897CBEACF69B833 /* Il2CppMethodPointerTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppMethodPointerTable.cpp; path = Classes/Native/Il2CppMethodPointerTable.cpp; sourceTree = SOURCE_ROOT; };
-		0E264D468EDBB13CECC14874 /* Il2CppCodeRegistration.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCodeRegistration.cpp; path = Classes/Native/Il2CppCodeRegistration.cpp; sourceTree = SOURCE_ROOT; };
-		0EF94715AA734D44A2DA4674 /* Bulk_Mono.Security_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Mono.Security_1.cpp; path = Classes/Native/Bulk_Mono.Security_1.cpp; sourceTree = SOURCE_ROOT; };
-		17174FBC810A258B24070C88 /* Bulk_Generics_4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Generics_4.cpp; path = Classes/Native/Bulk_Generics_4.cpp; sourceTree = SOURCE_ROOT; };
+		044B45BEBCA8A956EF186A01 /* Bulk_mscorlib_2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_mscorlib_2.cpp; path = Classes/Native/Bulk_mscorlib_2.cpp; sourceTree = SOURCE_ROOT; };
+		070947148DC90E89A7284984 /* Bulk_Generics_2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Generics_2.cpp; path = Classes/Native/Bulk_Generics_2.cpp; sourceTree = SOURCE_ROOT; };
+		07BD428B83518C343AEBBE84 /* Il2CppMetadataRegistration.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppMetadataRegistration.cpp; path = Classes/Native/Il2CppMetadataRegistration.cpp; sourceTree = SOURCE_ROOT; };
+		08114F4D8579C5F4CD1A9585 /* Il2CppCompilerCalculateTypeValues_16Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_16Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_16Table.cpp; sourceTree = SOURCE_ROOT; };
+		0DB943BBB90CE61F32E4CD86 /* Bulk_Generics_6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Generics_6.cpp; path = Classes/Native/Bulk_Generics_6.cpp; sourceTree = SOURCE_ROOT; };
+		0E3B4BFDB59E032D8ED4C5C2 /* Bulk_Mono.Security_0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Mono.Security_0.cpp; path = Classes/Native/Bulk_Mono.Security_0.cpp; sourceTree = SOURCE_ROOT; };
+		0E4D487ABDE4C6BA7D118188 /* Bulk_mscorlib_0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_mscorlib_0.cpp; path = Classes/Native/Bulk_mscorlib_0.cpp; sourceTree = SOURCE_ROOT; };
+		175B4873B535BF8F6546B18B /* Bulk_Generics_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Generics_1.cpp; path = Classes/Native/Bulk_Generics_1.cpp; sourceTree = SOURCE_ROOT; };
 		1859EA9A19214E7B0022C3D3 /* MetalHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MetalHelper.mm; sourceTree = "<group>"; };
-		190F4A96B47D2B7F71C2A72F /* LaunchScreen-iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "LaunchScreen-iPhone.xib"; sourceTree = SOURCE_ROOT; };
+		18CB4428BA7A68E6FBCD6979 /* Il2CppAttributes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppAttributes.cpp; path = Classes/Native/Il2CppAttributes.cpp; sourceTree = SOURCE_ROOT; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* Unity-Target-New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unity-Target-New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E7B4A63A1C65188AE3721B5 /* IUnityGraphicsMetal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IUnityGraphicsMetal.h; path = Classes/Unity/IUnityGraphicsMetal.h; sourceTree = SOURCE_ROOT; };
-		206346F18DA6656A905B35C1 /* Bulk_UnityEngine.UI_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_UnityEngine.UI_1.cpp; path = Classes/Native/Bulk_UnityEngine.UI_1.cpp; sourceTree = SOURCE_ROOT; };
-		2BEC44E090A2DD0AE3129E88 /* Bulk_Generics_6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Generics_6.cpp; path = Classes/Native/Bulk_Generics_6.cpp; sourceTree = SOURCE_ROOT; };
-		2C2B498F84520A5023189B6D /* Il2CppCompilerCalculateTypeValues_17Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_17Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_17Table.cpp; sourceTree = SOURCE_ROOT; };
-		3BCC494BA268E678ED8F302C /* Bulk_System.Core_0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_System.Core_0.cpp; path = Classes/Native/Bulk_System.Core_0.cpp; sourceTree = SOURCE_ROOT; };
-		3D6B403C93F241E22A351DF6 /* Il2CppCompilerCalculateTypeValues_16Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_16Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_16Table.cpp; sourceTree = SOURCE_ROOT; };
-		468D4BA98C28E2912215253A /* Il2CppCompilerCalculateTypeValues_0Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_0Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_0Table.cpp; sourceTree = SOURCE_ROOT; };
-		4B9C43F6A27F22BCE3D79CCB /* Il2CppGenericMethodPointerTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppGenericMethodPointerTable.cpp; path = Classes/Native/Il2CppGenericMethodPointerTable.cpp; sourceTree = SOURCE_ROOT; };
-		4C134A238C2879734D1FE61A /* Bulk_Mono.Security_0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Mono.Security_0.cpp; path = Classes/Native/Bulk_Mono.Security_0.cpp; sourceTree = SOURCE_ROOT; };
-		4D984AD1BB0422BAE6B421DD /* Bulk_mscorlib_4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_mscorlib_4.cpp; path = Classes/Native/Bulk_mscorlib_4.cpp; sourceTree = SOURCE_ROOT; };
-		54A9433383C62C6E4DDC38EB /* Bulk_mscorlib_6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_mscorlib_6.cpp; path = Classes/Native/Bulk_mscorlib_6.cpp; sourceTree = SOURCE_ROOT; };
+		20A4404193331AD932E96D0E /* Bulk_Generics_3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Generics_3.cpp; path = Classes/Native/Bulk_Generics_3.cpp; sourceTree = SOURCE_ROOT; };
+		23A946EBBE00F376584F6EE7 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		258646A0A12B9524BA72F192 /* Bulk_Mono.Security_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Mono.Security_1.cpp; path = Classes/Native/Bulk_Mono.Security_1.cpp; sourceTree = SOURCE_ROOT; };
+		27E6435EB2DC3AA415760889 /* Il2CppInvokerTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppInvokerTable.cpp; path = Classes/Native/Il2CppInvokerTable.cpp; sourceTree = SOURCE_ROOT; };
+		2D73473198C79667C82B1746 /* Il2CppCodeRegistration.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCodeRegistration.cpp; path = Classes/Native/Il2CppCodeRegistration.cpp; sourceTree = SOURCE_ROOT; };
+		2E834B18ADB3FF9EC1D3B947 /* LaunchScreen-iPhoneLandscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchScreen-iPhoneLandscape.png"; sourceTree = SOURCE_ROOT; };
+		39FA4B38A4CF4DBAB5DE8DDD /* Il2CppGenericMethodTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppGenericMethodTable.cpp; path = Classes/Native/Il2CppGenericMethodTable.cpp; sourceTree = SOURCE_ROOT; };
+		3E054810A08C000A552DE109 /* Bulk_UnityEngine.UI_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_UnityEngine.UI_1.cpp; path = Classes/Native/Bulk_UnityEngine.UI_1.cpp; sourceTree = SOURCE_ROOT; };
+		400E4C2E8E591DC9BCD1A5D4 /* Il2CppTypeDefinitions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppTypeDefinitions.cpp; path = Classes/Native/Il2CppTypeDefinitions.cpp; sourceTree = SOURCE_ROOT; };
+		427A45C6B5EE303639B0E572 /* Bulk_System_0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_System_0.cpp; path = Classes/Native/Bulk_System_0.cpp; sourceTree = SOURCE_ROOT; };
+		4B5E447AACF8D186444DE0C5 /* Bulk_UnityEngine.UI_0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_UnityEngine.UI_0.cpp; path = Classes/Native/Bulk_UnityEngine.UI_0.cpp; sourceTree = SOURCE_ROOT; };
+		4C944565B0091DE2EEB44D96 /* Il2CppCompilerCalculateTypeValues_9Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_9Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_9Table.cpp; sourceTree = SOURCE_ROOT; };
+		4D914FDF948BA49E7CA3DFDF /* Bulk_mscorlib_5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_mscorlib_5.cpp; path = Classes/Native/Bulk_mscorlib_5.cpp; sourceTree = SOURCE_ROOT; };
+		4E9D46F3BB97650F7307783C /* Il2CppMethodPointerTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppMethodPointerTable.cpp; path = Classes/Native/Il2CppMethodPointerTable.cpp; sourceTree = SOURCE_ROOT; };
+		547D404B96CF51942C98A6DB /* Bulk_Generics_5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Generics_5.cpp; path = Classes/Native/Bulk_Generics_5.cpp; sourceTree = SOURCE_ROOT; };
+		5575487E87C94AA619136457 /* Il2CppMarshalingFunctionsTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppMarshalingFunctionsTable.cpp; path = Classes/Native/Il2CppMarshalingFunctionsTable.cpp; sourceTree = SOURCE_ROOT; };
 		5623C57317FDCB0800090B9E /* Unity-iPhone Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unity-iPhone Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5623C57A17FDCB0900090B9E /* Unity-iPhone Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Unity-iPhone Tests-Info.plist"; sourceTree = "<group>"; };
 		5623C57C17FDCB0900090B9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5623C57E17FDCB0900090B9E /* Unity_iPhone_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Unity_iPhone_Tests.m; sourceTree = "<group>"; };
 		5623C58017FDCB0900090B9E /* Unity-iPhone Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Unity-iPhone Tests-Prefix.pch"; sourceTree = "<group>"; };
+		563B4920B891D80D071175C7 /* Il2CppCompilerCalculateTypeValues_17Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_17Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_17Table.cpp; sourceTree = SOURCE_ROOT; };
 		5682F4B10F3B34FF007A219C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		5692F3DC0FA9D8E500EBA2F1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		56B7959A1442E0F20026B3DD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -210,26 +216,25 @@
 		56DBF99C15E3CDC9007A4A8D /* iPhone_Sensors.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = iPhone_Sensors.mm; sourceTree = "<group>"; };
 		56DBF99E15E3CE85007A4A8D /* iPhone_Sensors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhone_Sensors.h; sourceTree = "<group>"; };
 		56FD43950ED4745200FE3770 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		59664A31B6BC707EE5C99386 /* Il2CppCompilerCalculateTypeValuesTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValuesTable.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValuesTable.cpp; sourceTree = SOURCE_ROOT; };
-		5C1F4B8BBEA8CF9348F00CB0 /* Bulk_Generics_7.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Generics_7.cpp; path = Classes/Native/Bulk_Generics_7.cpp; sourceTree = SOURCE_ROOT; };
-		60B64BA1986B05734D63E7C0 /* Il2CppMetadataRegistration.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppMetadataRegistration.cpp; path = Classes/Native/Il2CppMetadataRegistration.cpp; sourceTree = SOURCE_ROOT; };
-		611E496F8910CAB2DEF230F3 /* Il2CppCompilerCalculateTypeValues_3Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_3Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_3Table.cpp; sourceTree = SOURCE_ROOT; };
-		65F848C48E043701D95196A2 /* Bulk_Generics_3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Generics_3.cpp; path = Classes/Native/Bulk_Generics_3.cpp; sourceTree = SOURCE_ROOT; };
-		6C5D4D589EADD59323F5A443 /* Bulk_Generics_5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Generics_5.cpp; path = Classes/Native/Bulk_Generics_5.cpp; sourceTree = SOURCE_ROOT; };
-		6D694CF18F6CACF67E142DCD /* Bulk_mscorlib_7.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_mscorlib_7.cpp; path = Classes/Native/Bulk_mscorlib_7.cpp; sourceTree = SOURCE_ROOT; };
-		6DE24BE0B6D64CB9F98BEC0F /* Il2CppCompilerCalculateTypeValues_12Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_12Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_12Table.cpp; sourceTree = SOURCE_ROOT; };
-		718F4DD7BC44644978EA9B60 /* Il2CppCompilerCalculateTypeValues_10Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_10Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_10Table.cpp; sourceTree = SOURCE_ROOT; };
-		725142409D2794B56BC129F5 /* Il2CppMetadataUsage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppMetadataUsage.cpp; path = Classes/Native/Il2CppMetadataUsage.cpp; sourceTree = SOURCE_ROOT; };
-		75144EA69FBF673FF4BE5EA7 /* UnresolvedVirtualCallStubs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnresolvedVirtualCallStubs.cpp; path = Classes/Native/UnresolvedVirtualCallStubs.cpp; sourceTree = SOURCE_ROOT; };
-		75644909885EBFF724AADB49 /* UnityICallRegistration.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityICallRegistration.cpp; path = Classes/Native/UnityICallRegistration.cpp; sourceTree = SOURCE_ROOT; };
-		75E04FCBB17E32F786F4F6BC /* Il2CppCompilerCalculateTypeValues_14Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_14Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_14Table.cpp; sourceTree = SOURCE_ROOT; };
-		7811481A9DEA2B9AA2A8133B /* Il2CppMarshalingFunctionsTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppMarshalingFunctionsTable.cpp; path = Classes/Native/Il2CppMarshalingFunctionsTable.cpp; sourceTree = SOURCE_ROOT; };
-		7857486388C654F09513BF21 /* IUnityGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IUnityGraphics.h; path = Classes/Unity/IUnityGraphics.h; sourceTree = SOURCE_ROOT; };
-		7D304B81A0715A5CDEFD5B03 /* Il2CppCompilerCalculateTypeValues_13Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_13Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_13Table.cpp; sourceTree = SOURCE_ROOT; };
-		7E8C439A96E824DF9F9036B4 /* Il2CppCompilerCalculateTypeValues_15Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_15Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_15Table.cpp; sourceTree = SOURCE_ROOT; };
+		5777467A8B540C9A56BA7374 /* Il2CppCompilerCalculateTypeValues_15Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_15Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_15Table.cpp; sourceTree = SOURCE_ROOT; };
+		59C24AE6BCC7CC0BD7A95BA5 /* Il2CppCompilerCalculateTypeValues_0Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_0Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_0Table.cpp; sourceTree = SOURCE_ROOT; };
+		5AFF418BB64FABC9368BBD3B /* Il2CppCompilerCalculateTypeValues_11Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_11Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_11Table.cpp; sourceTree = SOURCE_ROOT; };
+		5C0E440CB03352F12A4DD032 /* Il2CppCompilerCalculateTypeValues_12Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_12Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_12Table.cpp; sourceTree = SOURCE_ROOT; };
+		5C734BF59F7A05185B5E0F44 /* Bulk_mscorlib_4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_mscorlib_4.cpp; path = Classes/Native/Bulk_mscorlib_4.cpp; sourceTree = SOURCE_ROOT; };
+		5F5B4C0DBFBDBE5163FD16A5 /* Il2CppCompilerCalculateTypeValues_4Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_4Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_4Table.cpp; sourceTree = SOURCE_ROOT; };
+		5F6F42FBB1A40C86BE12AA3F /* IUnityGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IUnityGraphics.h; path = Classes/Unity/IUnityGraphics.h; sourceTree = SOURCE_ROOT; };
+		633D49AE95D743DBE3FEC8CF /* Il2CppDelegateWrappersManagedToNativeTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppDelegateWrappersManagedToNativeTable.cpp; path = Classes/Native/Il2CppDelegateWrappersManagedToNativeTable.cpp; sourceTree = SOURCE_ROOT; };
+		6421406A820E725BC08AB2CA /* Il2CppGuids.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppGuids.cpp; path = Classes/Native/Il2CppGuids.cpp; sourceTree = SOURCE_ROOT; };
+		6911481E9765550537EF1B42 /* Il2CppGenericClassTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppGenericClassTable.cpp; path = Classes/Native/Il2CppGenericClassTable.cpp; sourceTree = SOURCE_ROOT; };
+		6C5A4574AFF285ABE749ED07 /* Il2CppGenericInstDefinitions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppGenericInstDefinitions.cpp; path = Classes/Native/Il2CppGenericInstDefinitions.cpp; sourceTree = SOURCE_ROOT; };
+		6E1A471C8EC3AA6D37348524 /* Bulk_UnityEngine_0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_UnityEngine_0.cpp; path = Classes/Native/Bulk_UnityEngine_0.cpp; sourceTree = SOURCE_ROOT; };
+		789B4CB8B24956C0C5145CB6 /* Il2CppCompilerCalculateTypeValues_6Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_6Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_6Table.cpp; sourceTree = SOURCE_ROOT; };
+		7EBD42979DB7A04DE409C2F8 /* Il2CppCompilerCalculateTypeValues_5Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_5Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_5Table.cpp; sourceTree = SOURCE_ROOT; };
+		7EDE4DB9ABAC2C7B505C93F8 /* Il2CppCcwMarshalingFunctionsTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCcwMarshalingFunctionsTable.cpp; path = Classes/Native/Il2CppCcwMarshalingFunctionsTable.cpp; sourceTree = SOURCE_ROOT; };
 		7F36C10E13C5C673007FBDD9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		7F36C10F13C5C673007FBDD9 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		7F36C11013C5C673007FBDD9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		82D04E95BA85DB5B64D951BA /* LaunchScreen-iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "LaunchScreen-iPhone.xib"; sourceTree = SOURCE_ROOT; };
 		830B5C100E5ED4C100C7819F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8358D1B70ED1CC3700E3A684 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		83B256E10E62FEA000468741 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -239,7 +244,7 @@
 		848031E01C5160D700FCEAB7 /* UnityReplayKit_Scripting.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UnityReplayKit_Scripting.mm; sourceTree = "<group>"; };
 		84DC28F51C5137FE00BC67D7 /* UnityReplayKit.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UnityReplayKit.mm; sourceTree = "<group>"; };
 		84DC28F71C51383500BC67D7 /* UnityReplayKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnityReplayKit.h; sourceTree = "<group>"; };
-		88B94CC7B93015E6E6E64A09 /* GenericMethods1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GenericMethods1.cpp; path = Classes/Native/GenericMethods1.cpp; sourceTree = SOURCE_ROOT; };
+		8676460A895AC4E37F660909 /* Bulk_UnityEngine_2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_UnityEngine_2.cpp; path = Classes/Native/Bulk_UnityEngine_2.cpp; sourceTree = SOURCE_ROOT; };
 		8A0FED471649699200E9727D /* EAGLContextHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLContextHelper.h; sourceTree = "<group>"; };
 		8A0FED481649699200E9727D /* EAGLContextHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EAGLContextHelper.mm; sourceTree = "<group>"; };
 		8A142DC41636943E00DD87CA /* Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keyboard.h; sourceTree = "<group>"; };
@@ -297,18 +302,22 @@
 		8AECDC781950835600CB29E8 /* UnityMetalSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnityMetalSupport.h; sourceTree = "<group>"; };
 		8AF7755E17997D1300341121 /* AppDelegateListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegateListener.h; sourceTree = "<group>"; };
 		8AF7755F17997D1300341121 /* AppDelegateListener.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegateListener.mm; sourceTree = "<group>"; };
+		8B0943A88EC3B42011E36815 /* LaunchScreen-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchScreen-iPad.png"; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E2C4CB7BDF98515129E3172 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
-		91F24A05885EA2A861170160 /* Bulk_UnityEngine_2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_UnityEngine_2.cpp; path = Classes/Native/Bulk_UnityEngine_2.cpp; sourceTree = SOURCE_ROOT; };
-		925D40828094B316573F5386 /* Bulk_mscorlib_2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_mscorlib_2.cpp; path = Classes/Native/Bulk_mscorlib_2.cpp; sourceTree = SOURCE_ROOT; };
-		937C44A6BB0F8E51B1641408 /* Il2CppCcwMarshalingFunctionsTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCcwMarshalingFunctionsTable.cpp; path = Classes/Native/Il2CppCcwMarshalingFunctionsTable.cpp; sourceTree = SOURCE_ROOT; };
-		943E463181AE54F9C8EE395D /* Il2CppGenericInstDefinitions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppGenericInstDefinitions.cpp; path = Classes/Native/Il2CppGenericInstDefinitions.cpp; sourceTree = SOURCE_ROOT; };
-		950A40179A12AEA69E507978 /* Il2CppGenericMethodDefinitions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppGenericMethodDefinitions.cpp; path = Classes/Native/Il2CppGenericMethodDefinitions.cpp; sourceTree = SOURCE_ROOT; };
-		98FA4884B31E8096895035BF /* Il2CppCompilerCalculateTypeValues_9Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_9Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_9Table.cpp; sourceTree = SOURCE_ROOT; };
+		8E8E4751A641B3CB5AB0C621 /* Il2CppGenericMethodPointerTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppGenericMethodPointerTable.cpp; path = Classes/Native/Il2CppGenericMethodPointerTable.cpp; sourceTree = SOURCE_ROOT; };
+		8F134346A5F28024FD6FFC6A /* IUnityInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IUnityInterface.h; path = Classes/Unity/IUnityInterface.h; sourceTree = SOURCE_ROOT; };
+		8F874463B1705D823DAC7A99 /* UnityClassRegistration.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityClassRegistration.cpp; path = Classes/Native/UnityClassRegistration.cpp; sourceTree = SOURCE_ROOT; };
+		95B544AB81C041F9F461308C /* Bulk_Assembly-CSharp_0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Bulk_Assembly-CSharp_0.cpp"; path = "Classes/Native/Bulk_Assembly-CSharp_0.cpp"; sourceTree = SOURCE_ROOT; };
+		99044EC6A942A983BDA62062 /* GenericMethods0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GenericMethods0.cpp; path = Classes/Native/GenericMethods0.cpp; sourceTree = SOURCE_ROOT; };
 		9994751F1A7BC3AE00178130 /* UnityAdsUnityWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = UnityAdsUnityWrapper.mm; path = UnityAds/UnityAdsUnityWrapper.mm; sourceTree = "<group>"; };
 		999475381A80DBC300178130 /* UnityAdsConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UnityAdsConfig.h; path = UnityAds/UnityAdsConfig.h; sourceTree = "<group>"; };
-		9E6A434C892B3B20AB261FD7 /* Bulk_UnityEngine_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_UnityEngine_1.cpp; path = Classes/Native/Bulk_UnityEngine_1.cpp; sourceTree = SOURCE_ROOT; };
-		A6BF4C37B7805335ABA0DF5F /* Bulk_Generics_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Generics_1.cpp; path = Classes/Native/Bulk_Generics_1.cpp; sourceTree = SOURCE_ROOT; };
+		9DE048B8A32110B33406A693 /* Bulk_mscorlib_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_mscorlib_1.cpp; path = Classes/Native/Bulk_mscorlib_1.cpp; sourceTree = SOURCE_ROOT; };
+		9E894D458467C7B5CCF56DD7 /* Il2CppCompilerCalculateTypeValues_13Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_13Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_13Table.cpp; sourceTree = SOURCE_ROOT; };
+		A2194290A5488FDBF90393D3 /* Il2CppMetadataUsage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppMetadataUsage.cpp; path = Classes/Native/Il2CppMetadataUsage.cpp; sourceTree = SOURCE_ROOT; };
+		A22A4E8A9F4F9D740014DFF9 /* Bulk_System_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_System_1.cpp; path = Classes/Native/Bulk_System_1.cpp; sourceTree = SOURCE_ROOT; };
+		A27A46E8A4FC755E0BE95A1B /* LaunchScreen-iPhonePortrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchScreen-iPhonePortrait.png"; sourceTree = SOURCE_ROOT; };
+		A3814649837605BBC53075DB /* Bulk_mscorlib_6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_mscorlib_6.cpp; path = Classes/Native/Bulk_mscorlib_6.cpp; sourceTree = SOURCE_ROOT; };
+		A922495AB1A0147AB9FA590E /* Il2CppCompilerCalculateTypeValues_3Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_3Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_3Table.cpp; sourceTree = SOURCE_ROOT; };
 		AA31BF961B55660D0013FB1B /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 		AA5D99861AFAD3C800B27605 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		AA6C5DF71A13842A0030E49A /* LaunchScreenImage-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchScreenImage-Landscape.png"; sourceTree = "<group>"; };
@@ -321,42 +330,33 @@
 		AAC3E38C1A68945900F6174A /* RegisterFeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterFeatures.h; sourceTree = "<group>"; };
 		AAFE69D019F187C200638316 /* UnityViewControllerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnityViewControllerListener.h; sourceTree = "<group>"; };
 		AAFE69D119F187C200638316 /* UnityViewControllerListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UnityViewControllerListener.mm; sourceTree = "<group>"; };
-		B357403D8C255A922E5F31A9 /* Bulk_mscorlib_3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_mscorlib_3.cpp; path = Classes/Native/Bulk_mscorlib_3.cpp; sourceTree = SOURCE_ROOT; };
-		B47645BAB8C670A39EAEAD7A /* Il2CppCompilerCalculateTypeValues_11Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_11Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_11Table.cpp; sourceTree = SOURCE_ROOT; };
-		BBE84C86B148F5168251AEB6 /* Bulk_UnityEngine_0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_UnityEngine_0.cpp; path = Classes/Native/Bulk_UnityEngine_0.cpp; sourceTree = SOURCE_ROOT; };
-		C6074DE78A1708DC7EFAF7FE /* Il2CppGenericMethodTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppGenericMethodTable.cpp; path = Classes/Native/Il2CppGenericMethodTable.cpp; sourceTree = SOURCE_ROOT; };
-		C86E403E9B94F623262466E7 /* Bulk_UnityEngine.UI_0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_UnityEngine.UI_0.cpp; path = Classes/Native/Bulk_UnityEngine.UI_0.cpp; sourceTree = SOURCE_ROOT; };
-		C973478286BD462A3999A006 /* Il2CppInvokerTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppInvokerTable.cpp; path = Classes/Native/Il2CppInvokerTable.cpp; sourceTree = SOURCE_ROOT; };
-		CCF740BB9A2175E0AA2E11AC /* IUnityInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IUnityInterface.h; path = Classes/Unity/IUnityInterface.h; sourceTree = SOURCE_ROOT; };
-		CFCB4E5DA4B8A0B37E2B4E2E /* LaunchScreen-iPhonePortrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchScreen-iPhonePortrait.png"; sourceTree = SOURCE_ROOT; };
-		CFE34AA28AF39E308F4EAC3F /* LaunchScreen-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "LaunchScreen-iPad.xib"; sourceTree = SOURCE_ROOT; };
-		D17D4306ACEC04F5DAF478EF /* Il2CppGuids.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppGuids.cpp; path = Classes/Native/Il2CppGuids.cpp; sourceTree = SOURCE_ROOT; };
-		D57B4A559193C22D2B08CE80 /* Il2CppCompilerCalculateTypeValues_5Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_5Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_5Table.cpp; sourceTree = SOURCE_ROOT; };
+		ABC941D696940BAF53FC0ACF /* Il2CppCompilerCalculateTypeValues_8Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_8Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_8Table.cpp; sourceTree = SOURCE_ROOT; };
+		AC0E45ECAA3E867A9373C9DF /* Bulk_Generics_7.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Generics_7.cpp; path = Classes/Native/Bulk_Generics_7.cpp; sourceTree = SOURCE_ROOT; };
+		AD4447048E9F0A1A4572D04C /* Il2CppCompilerCalculateTypeValuesTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValuesTable.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValuesTable.cpp; sourceTree = SOURCE_ROOT; };
+		B387417BB8E8B5B2142CFFCB /* Bulk_UnityEngine_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_UnityEngine_1.cpp; path = Classes/Native/Bulk_UnityEngine_1.cpp; sourceTree = SOURCE_ROOT; };
+		B619435B8CF74F27840ADA05 /* UnityICallRegistration.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityICallRegistration.cpp; path = Classes/Native/UnityICallRegistration.cpp; sourceTree = SOURCE_ROOT; };
+		BBDB4A3AAE09126B63AEC682 /* Il2CppCompilerCalculateTypeValues_1Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_1Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_1Table.cpp; sourceTree = SOURCE_ROOT; };
+		BFE54184830744BA357EC80C /* LaunchScreen-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "LaunchScreen-iPad.xib"; sourceTree = SOURCE_ROOT; };
+		C87E4FC790779CF8B6915169 /* Bulk_mscorlib_7.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_mscorlib_7.cpp; path = Classes/Native/Bulk_mscorlib_7.cpp; sourceTree = SOURCE_ROOT; };
+		CACF409686644841E847B7BB /* Il2CppCompilerCalculateTypeValues_2Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_2Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_2Table.cpp; sourceTree = SOURCE_ROOT; };
+		D1D745FBA25AB3F6AA954490 /* Bulk_mscorlib_3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_mscorlib_3.cpp; path = Classes/Native/Bulk_mscorlib_3.cpp; sourceTree = SOURCE_ROOT; };
+		D2214097A2619F8F5AF6342F /* Il2CppCompilerCalculateTypeValues_14Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_14Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_14Table.cpp; sourceTree = SOURCE_ROOT; };
+		D4014A208B2A27CED01D24BD /* GenericMethods1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GenericMethods1.cpp; path = Classes/Native/GenericMethods1.cpp; sourceTree = SOURCE_ROOT; };
+		D6AC41AE9D2BE7986189AEBB /* Bulk_Generics_4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Generics_4.cpp; path = Classes/Native/Bulk_Generics_4.cpp; sourceTree = SOURCE_ROOT; };
 		D82DCFBB0E8000A5005D6AD8 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = Classes/main.mm; sourceTree = SOURCE_ROOT; };
 		D8A1C7240E80637F000160D3 /* RegisterMonoModules.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RegisterMonoModules.cpp; path = Libraries/RegisterMonoModules.cpp; sourceTree = SOURCE_ROOT; };
 		D8A1C7250E80637F000160D3 /* RegisterMonoModules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterMonoModules.h; path = Libraries/RegisterMonoModules.h; sourceTree = SOURCE_ROOT; };
 		D8A1C72A0E8063A1000160D3 /* libiPhone-lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libiPhone-lib.a"; path = "Libraries/libiPhone-lib.a"; sourceTree = SOURCE_ROOT; };
-		D8AA4A4EACC77108DB4ADFCF /* Il2CppAttributes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppAttributes.cpp; path = Classes/Native/Il2CppAttributes.cpp; sourceTree = SOURCE_ROOT; };
-		D97D42AFA342171EB02AE130 /* Il2CppGenericClassTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppGenericClassTable.cpp; path = Classes/Native/Il2CppGenericClassTable.cpp; sourceTree = SOURCE_ROOT; };
-		DA5A4979B441D096A4512477 /* Bulk_mscorlib_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_mscorlib_1.cpp; path = Classes/Native/Bulk_mscorlib_1.cpp; sourceTree = SOURCE_ROOT; };
-		DD244338AABED1FE68FA34F3 /* Bulk_Generics_0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Generics_0.cpp; path = Classes/Native/Bulk_Generics_0.cpp; sourceTree = SOURCE_ROOT; };
-		E5284DB08396297B8C9D2B1B /* Bulk_System_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_System_1.cpp; path = Classes/Native/Bulk_System_1.cpp; sourceTree = SOURCE_ROOT; };
-		E76E4517959D5C2F9528090E /* Il2CppCompilerCalculateTypeValues_8Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_8Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_8Table.cpp; sourceTree = SOURCE_ROOT; };
-		E7774D8DA33C37F3FD1A0BA7 /* UnityClassRegistration.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityClassRegistration.cpp; path = Classes/Native/UnityClassRegistration.cpp; sourceTree = SOURCE_ROOT; };
-		E7E649348FCB26CB0E7F84C1 /* Bulk_System_0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_System_0.cpp; path = Classes/Native/Bulk_System_0.cpp; sourceTree = SOURCE_ROOT; };
-		E8624BD0B7BB42B1F2255525 /* Il2CppCompilerCalculateTypeValues_1Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_1Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_1Table.cpp; sourceTree = SOURCE_ROOT; };
-		E88A4DE7B0D3EDCAD89F0BA7 /* Il2CppCompilerCalculateTypeValues_7Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_7Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_7Table.cpp; sourceTree = SOURCE_ROOT; };
-		ECD346DD8D96995BAE26B785 /* Il2CppTypeDefinitions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppTypeDefinitions.cpp; path = Classes/Native/Il2CppTypeDefinitions.cpp; sourceTree = SOURCE_ROOT; };
-		ED4B4F84AB8DB99D8669D2FF /* Il2CppCompilerCalculateTypeValues_2Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_2Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_2Table.cpp; sourceTree = SOURCE_ROOT; };
-		ED7544ED8CAB8E44D997103E /* LaunchScreen-iPhoneLandscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchScreen-iPhoneLandscape.png"; sourceTree = SOURCE_ROOT; };
-		EE044B3AB410BCC8590358D3 /* Bulk_mscorlib_5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_mscorlib_5.cpp; path = Classes/Native/Bulk_mscorlib_5.cpp; sourceTree = SOURCE_ROOT; };
-		F0924284A5188F1185B621F0 /* LaunchScreen-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchScreen-iPad.png"; sourceTree = SOURCE_ROOT; };
+		DB4749698EBECF7178BB2C06 /* IUnityGraphicsMetal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IUnityGraphicsMetal.h; path = Classes/Unity/IUnityGraphicsMetal.h; sourceTree = SOURCE_ROOT; };
+		DB4E408781EB48F7D296BE78 /* Il2CppCompilerCalculateTypeValues_10Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_10Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_10Table.cpp; sourceTree = SOURCE_ROOT; };
+		DB5F44A1BF8A16AFA0CD2A7F /* Bulk_System.Core_0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_System.Core_0.cpp; path = Classes/Native/Bulk_System.Core_0.cpp; sourceTree = SOURCE_ROOT; };
+		EFCB4DF78D30B2D14D7B0844 /* Bulk_Generics_0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Generics_0.cpp; path = Classes/Native/Bulk_Generics_0.cpp; sourceTree = SOURCE_ROOT; };
+		F6B34C518803EB508B1D6BD2 /* Il2CppGenericMethodDefinitions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppGenericMethodDefinitions.cpp; path = Classes/Native/Il2CppGenericMethodDefinitions.cpp; sourceTree = SOURCE_ROOT; };
 		FC0B20A11B7A4F0B00FDFC55 /* OnDemandResources.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OnDemandResources.mm; sourceTree = "<group>"; };
 		FC3D7EBE16D2621600D1BD0D /* CrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashReporter.h; sourceTree = "<group>"; };
 		FC85CCB916C3ED8000BAF7C7 /* CrashReporter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CrashReporter.mm; sourceTree = "<group>"; };
 		FC85CCBA16C3ED8000BAF7C7 /* PLCrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReporter.h; sourceTree = "<group>"; };
-		FC984BE3BF05C4A7481B84EE /* GenericMethods0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GenericMethods0.cpp; path = Classes/Native/GenericMethods0.cpp; sourceTree = SOURCE_ROOT; };
-		FFFE451D8FF77245DB013302 /* Il2CppCompilerCalculateTypeValues_4Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_4Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_4Table.cpp; sourceTree = SOURCE_ROOT; };
+		FFB8467FA6EE7B989469844F /* Il2CppCompilerCalculateTypeValues_7Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_7Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_7Table.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -382,7 +382,7 @@
 				56BCBA390FCF049A0030C3B2 /* SystemConfiguration.framework in Frameworks */,
 				830B5C110E5ED4C100C7819F /* UIKit.framework in Frameworks */,
 				83B2574F0E63025400468741 /* libiconv.2.dylib in Frameworks */,
-				A629485B92DB9FFEA7A1D9A8 /* Metal.framework in Frameworks */,
+				B5CE428CA4357CCE5B5018C3 /* Metal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,11 +419,11 @@
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				83B2574E0E63025400468741 /* libiconv.2.dylib */,
-				190F4A96B47D2B7F71C2A72F /* LaunchScreen-iPhone.xib */,
-				CFCB4E5DA4B8A0B37E2B4E2E /* LaunchScreen-iPhonePortrait.png */,
-				ED7544ED8CAB8E44D997103E /* LaunchScreen-iPhoneLandscape.png */,
-				CFE34AA28AF39E308F4EAC3F /* LaunchScreen-iPad.xib */,
-				F0924284A5188F1185B621F0 /* LaunchScreen-iPad.png */,
+				82D04E95BA85DB5B64D951BA /* LaunchScreen-iPhone.xib */,
+				A27A46E8A4FC755E0BE95A1B /* LaunchScreen-iPhonePortrait.png */,
+				2E834B18ADB3FF9EC1D3B947 /* LaunchScreen-iPhoneLandscape.png */,
+				BFE54184830744BA357EC80C /* LaunchScreen-iPad.xib */,
+				8B0943A88EC3B42011E36815 /* LaunchScreen-iPad.png */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -447,7 +447,7 @@
 				83B2570A0E62FF8A00468741 /* QuartzCore.framework */,
 				56BCBA380FCF049A0030C3B2 /* SystemConfiguration.framework */,
 				830B5C100E5ED4C100C7819F /* UIKit.framework */,
-				8E2C4CB7BDF98515129E3172 /* Metal.framework */,
+				23A946EBBE00F376584F6EE7 /* Metal.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -469,80 +469,6 @@
 				5623C58017FDCB0900090B9E /* Unity-iPhone Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8408408A86967E520695BC71 /* Native */ = {
-			isa = PBXGroup;
-			children = (
-				02D64E899613999865968C86 /* Bulk_Assembly-CSharp_0.cpp */,
-				DD244338AABED1FE68FA34F3 /* Bulk_Generics_0.cpp */,
-				A6BF4C37B7805335ABA0DF5F /* Bulk_Generics_1.cpp */,
-				0906412FA7B0FEA96811F2B0 /* Bulk_Generics_2.cpp */,
-				65F848C48E043701D95196A2 /* Bulk_Generics_3.cpp */,
-				17174FBC810A258B24070C88 /* Bulk_Generics_4.cpp */,
-				6C5D4D589EADD59323F5A443 /* Bulk_Generics_5.cpp */,
-				2BEC44E090A2DD0AE3129E88 /* Bulk_Generics_6.cpp */,
-				5C1F4B8BBEA8CF9348F00CB0 /* Bulk_Generics_7.cpp */,
-				4C134A238C2879734D1FE61A /* Bulk_Mono.Security_0.cpp */,
-				0EF94715AA734D44A2DA4674 /* Bulk_Mono.Security_1.cpp */,
-				3BCC494BA268E678ED8F302C /* Bulk_System.Core_0.cpp */,
-				E7E649348FCB26CB0E7F84C1 /* Bulk_System_0.cpp */,
-				E5284DB08396297B8C9D2B1B /* Bulk_System_1.cpp */,
-				C86E403E9B94F623262466E7 /* Bulk_UnityEngine.UI_0.cpp */,
-				206346F18DA6656A905B35C1 /* Bulk_UnityEngine.UI_1.cpp */,
-				BBE84C86B148F5168251AEB6 /* Bulk_UnityEngine_0.cpp */,
-				9E6A434C892B3B20AB261FD7 /* Bulk_UnityEngine_1.cpp */,
-				91F24A05885EA2A861170160 /* Bulk_UnityEngine_2.cpp */,
-				082E47FEAEAFE2F15FF16856 /* Bulk_mscorlib_0.cpp */,
-				DA5A4979B441D096A4512477 /* Bulk_mscorlib_1.cpp */,
-				925D40828094B316573F5386 /* Bulk_mscorlib_2.cpp */,
-				B357403D8C255A922E5F31A9 /* Bulk_mscorlib_3.cpp */,
-				4D984AD1BB0422BAE6B421DD /* Bulk_mscorlib_4.cpp */,
-				EE044B3AB410BCC8590358D3 /* Bulk_mscorlib_5.cpp */,
-				54A9433383C62C6E4DDC38EB /* Bulk_mscorlib_6.cpp */,
-				6D694CF18F6CACF67E142DCD /* Bulk_mscorlib_7.cpp */,
-				FC984BE3BF05C4A7481B84EE /* GenericMethods0.cpp */,
-				88B94CC7B93015E6E6E64A09 /* GenericMethods1.cpp */,
-				D8AA4A4EACC77108DB4ADFCF /* Il2CppAttributes.cpp */,
-				937C44A6BB0F8E51B1641408 /* Il2CppCcwMarshalingFunctionsTable.cpp */,
-				0E264D468EDBB13CECC14874 /* Il2CppCodeRegistration.cpp */,
-				59664A31B6BC707EE5C99386 /* Il2CppCompilerCalculateTypeValuesTable.cpp */,
-				468D4BA98C28E2912215253A /* Il2CppCompilerCalculateTypeValues_0Table.cpp */,
-				718F4DD7BC44644978EA9B60 /* Il2CppCompilerCalculateTypeValues_10Table.cpp */,
-				B47645BAB8C670A39EAEAD7A /* Il2CppCompilerCalculateTypeValues_11Table.cpp */,
-				6DE24BE0B6D64CB9F98BEC0F /* Il2CppCompilerCalculateTypeValues_12Table.cpp */,
-				7D304B81A0715A5CDEFD5B03 /* Il2CppCompilerCalculateTypeValues_13Table.cpp */,
-				75E04FCBB17E32F786F4F6BC /* Il2CppCompilerCalculateTypeValues_14Table.cpp */,
-				7E8C439A96E824DF9F9036B4 /* Il2CppCompilerCalculateTypeValues_15Table.cpp */,
-				3D6B403C93F241E22A351DF6 /* Il2CppCompilerCalculateTypeValues_16Table.cpp */,
-				2C2B498F84520A5023189B6D /* Il2CppCompilerCalculateTypeValues_17Table.cpp */,
-				E8624BD0B7BB42B1F2255525 /* Il2CppCompilerCalculateTypeValues_1Table.cpp */,
-				ED4B4F84AB8DB99D8669D2FF /* Il2CppCompilerCalculateTypeValues_2Table.cpp */,
-				611E496F8910CAB2DEF230F3 /* Il2CppCompilerCalculateTypeValues_3Table.cpp */,
-				FFFE451D8FF77245DB013302 /* Il2CppCompilerCalculateTypeValues_4Table.cpp */,
-				D57B4A559193C22D2B08CE80 /* Il2CppCompilerCalculateTypeValues_5Table.cpp */,
-				02A44211A39C2514ECC21C56 /* Il2CppCompilerCalculateTypeValues_6Table.cpp */,
-				E88A4DE7B0D3EDCAD89F0BA7 /* Il2CppCompilerCalculateTypeValues_7Table.cpp */,
-				E76E4517959D5C2F9528090E /* Il2CppCompilerCalculateTypeValues_8Table.cpp */,
-				98FA4884B31E8096895035BF /* Il2CppCompilerCalculateTypeValues_9Table.cpp */,
-				09F848E3B7252A9E49379F22 /* Il2CppDelegateWrappersManagedToNativeTable.cpp */,
-				D97D42AFA342171EB02AE130 /* Il2CppGenericClassTable.cpp */,
-				943E463181AE54F9C8EE395D /* Il2CppGenericInstDefinitions.cpp */,
-				950A40179A12AEA69E507978 /* Il2CppGenericMethodDefinitions.cpp */,
-				4B9C43F6A27F22BCE3D79CCB /* Il2CppGenericMethodPointerTable.cpp */,
-				C6074DE78A1708DC7EFAF7FE /* Il2CppGenericMethodTable.cpp */,
-				D17D4306ACEC04F5DAF478EF /* Il2CppGuids.cpp */,
-				C973478286BD462A3999A006 /* Il2CppInvokerTable.cpp */,
-				7811481A9DEA2B9AA2A8133B /* Il2CppMarshalingFunctionsTable.cpp */,
-				60B64BA1986B05734D63E7C0 /* Il2CppMetadataRegistration.cpp */,
-				725142409D2794B56BC129F5 /* Il2CppMetadataUsage.cpp */,
-				0CF44075B897CBEACF69B833 /* Il2CppMethodPointerTable.cpp */,
-				ECD346DD8D96995BAE26B785 /* Il2CppTypeDefinitions.cpp */,
-				E7774D8DA33C37F3FD1A0BA7 /* UnityClassRegistration.cpp */,
-				75644909885EBFF724AADB49 /* UnityICallRegistration.cpp */,
-				75144EA69FBF673FF4BE5EA7 /* UnresolvedVirtualCallStubs.cpp */,
-			);
-			path = Native;
 			sourceTree = "<group>";
 		};
 		8A3EDDC51615B7C1001839E9 /* UI */ = {
@@ -621,9 +547,9 @@
 				8AB3CB3D16D390BB00697AD5 /* VideoPlayer.mm */,
 				8AA568AC1827DD79004969C7 /* WWWConnection.h */,
 				8AA568AD1827DD79004969C7 /* WWWConnection.mm */,
-				CCF740BB9A2175E0AA2E11AC /* IUnityInterface.h */,
-				7857486388C654F09513BF21 /* IUnityGraphics.h */,
-				1E7B4A63A1C65188AE3721B5 /* IUnityGraphicsMetal.h */,
+				8F134346A5F28024FD6FFC6A /* IUnityInterface.h */,
+				5F6F42FBB1A40C86BE12AA3F /* IUnityGraphics.h */,
+				DB4749698EBECF7178BB2C06 /* IUnityGraphicsMetal.h */,
 			);
 			path = Unity;
 			sourceTree = "<group>";
@@ -635,6 +561,80 @@
 				9994751F1A7BC3AE00178130 /* UnityAdsUnityWrapper.mm */,
 			);
 			name = UnityAds;
+			sourceTree = "<group>";
+		};
+		D0044B26BC9F1728A2573D2D /* Native */ = {
+			isa = PBXGroup;
+			children = (
+				95B544AB81C041F9F461308C /* Bulk_Assembly-CSharp_0.cpp */,
+				EFCB4DF78D30B2D14D7B0844 /* Bulk_Generics_0.cpp */,
+				175B4873B535BF8F6546B18B /* Bulk_Generics_1.cpp */,
+				070947148DC90E89A7284984 /* Bulk_Generics_2.cpp */,
+				20A4404193331AD932E96D0E /* Bulk_Generics_3.cpp */,
+				D6AC41AE9D2BE7986189AEBB /* Bulk_Generics_4.cpp */,
+				547D404B96CF51942C98A6DB /* Bulk_Generics_5.cpp */,
+				0DB943BBB90CE61F32E4CD86 /* Bulk_Generics_6.cpp */,
+				AC0E45ECAA3E867A9373C9DF /* Bulk_Generics_7.cpp */,
+				0E3B4BFDB59E032D8ED4C5C2 /* Bulk_Mono.Security_0.cpp */,
+				258646A0A12B9524BA72F192 /* Bulk_Mono.Security_1.cpp */,
+				DB5F44A1BF8A16AFA0CD2A7F /* Bulk_System.Core_0.cpp */,
+				427A45C6B5EE303639B0E572 /* Bulk_System_0.cpp */,
+				A22A4E8A9F4F9D740014DFF9 /* Bulk_System_1.cpp */,
+				4B5E447AACF8D186444DE0C5 /* Bulk_UnityEngine.UI_0.cpp */,
+				3E054810A08C000A552DE109 /* Bulk_UnityEngine.UI_1.cpp */,
+				6E1A471C8EC3AA6D37348524 /* Bulk_UnityEngine_0.cpp */,
+				B387417BB8E8B5B2142CFFCB /* Bulk_UnityEngine_1.cpp */,
+				8676460A895AC4E37F660909 /* Bulk_UnityEngine_2.cpp */,
+				0E4D487ABDE4C6BA7D118188 /* Bulk_mscorlib_0.cpp */,
+				9DE048B8A32110B33406A693 /* Bulk_mscorlib_1.cpp */,
+				044B45BEBCA8A956EF186A01 /* Bulk_mscorlib_2.cpp */,
+				D1D745FBA25AB3F6AA954490 /* Bulk_mscorlib_3.cpp */,
+				5C734BF59F7A05185B5E0F44 /* Bulk_mscorlib_4.cpp */,
+				4D914FDF948BA49E7CA3DFDF /* Bulk_mscorlib_5.cpp */,
+				A3814649837605BBC53075DB /* Bulk_mscorlib_6.cpp */,
+				C87E4FC790779CF8B6915169 /* Bulk_mscorlib_7.cpp */,
+				99044EC6A942A983BDA62062 /* GenericMethods0.cpp */,
+				D4014A208B2A27CED01D24BD /* GenericMethods1.cpp */,
+				18CB4428BA7A68E6FBCD6979 /* Il2CppAttributes.cpp */,
+				7EDE4DB9ABAC2C7B505C93F8 /* Il2CppCcwMarshalingFunctionsTable.cpp */,
+				2D73473198C79667C82B1746 /* Il2CppCodeRegistration.cpp */,
+				AD4447048E9F0A1A4572D04C /* Il2CppCompilerCalculateTypeValuesTable.cpp */,
+				59C24AE6BCC7CC0BD7A95BA5 /* Il2CppCompilerCalculateTypeValues_0Table.cpp */,
+				DB4E408781EB48F7D296BE78 /* Il2CppCompilerCalculateTypeValues_10Table.cpp */,
+				5AFF418BB64FABC9368BBD3B /* Il2CppCompilerCalculateTypeValues_11Table.cpp */,
+				5C0E440CB03352F12A4DD032 /* Il2CppCompilerCalculateTypeValues_12Table.cpp */,
+				9E894D458467C7B5CCF56DD7 /* Il2CppCompilerCalculateTypeValues_13Table.cpp */,
+				D2214097A2619F8F5AF6342F /* Il2CppCompilerCalculateTypeValues_14Table.cpp */,
+				5777467A8B540C9A56BA7374 /* Il2CppCompilerCalculateTypeValues_15Table.cpp */,
+				08114F4D8579C5F4CD1A9585 /* Il2CppCompilerCalculateTypeValues_16Table.cpp */,
+				563B4920B891D80D071175C7 /* Il2CppCompilerCalculateTypeValues_17Table.cpp */,
+				BBDB4A3AAE09126B63AEC682 /* Il2CppCompilerCalculateTypeValues_1Table.cpp */,
+				CACF409686644841E847B7BB /* Il2CppCompilerCalculateTypeValues_2Table.cpp */,
+				A922495AB1A0147AB9FA590E /* Il2CppCompilerCalculateTypeValues_3Table.cpp */,
+				5F5B4C0DBFBDBE5163FD16A5 /* Il2CppCompilerCalculateTypeValues_4Table.cpp */,
+				7EBD42979DB7A04DE409C2F8 /* Il2CppCompilerCalculateTypeValues_5Table.cpp */,
+				789B4CB8B24956C0C5145CB6 /* Il2CppCompilerCalculateTypeValues_6Table.cpp */,
+				FFB8467FA6EE7B989469844F /* Il2CppCompilerCalculateTypeValues_7Table.cpp */,
+				ABC941D696940BAF53FC0ACF /* Il2CppCompilerCalculateTypeValues_8Table.cpp */,
+				4C944565B0091DE2EEB44D96 /* Il2CppCompilerCalculateTypeValues_9Table.cpp */,
+				633D49AE95D743DBE3FEC8CF /* Il2CppDelegateWrappersManagedToNativeTable.cpp */,
+				6911481E9765550537EF1B42 /* Il2CppGenericClassTable.cpp */,
+				6C5A4574AFF285ABE749ED07 /* Il2CppGenericInstDefinitions.cpp */,
+				F6B34C518803EB508B1D6BD2 /* Il2CppGenericMethodDefinitions.cpp */,
+				8E8E4751A641B3CB5AB0C621 /* Il2CppGenericMethodPointerTable.cpp */,
+				39FA4B38A4CF4DBAB5DE8DDD /* Il2CppGenericMethodTable.cpp */,
+				6421406A820E725BC08AB2CA /* Il2CppGuids.cpp */,
+				27E6435EB2DC3AA415760889 /* Il2CppInvokerTable.cpp */,
+				5575487E87C94AA619136457 /* Il2CppMarshalingFunctionsTable.cpp */,
+				07BD428B83518C343AEBBE84 /* Il2CppMetadataRegistration.cpp */,
+				A2194290A5488FDBF90393D3 /* Il2CppMetadataUsage.cpp */,
+				4E9D46F3BB97650F7307783C /* Il2CppMethodPointerTable.cpp */,
+				400E4C2E8E591DC9BCD1A5D4 /* Il2CppTypeDefinitions.cpp */,
+				8F874463B1705D823DAC7A99 /* UnityClassRegistration.cpp */,
+				B619435B8CF74F27840ADA05 /* UnityICallRegistration.cpp */,
+				02D1495F8083A8B2C5880E7D /* UnresolvedVirtualCallStubs.cpp */,
+			);
+			path = Native;
 			sourceTree = "<group>";
 		};
 		D82DCFB50E8000A5005D6AD8 /* Classes */ = {
@@ -659,7 +659,7 @@
 				8A8D90D81A274A7800456C4E /* UnityAppController+UnityInterface.h */,
 				8A8D90D91A274A7800456C4E /* UnityAppController+UnityInterface.mm */,
 				8AA6ADDB17818CFD00A1C5F1 /* UnityTrampolineConfigure.h */,
-				8408408A86967E520695BC71 /* Native */,
+				D0044B26BC9F1728A2573D2D /* Native */,
 			);
 			path = Classes;
 			sourceTree = SOURCE_ROOT;
@@ -764,11 +764,11 @@
 			files = (
 				AA31BF971B55660D0013FB1B /* Data in Resources */,
 				56C56C9817D6015200616839 /* Images.xcassets in Resources */,
-				C166437E8075515964AADE32 /* LaunchScreen-iPhone.xib in Resources */,
-				3C104A3C84CC3D7596E8F9CD /* LaunchScreen-iPhonePortrait.png in Resources */,
-				07244288948777F587B82489 /* LaunchScreen-iPhoneLandscape.png in Resources */,
-				5E7040DDB6E9BCFBC212A366 /* LaunchScreen-iPad.xib in Resources */,
-				847F4813BC3FAA21460D631C /* LaunchScreen-iPad.png in Resources */,
+				FA0945D693F49FB092651FBB /* LaunchScreen-iPhone.xib in Resources */,
+				37C84EEE874802472F9278C8 /* LaunchScreen-iPhonePortrait.png in Resources */,
+				C59B4D18864EBBCEF75A0639 /* LaunchScreen-iPhoneLandscape.png in Resources */,
+				4AA94F34B25D9200EB393914 /* LaunchScreen-iPad.xib in Resources */,
+				C04E493BA5A45FD5928C1E0C /* LaunchScreen-iPad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -843,73 +843,73 @@
 				84DC28F61C5137FE00BC67D7 /* UnityReplayKit.mm in Sources */,
 				8ACB801C177081D4005D0019 /* DeviceSettings.mm in Sources */,
 				03F528631B447098000F4FB8 /* Il2CppOptions.cpp in Sources */,
-				8D334FDFAB1EFCFA1C5E0F24 /* Bulk_Assembly-CSharp_0.cpp in Sources */,
-				E27247B9884BDA2BA0B01C53 /* Bulk_Generics_0.cpp in Sources */,
-				31144E75B07059866510378F /* Bulk_Generics_1.cpp in Sources */,
-				0CF94D8C97EAC060EF49D8D3 /* Bulk_Generics_2.cpp in Sources */,
-				76854DB9BA87A2D3F7A2C0F9 /* Bulk_Generics_3.cpp in Sources */,
-				0EFD483B8FD15509EBEC4A98 /* Bulk_Generics_4.cpp in Sources */,
-				EDDB46089B12E86A6B8DB5C4 /* Bulk_Generics_5.cpp in Sources */,
-				08F14D2189C92FFB926DA22A /* Bulk_Generics_6.cpp in Sources */,
-				CEA64781A9EFB262E04E66C2 /* Bulk_Generics_7.cpp in Sources */,
-				05B646D1B1001D5A5D6870F1 /* Bulk_Mono.Security_0.cpp in Sources */,
-				72A64EC8B066DE8F285AD82B /* Bulk_Mono.Security_1.cpp in Sources */,
-				435743AEB7F6113881A099CE /* Bulk_System.Core_0.cpp in Sources */,
-				D40F4E3B8258BC1E3CC5EFF3 /* Bulk_System_0.cpp in Sources */,
-				BBF2483683A5E3AFA0642B54 /* Bulk_System_1.cpp in Sources */,
-				F92546499FCAE8F6C5C6E2C3 /* Bulk_UnityEngine.UI_0.cpp in Sources */,
-				7CA546A8A2FF8672A65484CE /* Bulk_UnityEngine.UI_1.cpp in Sources */,
-				6B024CFC9570573ED1FADE17 /* Bulk_UnityEngine_0.cpp in Sources */,
-				6E684C809D153265180DBDF4 /* Bulk_UnityEngine_1.cpp in Sources */,
-				79BD4091AB8C8E02FD66A77B /* Bulk_UnityEngine_2.cpp in Sources */,
-				B3EC403182FDE809FC84FFF3 /* Bulk_mscorlib_0.cpp in Sources */,
-				44E646E9919E177D94370835 /* Bulk_mscorlib_1.cpp in Sources */,
-				CBC1456EA834297E8B742327 /* Bulk_mscorlib_2.cpp in Sources */,
-				9F424E15984A2485185C6C2D /* Bulk_mscorlib_3.cpp in Sources */,
-				B0644104818B8BC5858E156B /* Bulk_mscorlib_4.cpp in Sources */,
-				841447929A17DD8188ACD003 /* Bulk_mscorlib_5.cpp in Sources */,
-				A9764F04A253309BA8B1D7BA /* Bulk_mscorlib_6.cpp in Sources */,
-				9B4644179302E77591A51E56 /* Bulk_mscorlib_7.cpp in Sources */,
-				3A5A4860B8C2BC43AB1AD78A /* GenericMethods0.cpp in Sources */,
-				250B475F90721C10EF820245 /* GenericMethods1.cpp in Sources */,
-				E3F54DF5BAC45DFDEC9A207B /* Il2CppAttributes.cpp in Sources */,
-				B9AF47EEAAEF910681C0A3DA /* Il2CppCcwMarshalingFunctionsTable.cpp in Sources */,
-				8BBE476FA4ED94C39D102C70 /* Il2CppCodeRegistration.cpp in Sources */,
-				F6BB4103B079D4ED133813E1 /* Il2CppCompilerCalculateTypeValuesTable.cpp in Sources */,
-				31A746708071E7052D8D4AFE /* Il2CppCompilerCalculateTypeValues_0Table.cpp in Sources */,
-				25B14076B446316BEBEA95A0 /* Il2CppCompilerCalculateTypeValues_10Table.cpp in Sources */,
-				B9B84C1DB05679DBAE1B11EE /* Il2CppCompilerCalculateTypeValues_11Table.cpp in Sources */,
-				8C8D4E1997E7FA1C5BE5DF9A /* Il2CppCompilerCalculateTypeValues_12Table.cpp in Sources */,
-				C8C14765A982616A9956674F /* Il2CppCompilerCalculateTypeValues_13Table.cpp in Sources */,
-				B09D4CEFA4EC06E68B9E079C /* Il2CppCompilerCalculateTypeValues_14Table.cpp in Sources */,
-				B6894E77945024F9981AE9B4 /* Il2CppCompilerCalculateTypeValues_15Table.cpp in Sources */,
-				86F34634BBB5F30938163382 /* Il2CppCompilerCalculateTypeValues_16Table.cpp in Sources */,
-				3EE048098B3B2A12327769AD /* Il2CppCompilerCalculateTypeValues_17Table.cpp in Sources */,
-				8E9147FB8D2B517D7D4FEA31 /* Il2CppCompilerCalculateTypeValues_1Table.cpp in Sources */,
-				B8514E55ADF883C17F9C136C /* Il2CppCompilerCalculateTypeValues_2Table.cpp in Sources */,
-				2880493782171AAEB718DBD4 /* Il2CppCompilerCalculateTypeValues_3Table.cpp in Sources */,
-				9A9B4C7783114203D6AF09D3 /* Il2CppCompilerCalculateTypeValues_4Table.cpp in Sources */,
-				BB97409F991DA94A6B6AB3A2 /* Il2CppCompilerCalculateTypeValues_5Table.cpp in Sources */,
-				CD8049F69FBA9ADB6A46EF8F /* Il2CppCompilerCalculateTypeValues_6Table.cpp in Sources */,
-				F9DD4771A586B7907BC0476B /* Il2CppCompilerCalculateTypeValues_7Table.cpp in Sources */,
-				308A4364B297C2C07AB43952 /* Il2CppCompilerCalculateTypeValues_8Table.cpp in Sources */,
-				C92A47E0B08107C5924C974E /* Il2CppCompilerCalculateTypeValues_9Table.cpp in Sources */,
-				434F4175B5CA128BCDF05F23 /* Il2CppDelegateWrappersManagedToNativeTable.cpp in Sources */,
-				E3624C6EA38F36F12BD12EEB /* Il2CppGenericClassTable.cpp in Sources */,
-				52904D408E0D473FB727E919 /* Il2CppGenericInstDefinitions.cpp in Sources */,
-				96CD4691A877B7DEBE08E3BB /* Il2CppGenericMethodDefinitions.cpp in Sources */,
-				216F4E6B95F05E8FF769C871 /* Il2CppGenericMethodPointerTable.cpp in Sources */,
-				5618450D9A51ED69FE03C986 /* Il2CppGenericMethodTable.cpp in Sources */,
-				7CD84F95B08E48D254EAF2E5 /* Il2CppGuids.cpp in Sources */,
-				3C244B3095723C7DB9E96089 /* Il2CppInvokerTable.cpp in Sources */,
-				AE5342D2B282C88AA69DC307 /* Il2CppMarshalingFunctionsTable.cpp in Sources */,
-				42A4472FBDC47459CFBD038A /* Il2CppMetadataRegistration.cpp in Sources */,
-				EADB446787B153641D56E165 /* Il2CppMetadataUsage.cpp in Sources */,
-				0BFD41AB9CEDF277CA5C5E68 /* Il2CppMethodPointerTable.cpp in Sources */,
-				3C19404299EF573C255814CB /* Il2CppTypeDefinitions.cpp in Sources */,
-				25034AC298734979458ED608 /* UnityClassRegistration.cpp in Sources */,
-				5C8F4E6EB2EFBD797B716B29 /* UnityICallRegistration.cpp in Sources */,
-				3A424BA29A9B9FD4D25ADB5B /* UnresolvedVirtualCallStubs.cpp in Sources */,
+				7BF4462485AA23632935A5B3 /* Bulk_Assembly-CSharp_0.cpp in Sources */,
+				7A7242FDA11F64306266E598 /* Bulk_Generics_0.cpp in Sources */,
+				AC9D431D8679CE332C893711 /* Bulk_Generics_1.cpp in Sources */,
+				7F06446A985458D4F7B17F3C /* Bulk_Generics_2.cpp in Sources */,
+				25824F97A1AC273C74262745 /* Bulk_Generics_3.cpp in Sources */,
+				AD4E44B58BE769E924403698 /* Bulk_Generics_4.cpp in Sources */,
+				4C4344479D4BDE4CFB169A99 /* Bulk_Generics_5.cpp in Sources */,
+				9A0347AA8807E17AD39AC8B2 /* Bulk_Generics_6.cpp in Sources */,
+				B93148FF9D840C953F2F5BD8 /* Bulk_Generics_7.cpp in Sources */,
+				DE9343ED9BF7D56F9BF178D4 /* Bulk_Mono.Security_0.cpp in Sources */,
+				0BBB4204BD4D73F351817A87 /* Bulk_Mono.Security_1.cpp in Sources */,
+				E2F6439BA300BCDB1F01E109 /* Bulk_System.Core_0.cpp in Sources */,
+				FCE34EE4BEC109C4B46EFAD8 /* Bulk_System_0.cpp in Sources */,
+				09FA4E71A6D2BA08E666EBDC /* Bulk_System_1.cpp in Sources */,
+				E4DA4D35A6DC4572A73C6D1B /* Bulk_UnityEngine.UI_0.cpp in Sources */,
+				C25C48178116396126679291 /* Bulk_UnityEngine.UI_1.cpp in Sources */,
+				430549EBBCD5874D10C04E0D /* Bulk_UnityEngine_0.cpp in Sources */,
+				8B554F0480F137EE3F536C6C /* Bulk_UnityEngine_1.cpp in Sources */,
+				FFCC4821A0244688D3260AC8 /* Bulk_UnityEngine_2.cpp in Sources */,
+				1EDB46EF93D2737844C67DC2 /* Bulk_mscorlib_0.cpp in Sources */,
+				3BB148F99E009F7485BD1395 /* Bulk_mscorlib_1.cpp in Sources */,
+				97D3419A9488067F7FBADE4F /* Bulk_mscorlib_2.cpp in Sources */,
+				ED8A4858AF44EB1BBB4A3EEB /* Bulk_mscorlib_3.cpp in Sources */,
+				E05B46FF88F8078608043C7A /* Bulk_mscorlib_4.cpp in Sources */,
+				2B7B4286A91C5A666406458A /* Bulk_mscorlib_5.cpp in Sources */,
+				1EA84B64A1F2F906A4B569B2 /* Bulk_mscorlib_6.cpp in Sources */,
+				D15F404399D4C7CC25D4B390 /* Bulk_mscorlib_7.cpp in Sources */,
+				663B4986BC56067E4E57D2A1 /* GenericMethods0.cpp in Sources */,
+				FB0B4B3FB3B9B3F504069599 /* GenericMethods1.cpp in Sources */,
+				E8ED42CABEABFBB7A3BECC2C /* Il2CppAttributes.cpp in Sources */,
+				B7054B4E8D2D8C15D045E39F /* Il2CppCcwMarshalingFunctionsTable.cpp in Sources */,
+				BBD54EAE9AD689EA310F498C /* Il2CppCodeRegistration.cpp in Sources */,
+				22744204887923E7A22503F9 /* Il2CppCompilerCalculateTypeValuesTable.cpp in Sources */,
+				A2064C44906F8C9FCF7E5BBD /* Il2CppCompilerCalculateTypeValues_0Table.cpp in Sources */,
+				D6214DB582C4E515A6D2467C /* Il2CppCompilerCalculateTypeValues_10Table.cpp in Sources */,
+				5E99440DAF8C098F8329A897 /* Il2CppCompilerCalculateTypeValues_11Table.cpp in Sources */,
+				90D94C61B400BD34378B296E /* Il2CppCompilerCalculateTypeValues_12Table.cpp in Sources */,
+				D2094B92BCB087501E4978A9 /* Il2CppCompilerCalculateTypeValues_13Table.cpp in Sources */,
+				A987415490DA12A977C486C1 /* Il2CppCompilerCalculateTypeValues_14Table.cpp in Sources */,
+				BF6D41ACA7961B92E1EBD869 /* Il2CppCompilerCalculateTypeValues_15Table.cpp in Sources */,
+				D9A6452BB74E741CB276D56B /* Il2CppCompilerCalculateTypeValues_16Table.cpp in Sources */,
+				289043828579C434E4B133C9 /* Il2CppCompilerCalculateTypeValues_17Table.cpp in Sources */,
+				1E89404CA66B2A200FDE5F23 /* Il2CppCompilerCalculateTypeValues_1Table.cpp in Sources */,
+				50EE47D69E4686B258041D92 /* Il2CppCompilerCalculateTypeValues_2Table.cpp in Sources */,
+				348541B6A66F9FA2F9AFF99B /* Il2CppCompilerCalculateTypeValues_3Table.cpp in Sources */,
+				B13C49D9990AAEC985E03D72 /* Il2CppCompilerCalculateTypeValues_4Table.cpp in Sources */,
+				79A44B089CEB4E2279D8987F /* Il2CppCompilerCalculateTypeValues_5Table.cpp in Sources */,
+				7EAD4CD5BE9CA64447D177A5 /* Il2CppCompilerCalculateTypeValues_6Table.cpp in Sources */,
+				467B4474862F3B7C08E4FEF3 /* Il2CppCompilerCalculateTypeValues_7Table.cpp in Sources */,
+				22D444B5A272BA701C229D79 /* Il2CppCompilerCalculateTypeValues_8Table.cpp in Sources */,
+				87A64B0AB44C8C5C329D9C60 /* Il2CppCompilerCalculateTypeValues_9Table.cpp in Sources */,
+				3F5C46AC9A89DB9526BDC8F9 /* Il2CppDelegateWrappersManagedToNativeTable.cpp in Sources */,
+				78144B51AB9C79FFB3D0E515 /* Il2CppGenericClassTable.cpp in Sources */,
+				C31B4F7BB24E281CCAA2AA2E /* Il2CppGenericInstDefinitions.cpp in Sources */,
+				AAA842FDBAD3B77E2E5E8399 /* Il2CppGenericMethodDefinitions.cpp in Sources */,
+				56D24A079214857702BAFF02 /* Il2CppGenericMethodPointerTable.cpp in Sources */,
+				663F47E993721CAD10A926BF /* Il2CppGenericMethodTable.cpp in Sources */,
+				9A48490E9A1A34C8E0F105BC /* Il2CppGuids.cpp in Sources */,
+				7ECA41C3A62FB97E0ECC6E00 /* Il2CppInvokerTable.cpp in Sources */,
+				649F4BD79266903D62D1797F /* Il2CppMarshalingFunctionsTable.cpp in Sources */,
+				86324CD1AAFF6D5649D7F1BC /* Il2CppMetadataRegistration.cpp in Sources */,
+				7FF74668B74B4C59F3005490 /* Il2CppMetadataUsage.cpp in Sources */,
+				41344A65950E65F7412608D4 /* Il2CppMethodPointerTable.cpp in Sources */,
+				CB2D4DEE9A767589D06464CE /* Il2CppTypeDefinitions.cpp in Sources */,
+				2969439687242904FB95C193 /* UnityClassRegistration.cpp in Sources */,
+				63CB42F8BE0DCA0CACAD9FC5 /* UnityICallRegistration.cpp in Sources */,
+				588640FC81121D5B2726461B /* UnresolvedVirtualCallStubs.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -947,7 +947,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = x86_64;
+				ARCHS = "armv7 arm64";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
@@ -980,23 +980,16 @@
 					"\"$(SRCROOT)/Libraries\"",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = (
-					"-DTARGET_IPHONE_SIMULATOR=1",
-					"-DINIT_SCRIPTING_BACKEND=1",
-				);
+				OTHER_CFLAGS = "-DINIT_SCRIPTING_BACKEND=1";
 				OTHER_LDFLAGS = (
 					"$(OTHER_LDFLAGS)",
 					"-weak_framework",
 					CoreMotion,
 					"-weak-lSystem",
-					"-Wl,-undefined,dynamic_lookup",
 				);
 				PRODUCT_NAME = tanksWar;
-				SDKROOT = iphonesimulator;
-				SUPPORTED_PLATFORMS = (
-					iphoneos,
-					iphonesimulator,
-				);
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				UNITY_RUNTIME_VERSION = 5.5.0f3;
 				UNITY_SCRIPTING_BACKEND = il2cpp;
@@ -1007,7 +1000,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = x86_64;
+				ARCHS = "armv7 arm64";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
@@ -1037,23 +1030,16 @@
 					"\"$(SRCROOT)/Libraries\"",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = (
-					"-DTARGET_IPHONE_SIMULATOR=1",
-					"-DINIT_SCRIPTING_BACKEND=1",
-				);
+				OTHER_CFLAGS = "-DINIT_SCRIPTING_BACKEND=1";
 				OTHER_LDFLAGS = (
 					"$(OTHER_LDFLAGS)",
 					"-weak_framework",
 					CoreMotion,
 					"-weak-lSystem",
-					"-Wl,-undefined,dynamic_lookup",
 				);
 				PRODUCT_NAME = tanksWar;
-				SDKROOT = iphonesimulator;
-				SUPPORTED_PLATFORMS = (
-					iphoneos,
-					iphonesimulator,
-				);
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				UNITY_RUNTIME_VERSION = 5.5.0f3;
 				UNITY_SCRIPTING_BACKEND = il2cpp;
@@ -1064,7 +1050,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = x86_64;
+				ARCHS = "armv7 arm64";
 				BUNDLE_LOADER = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(PRODUCT_NAME).app/$(PRODUCT_NAME)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1095,11 +1081,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_GENERATE_MAP_FILE = YES;
 				PRODUCT_NAME = tanksWar;
-				SDKROOT = iphonesimulator;
-				SUPPORTED_PLATFORMS = (
-					iphoneos,
-					iphonesimulator,
-				);
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				UNITY_RUNTIME_VERSION = 5.5.0f3;
@@ -1113,7 +1096,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = x86_64;
+				ARCHS = "armv7 arm64";
 				BUNDLE_LOADER = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(PRODUCT_NAME).app/$(PRODUCT_NAME)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1151,11 +1134,8 @@
 				LD_GENERATE_MAP_FILE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = tanksWar;
-				SDKROOT = iphonesimulator;
-				SUPPORTED_PLATFORMS = (
-					iphoneos,
-					iphonesimulator,
-				);
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				UNITY_RUNTIME_VERSION = 5.5.0f3;
@@ -1178,11 +1158,8 @@
 				GCC_USE_INDIRECT_FUNCTION_CALLS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				SDKROOT = iphonesimulator;
-				SUPPORTED_PLATFORMS = (
-					iphoneos,
-					iphonesimulator,
-				);
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
 			};
 			name = ReleaseForRunning;
 		};
@@ -1190,7 +1167,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = x86_64;
+				ARCHS = "armv7 arm64";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
@@ -1221,22 +1198,15 @@
 					"\"$(SRCROOT)/Libraries\"",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = (
-					"-DTARGET_IPHONE_SIMULATOR=1",
-					"-DINIT_SCRIPTING_BACKEND=1",
-				);
+				OTHER_CFLAGS = "-DINIT_SCRIPTING_BACKEND=1";
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreMotion,
 					"-weak-lSystem",
-					"-Wl,-undefined,dynamic_lookup",
 				);
 				PRODUCT_NAME = tanksWar;
-				SDKROOT = iphonesimulator;
-				SUPPORTED_PLATFORMS = (
-					iphoneos,
-					iphonesimulator,
-				);
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				UNITY_RUNTIME_VERSION = 5.5.0f3;
 				UNITY_SCRIPTING_BACKEND = il2cpp;
@@ -1247,7 +1217,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = x86_64;
+				ARCHS = "armv7 arm64";
 				BUNDLE_LOADER = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(PRODUCT_NAME).app/$(PRODUCT_NAME)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1278,11 +1248,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_GENERATE_MAP_FILE = YES;
 				PRODUCT_NAME = tanksWar;
-				SDKROOT = iphonesimulator;
-				SUPPORTED_PLATFORMS = (
-					iphoneos,
-					iphonesimulator,
-				);
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				UNITY_RUNTIME_VERSION = 5.5.0f3;
@@ -1306,11 +1273,8 @@
 				GCC_USE_INDIRECT_FUNCTION_CALLS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				SDKROOT = iphonesimulator;
-				SUPPORTED_PLATFORMS = (
-					iphoneos,
-					iphonesimulator,
-				);
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
 			};
 			name = ReleaseForProfiling;
 		};
@@ -1318,7 +1282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = x86_64;
+				ARCHS = "armv7 arm64";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
@@ -1348,22 +1312,15 @@
 					"\"$(SRCROOT)/Libraries\"",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = (
-					"-DTARGET_IPHONE_SIMULATOR=1",
-					"-DINIT_SCRIPTING_BACKEND=1",
-				);
+				OTHER_CFLAGS = "-DINIT_SCRIPTING_BACKEND=1";
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreMotion,
 					"-weak-lSystem",
-					"-Wl,-undefined,dynamic_lookup",
 				);
 				PRODUCT_NAME = tanksWar;
-				SDKROOT = iphonesimulator;
-				SUPPORTED_PLATFORMS = (
-					iphoneos,
-					iphonesimulator,
-				);
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				UNITY_RUNTIME_VERSION = 5.5.0f3;
 				UNITY_SCRIPTING_BACKEND = il2cpp;
@@ -1374,7 +1331,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = x86_64;
+				ARCHS = "armv7 arm64";
 				BUNDLE_LOADER = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(PRODUCT_NAME).app/$(PRODUCT_NAME)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1405,11 +1362,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_GENERATE_MAP_FILE = YES;
 				PRODUCT_NAME = tanksWar;
-				SDKROOT = iphonesimulator;
-				SUPPORTED_PLATFORMS = (
-					iphoneos,
-					iphonesimulator,
-				);
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				UNITY_RUNTIME_VERSION = 5.5.0f3;
@@ -1436,11 +1390,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
-				SDKROOT = iphonesimulator;
-				SUPPORTED_PLATFORMS = (
-					iphoneos,
-					iphonesimulator,
-				);
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
 			};
 			name = Debug;
 		};
@@ -1458,11 +1409,8 @@
 				GCC_USE_INDIRECT_FUNCTION_CALLS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				SDKROOT = iphonesimulator;
-				SUPPORTED_PLATFORMS = (
-					iphoneos,
-					iphonesimulator,
-				);
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
 			};
 			name = Release;
 		};
