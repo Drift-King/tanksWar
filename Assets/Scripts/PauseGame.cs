@@ -10,11 +10,13 @@ public class PauseGame : MonoBehaviour {
 	public void Pause() {
 		pauseMenu.SetActive (true);
 		GamePlayManager.Instance.isPaused = true;
+		GamePlayManager.Instance.GamePausedToggleEvent ();
 
 	}
 
 	public void Resume() {
 		GamePlayManager.Instance.isPaused = false;
+		GamePlayManager.Instance.GamePausedToggleEvent ();
 		pauseMenu.SetActive (false);
 	}
 		

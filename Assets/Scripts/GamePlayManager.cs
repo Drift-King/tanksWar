@@ -6,6 +6,9 @@ using System.Collections.Generic;
 public class GamePlayManager : MonoBehaviour {
 
 
+	public delegate void PauseToggle();
+	public event PauseToggle pauseToggle;
+
 	public EnemyAI enemy;
 	public PlayerControl player;
 	public CameraFollow cameraFollow;
@@ -61,6 +64,7 @@ public class GamePlayManager : MonoBehaviour {
 		player.GetComponentInChildren<Gun> ().gunFired += SwapTurn;
 		player.GetComponent<PlayerHealth>().playerDied += PlayerHasDied;
 		enemy.GetComponent<PlayerHealth>().playerDied += EnemyHasDied;
+		pauseToggle += PauseGameToggle;
 		GlobalSettings.Instance.musicToggled += ToggleMusic;
 		GlobalSettings.Instance.volumeChanged += UpdateMusicVolume;
 		playerTurnIndicator = player.gameObject.transform.FindChild ("currentTurn").gameObject;
@@ -161,7 +165,6 @@ public class GamePlayManager : MonoBehaviour {
 	}
 
 	void ToggleMusic() {
-		Debug.Log ("Toogle Music ======");
 		if (GlobalSettings.Instance.musicOn) {
 			if (audioSource != null) {
 				audioSource.Play ();
@@ -179,12 +182,21 @@ public class GamePlayManager : MonoBehaviour {
 		}
 	}
 
-	void Update() {
+	public void GamePausedToggleEvent(){
+		if (pauseToggle != null) {
+			pauseToggle ();
+		}
+	}
 
+	void PauseGameToggle() {
 		if (isPaused) {
-			Time.timeScale = 0;	
+			Time.timeScale = 0;
+			if (GlobalSettings.Instance.musicOn) {
+				audioSource.Pause ();
+			}
 		} else if (isPaused == false) {
 			Time.timeScale = 1;
+			audioSource.Play ();
 		}
 
 	}
