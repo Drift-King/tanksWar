@@ -10,6 +10,9 @@ public class Gun : MonoBehaviour
 
 	public delegate void GunFired ();
 	public event GunFired gunFired;
+	public delegate void RocketExploded ();
+	public event GunFired rocketExploded;
+
 	public bool attackTriggered = false;
 	public AudioClip fireSound;
 
@@ -68,16 +71,21 @@ public class Gun : MonoBehaviour
 		}
 			
 	}
+		
 
 	public void FinishFire(){
-		if (gunFired != null) {
-			gunFired ();
+		if (rocketExploded != null) {
+			rocketExploded ();
 		}
 	}
 
 	public void Fire() {
 
 		if (playerCtrl.hasTurn && attackTriggered == false) {
+
+			if (gunFired != null) {
+				gunFired ();
+			}
 
 			if (GlobalSettings.Instance.soundsOn) {
 				audioSource.PlayOneShot (fireSound);

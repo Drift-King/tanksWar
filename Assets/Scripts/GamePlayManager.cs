@@ -60,8 +60,10 @@ public class GamePlayManager : MonoBehaviour {
 		TwoStars.SetActive (false);
 		ThreeStars.SetActive (false);
 
-		enemy.GetComponentInChildren<Gun> ().gunFired += SwapTurn;
-		player.GetComponentInChildren<Gun> ().gunFired += SwapTurn;
+		enemy.GetComponentInChildren<Gun> ().rocketExploded += SwapTurn;
+		player.GetComponentInChildren<Gun> ().rocketExploded += SwapTurn;
+		player.GetComponentInChildren<Gun> ().gunFired += MoveCamera;
+		enemy.GetComponentInChildren<Gun> ().gunFired += MoveCamera;
 		player.GetComponent<PlayerHealth>().playerDied += PlayerHasDied;
 		enemy.GetComponent<PlayerHealth>().playerDied += EnemyHasDied;
 		pauseToggle += PauseGameToggle;
@@ -100,7 +102,7 @@ public class GamePlayManager : MonoBehaviour {
 			Debug.Log ("Player shooted " + playerStatistics.totalShots + " times");
 		}
 		player.hasTurn = !player.hasTurn;
-		cameraFollow.SetPlayerToFollow (player.hasTurn ? player.transform : enemy.transform);
+		//cameraFollow.SetPlayerToFollow (player.hasTurn ? player.transform : enemy.transform);
 
 		if (!player.hasTurn) {
 			yield
@@ -110,6 +112,9 @@ public class GamePlayManager : MonoBehaviour {
 		enemy.hasTurn = !enemy.hasTurn;
 	}
 		
+	void MoveCamera(){
+		cameraFollow.SetPlayerToFollow (player.hasTurn ? enemy.transform : player.transform);	
+	}
 
 	void PlayerHasDied(){
 		StartCoroutine (DefeatSummaryCoroutine());
