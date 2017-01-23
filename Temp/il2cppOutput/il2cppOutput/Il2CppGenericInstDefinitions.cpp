@@ -536,9 +536,6 @@ extern const Il2CppGenericInst GenInst_Score_t2307748940_0_0_0 = { 1, GenInst_Sc
 extern const Il2CppType IUserProfileU5BU5D_t3461248430_0_0_0;
 static const Il2CppType* GenInst_IUserProfileU5BU5D_t3461248430_0_0_0_Types[] = { &IUserProfileU5BU5D_t3461248430_0_0_0 };
 extern const Il2CppGenericInst GenInst_IUserProfileU5BU5D_t3461248430_0_0_0 = { 1, GenInst_IUserProfileU5BU5D_t3461248430_0_0_0_Types };
-extern const Il2CppType GameObject_t1756533147_0_0_0;
-static const Il2CppType* GenInst_GameObject_t1756533147_0_0_0_Types[] = { &GameObject_t1756533147_0_0_0 };
-extern const Il2CppGenericInst GenInst_GameObject_t1756533147_0_0_0 = { 1, GenInst_GameObject_t1756533147_0_0_0_Types };
 extern const Il2CppType Touch_t407273883_0_0_0;
 static const Il2CppType* GenInst_Touch_t407273883_0_0_0_Types[] = { &Touch_t407273883_0_0_0 };
 extern const Il2CppGenericInst GenInst_Touch_t407273883_0_0_0 = { 1, GenInst_Touch_t407273883_0_0_0_Types };
@@ -768,6 +765,9 @@ extern const Il2CppGenericInst GenInst_ICancelHandler_t1980319651_0_0_0 = { 1, G
 extern const Il2CppType Transform_t3275118058_0_0_0;
 static const Il2CppType* GenInst_Transform_t3275118058_0_0_0_Types[] = { &Transform_t3275118058_0_0_0 };
 extern const Il2CppGenericInst GenInst_Transform_t3275118058_0_0_0 = { 1, GenInst_Transform_t3275118058_0_0_0_Types };
+extern const Il2CppType GameObject_t1756533147_0_0_0;
+static const Il2CppType* GenInst_GameObject_t1756533147_0_0_0_Types[] = { &GameObject_t1756533147_0_0_0 };
+extern const Il2CppGenericInst GenInst_GameObject_t1756533147_0_0_0 = { 1, GenInst_GameObject_t1756533147_0_0_0_Types };
 extern const Il2CppType BaseInput_t621514313_0_0_0;
 static const Il2CppType* GenInst_BaseInput_t621514313_0_0_0_Types[] = { &BaseInput_t621514313_0_0_0 };
 extern const Il2CppGenericInst GenInst_BaseInput_t621514313_0_0_0 = { 1, GenInst_BaseInput_t621514313_0_0_0_Types };
@@ -1820,7 +1820,6 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[569] =
 	&GenInst_GcScoreData_t3676783238_0_0_0,
 	&GenInst_Score_t2307748940_0_0_0,
 	&GenInst_IUserProfileU5BU5D_t3461248430_0_0_0,
-	&GenInst_GameObject_t1756533147_0_0_0,
 	&GenInst_Touch_t407273883_0_0_0,
 	&GenInst_Keyframe_t1449471340_0_0_0,
 	&GenInst_Vector3_t2243707580_0_0_0,
@@ -1903,6 +1902,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[569] =
 	&GenInst_ISubmitHandler_t525803901_0_0_0,
 	&GenInst_ICancelHandler_t1980319651_0_0_0,
 	&GenInst_Transform_t3275118058_0_0_0,
+	&GenInst_GameObject_t1756533147_0_0_0,
 	&GenInst_BaseInput_t621514313_0_0_0,
 	&GenInst_UIBehaviour_t3960014691_0_0_0,
 	&GenInst_MonoBehaviour_t1158329972_0_0_0,

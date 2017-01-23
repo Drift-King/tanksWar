@@ -23,8 +23,6 @@ public class PlayerControl : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-//		tilt = Mathf.Clamp (tilt, 90, 180);
-//		pivot.rotation = Quaternion.Euler (0, 0, tilt);
 		
 		if (hasTurn) {
 

@@ -211,8 +211,6 @@ struct Action_1_t4041298073;
 struct FontTextureRebuildCallback_t1272078033;
 // System.Array
 struct Il2CppArray;
-// UnityEngine.GameObject[]
-struct GameObjectU5BU5D_t3057952154;
 // UnityEngine.Gradient
 struct Gradient_t3600583008;
 // UnityEngine.GUISkin
@@ -15423,15 +15421,6 @@ extern "C"  GameObject_t1756533147 * GameObject_FindGameObjectWithTag_m829057129
 	static GameObject_FindGameObjectWithTag_m829057129_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (GameObject_FindGameObjectWithTag_m829057129_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GameObject::FindGameObjectWithTag(System.String)");
-	return _il2cpp_icall_func(___tag0);
-}
-// UnityEngine.GameObject[] UnityEngine.GameObject::FindGameObjectsWithTag(System.String)
-extern "C"  GameObjectU5BU5D_t3057952154* GameObject_FindGameObjectsWithTag_m2154478296 (Il2CppObject * __this /* static, unused */, String_t* ___tag0, const MethodInfo* method)
-{
-	typedef GameObjectU5BU5D_t3057952154* (*GameObject_FindGameObjectsWithTag_m2154478296_ftn) (String_t*);
-	static GameObject_FindGameObjectsWithTag_m2154478296_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (GameObject_FindGameObjectsWithTag_m2154478296_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GameObject::FindGameObjectsWithTag(System.String)");
 	return _il2cpp_icall_func(___tag0);
 }
 // System.Void UnityEngine.GameObject::SendMessage(System.String,System.Object,UnityEngine.SendMessageOptions)

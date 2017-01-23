@@ -8019,7 +8019,6 @@ extern "C" void GameObject_get_activeInHierarchy_m4242915935 ();
 extern "C" void GameObject_get_tag_m1425941094 ();
 extern "C" void GameObject_set_tag_m717375123 ();
 extern "C" void GameObject_FindGameObjectWithTag_m829057129 ();
-extern "C" void GameObject_FindGameObjectsWithTag_m2154478296 ();
 extern "C" void GameObject_SendMessage_m71956653 ();
 extern "C" void GameObject_SendMessage_m2115020133 ();
 extern "C" void GameObject_SendMessage_m1177535567 ();
@@ -8820,8 +8819,6 @@ extern "C" void Quaternion_GetHashCode_m2270520528_AdjustorThunk ();
 extern "C" void Quaternion_Equals_m3730391696_AdjustorThunk ();
 extern "C" void Quaternion_ToString_m2638853272_AdjustorThunk ();
 extern "C" void Random_Range_m2884721203 ();
-extern "C" void Random_Range_m694320887 ();
-extern "C" void Random_RandomRangeInt_m374035151 ();
 extern "C" void RangeAttribute__ctor_m1657271662 ();
 extern "C" void Ray__ctor_m3379034047_AdjustorThunk ();
 extern "C" void Ray_get_origin_m3339262500_AdjustorThunk ();
@@ -11131,6 +11128,7 @@ extern "C" void Images__ctor_m1689480523 ();
 extern "C" void InactiveObject__ctor_m3533399521 ();
 extern "C" void InactiveObject_Start_m688887633 ();
 extern "C" void MissionSelector__ctor_m1810040822 ();
+extern "C" void MissionSelector_Start_m2532431450 ();
 extern "C" void MissionSelector_HideAllSelectors_m3586241565 ();
 extern "C" void MissionSelector_SelectMissionOne_m1584870450 ();
 extern "C" void MissionSelector_SelectMissionTwo_m2976525968 ();
@@ -11346,7 +11344,7 @@ extern "C" void VolumeController_Awake_m700837934 ();
 extern "C" void VolumeController_Start_m2527877471 ();
 extern "C" void VolumeController_UpdateVolumeBar_m3948430583 ();
 extern "C" void VolumeController_MoveVolume_m2198246158 ();
-extern const Il2CppMethodPointer g_MethodPointers[11335] = 
+extern const Il2CppMethodPointer g_MethodPointers[11333] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -19356,7 +19354,6 @@ extern const Il2CppMethodPointer g_MethodPointers[11335] =
 	GameObject_get_tag_m1425941094,
 	GameObject_set_tag_m717375123,
 	GameObject_FindGameObjectWithTag_m829057129,
-	GameObject_FindGameObjectsWithTag_m2154478296,
 	GameObject_SendMessage_m71956653,
 	GameObject_SendMessage_m2115020133,
 	GameObject_SendMessage_m1177535567,
@@ -20157,8 +20154,6 @@ extern const Il2CppMethodPointer g_MethodPointers[11335] =
 	Quaternion_Equals_m3730391696_AdjustorThunk,
 	Quaternion_ToString_m2638853272_AdjustorThunk,
 	Random_Range_m2884721203,
-	Random_Range_m694320887,
-	Random_RandomRangeInt_m374035151,
 	RangeAttribute__ctor_m1657271662,
 	Ray__ctor_m3379034047_AdjustorThunk,
 	Ray_get_origin_m3339262500_AdjustorThunk,
@@ -22468,6 +22463,7 @@ extern const Il2CppMethodPointer g_MethodPointers[11335] =
 	InactiveObject__ctor_m3533399521,
 	InactiveObject_Start_m688887633,
 	MissionSelector__ctor_m1810040822,
+	MissionSelector_Start_m2532431450,
 	MissionSelector_HideAllSelectors_m3586241565,
 	MissionSelector_SelectMissionOne_m1584870450,
 	MissionSelector_SelectMissionTwo_m2976525968,

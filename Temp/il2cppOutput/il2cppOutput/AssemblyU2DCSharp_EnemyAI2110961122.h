@@ -33,6 +33,8 @@ public:
 	Gun_t1581089958 * ___gun_12;
 	// System.Single EnemyAI::shootAngle
 	float ___shootAngle_13;
+	// System.Boolean EnemyAI::easy
+	bool ___easy_14;
 
 public:
 	inline static int32_t get_offset_of_player_11() { return static_cast<int32_t>(offsetof(EnemyAI_t2110961122, ___player_11)); }
@@ -59,6 +61,14 @@ public:
 	inline void set_shootAngle_13(float value)
 	{
 		___shootAngle_13 = value;
+	}
+
+	inline static int32_t get_offset_of_easy_14() { return static_cast<int32_t>(offsetof(EnemyAI_t2110961122, ___easy_14)); }
+	inline bool get_easy_14() const { return ___easy_14; }
+	inline bool* get_address_of_easy_14() { return &___easy_14; }
+	inline void set_easy_14(bool value)
+	{
+		___easy_14 = value;
 	}
 };
 

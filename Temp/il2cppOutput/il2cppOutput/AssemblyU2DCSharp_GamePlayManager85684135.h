@@ -55,22 +55,26 @@ public:
 	Text_t356221433 * ___shotsCounter_8;
 	// PlayerStatistics GamePlayManager::playerStatistics
 	PlayerStatistics_t1841391070 * ___playerStatistics_9;
+	// System.Single GamePlayManager::enemyMinTilt
+	float ___enemyMinTilt_10;
+	// System.Single GamePlayManager::enemyMaxTilt
+	float ___enemyMaxTilt_11;
 	// UnityEngine.GameObject GamePlayManager::ZeroStars
-	GameObject_t1756533147 * ___ZeroStars_10;
+	GameObject_t1756533147 * ___ZeroStars_12;
 	// UnityEngine.GameObject GamePlayManager::OneStar
-	GameObject_t1756533147 * ___OneStar_11;
+	GameObject_t1756533147 * ___OneStar_13;
 	// UnityEngine.GameObject GamePlayManager::TwoStars
-	GameObject_t1756533147 * ___TwoStars_12;
+	GameObject_t1756533147 * ___TwoStars_14;
 	// UnityEngine.GameObject GamePlayManager::ThreeStars
-	GameObject_t1756533147 * ___ThreeStars_13;
+	GameObject_t1756533147 * ___ThreeStars_15;
 	// UnityEngine.GameObject GamePlayManager::playerTurnIndicator
-	GameObject_t1756533147 * ___playerTurnIndicator_14;
+	GameObject_t1756533147 * ___playerTurnIndicator_16;
 	// UnityEngine.GameObject GamePlayManager::enemyTurnIndicator
-	GameObject_t1756533147 * ___enemyTurnIndicator_15;
+	GameObject_t1756533147 * ___enemyTurnIndicator_17;
 	// UnityEngine.AudioSource GamePlayManager::audioSource
-	AudioSource_t1135106623 * ___audioSource_16;
+	AudioSource_t1135106623 * ___audioSource_18;
 	// System.Boolean GamePlayManager::isPaused
-	bool ___isPaused_17;
+	bool ___isPaused_19;
 
 public:
 	inline static int32_t get_offset_of_enemy_2() { return static_cast<int32_t>(offsetof(GamePlayManager_t85684135, ___enemy_2)); }
@@ -145,75 +149,91 @@ public:
 		Il2CppCodeGenWriteBarrier(&___playerStatistics_9, value);
 	}
 
-	inline static int32_t get_offset_of_ZeroStars_10() { return static_cast<int32_t>(offsetof(GamePlayManager_t85684135, ___ZeroStars_10)); }
-	inline GameObject_t1756533147 * get_ZeroStars_10() const { return ___ZeroStars_10; }
-	inline GameObject_t1756533147 ** get_address_of_ZeroStars_10() { return &___ZeroStars_10; }
-	inline void set_ZeroStars_10(GameObject_t1756533147 * value)
+	inline static int32_t get_offset_of_enemyMinTilt_10() { return static_cast<int32_t>(offsetof(GamePlayManager_t85684135, ___enemyMinTilt_10)); }
+	inline float get_enemyMinTilt_10() const { return ___enemyMinTilt_10; }
+	inline float* get_address_of_enemyMinTilt_10() { return &___enemyMinTilt_10; }
+	inline void set_enemyMinTilt_10(float value)
 	{
-		___ZeroStars_10 = value;
-		Il2CppCodeGenWriteBarrier(&___ZeroStars_10, value);
+		___enemyMinTilt_10 = value;
 	}
 
-	inline static int32_t get_offset_of_OneStar_11() { return static_cast<int32_t>(offsetof(GamePlayManager_t85684135, ___OneStar_11)); }
-	inline GameObject_t1756533147 * get_OneStar_11() const { return ___OneStar_11; }
-	inline GameObject_t1756533147 ** get_address_of_OneStar_11() { return &___OneStar_11; }
-	inline void set_OneStar_11(GameObject_t1756533147 * value)
+	inline static int32_t get_offset_of_enemyMaxTilt_11() { return static_cast<int32_t>(offsetof(GamePlayManager_t85684135, ___enemyMaxTilt_11)); }
+	inline float get_enemyMaxTilt_11() const { return ___enemyMaxTilt_11; }
+	inline float* get_address_of_enemyMaxTilt_11() { return &___enemyMaxTilt_11; }
+	inline void set_enemyMaxTilt_11(float value)
 	{
-		___OneStar_11 = value;
-		Il2CppCodeGenWriteBarrier(&___OneStar_11, value);
+		___enemyMaxTilt_11 = value;
 	}
 
-	inline static int32_t get_offset_of_TwoStars_12() { return static_cast<int32_t>(offsetof(GamePlayManager_t85684135, ___TwoStars_12)); }
-	inline GameObject_t1756533147 * get_TwoStars_12() const { return ___TwoStars_12; }
-	inline GameObject_t1756533147 ** get_address_of_TwoStars_12() { return &___TwoStars_12; }
-	inline void set_TwoStars_12(GameObject_t1756533147 * value)
+	inline static int32_t get_offset_of_ZeroStars_12() { return static_cast<int32_t>(offsetof(GamePlayManager_t85684135, ___ZeroStars_12)); }
+	inline GameObject_t1756533147 * get_ZeroStars_12() const { return ___ZeroStars_12; }
+	inline GameObject_t1756533147 ** get_address_of_ZeroStars_12() { return &___ZeroStars_12; }
+	inline void set_ZeroStars_12(GameObject_t1756533147 * value)
 	{
-		___TwoStars_12 = value;
-		Il2CppCodeGenWriteBarrier(&___TwoStars_12, value);
+		___ZeroStars_12 = value;
+		Il2CppCodeGenWriteBarrier(&___ZeroStars_12, value);
 	}
 
-	inline static int32_t get_offset_of_ThreeStars_13() { return static_cast<int32_t>(offsetof(GamePlayManager_t85684135, ___ThreeStars_13)); }
-	inline GameObject_t1756533147 * get_ThreeStars_13() const { return ___ThreeStars_13; }
-	inline GameObject_t1756533147 ** get_address_of_ThreeStars_13() { return &___ThreeStars_13; }
-	inline void set_ThreeStars_13(GameObject_t1756533147 * value)
+	inline static int32_t get_offset_of_OneStar_13() { return static_cast<int32_t>(offsetof(GamePlayManager_t85684135, ___OneStar_13)); }
+	inline GameObject_t1756533147 * get_OneStar_13() const { return ___OneStar_13; }
+	inline GameObject_t1756533147 ** get_address_of_OneStar_13() { return &___OneStar_13; }
+	inline void set_OneStar_13(GameObject_t1756533147 * value)
 	{
-		___ThreeStars_13 = value;
-		Il2CppCodeGenWriteBarrier(&___ThreeStars_13, value);
+		___OneStar_13 = value;
+		Il2CppCodeGenWriteBarrier(&___OneStar_13, value);
 	}
 
-	inline static int32_t get_offset_of_playerTurnIndicator_14() { return static_cast<int32_t>(offsetof(GamePlayManager_t85684135, ___playerTurnIndicator_14)); }
-	inline GameObject_t1756533147 * get_playerTurnIndicator_14() const { return ___playerTurnIndicator_14; }
-	inline GameObject_t1756533147 ** get_address_of_playerTurnIndicator_14() { return &___playerTurnIndicator_14; }
-	inline void set_playerTurnIndicator_14(GameObject_t1756533147 * value)
+	inline static int32_t get_offset_of_TwoStars_14() { return static_cast<int32_t>(offsetof(GamePlayManager_t85684135, ___TwoStars_14)); }
+	inline GameObject_t1756533147 * get_TwoStars_14() const { return ___TwoStars_14; }
+	inline GameObject_t1756533147 ** get_address_of_TwoStars_14() { return &___TwoStars_14; }
+	inline void set_TwoStars_14(GameObject_t1756533147 * value)
 	{
-		___playerTurnIndicator_14 = value;
-		Il2CppCodeGenWriteBarrier(&___playerTurnIndicator_14, value);
+		___TwoStars_14 = value;
+		Il2CppCodeGenWriteBarrier(&___TwoStars_14, value);
 	}
 
-	inline static int32_t get_offset_of_enemyTurnIndicator_15() { return static_cast<int32_t>(offsetof(GamePlayManager_t85684135, ___enemyTurnIndicator_15)); }
-	inline GameObject_t1756533147 * get_enemyTurnIndicator_15() const { return ___enemyTurnIndicator_15; }
-	inline GameObject_t1756533147 ** get_address_of_enemyTurnIndicator_15() { return &___enemyTurnIndicator_15; }
-	inline void set_enemyTurnIndicator_15(GameObject_t1756533147 * value)
+	inline static int32_t get_offset_of_ThreeStars_15() { return static_cast<int32_t>(offsetof(GamePlayManager_t85684135, ___ThreeStars_15)); }
+	inline GameObject_t1756533147 * get_ThreeStars_15() const { return ___ThreeStars_15; }
+	inline GameObject_t1756533147 ** get_address_of_ThreeStars_15() { return &___ThreeStars_15; }
+	inline void set_ThreeStars_15(GameObject_t1756533147 * value)
 	{
-		___enemyTurnIndicator_15 = value;
-		Il2CppCodeGenWriteBarrier(&___enemyTurnIndicator_15, value);
+		___ThreeStars_15 = value;
+		Il2CppCodeGenWriteBarrier(&___ThreeStars_15, value);
 	}
 
-	inline static int32_t get_offset_of_audioSource_16() { return static_cast<int32_t>(offsetof(GamePlayManager_t85684135, ___audioSource_16)); }
-	inline AudioSource_t1135106623 * get_audioSource_16() const { return ___audioSource_16; }
-	inline AudioSource_t1135106623 ** get_address_of_audioSource_16() { return &___audioSource_16; }
-	inline void set_audioSource_16(AudioSource_t1135106623 * value)
+	inline static int32_t get_offset_of_playerTurnIndicator_16() { return static_cast<int32_t>(offsetof(GamePlayManager_t85684135, ___playerTurnIndicator_16)); }
+	inline GameObject_t1756533147 * get_playerTurnIndicator_16() const { return ___playerTurnIndicator_16; }
+	inline GameObject_t1756533147 ** get_address_of_playerTurnIndicator_16() { return &___playerTurnIndicator_16; }
+	inline void set_playerTurnIndicator_16(GameObject_t1756533147 * value)
 	{
-		___audioSource_16 = value;
-		Il2CppCodeGenWriteBarrier(&___audioSource_16, value);
+		___playerTurnIndicator_16 = value;
+		Il2CppCodeGenWriteBarrier(&___playerTurnIndicator_16, value);
 	}
 
-	inline static int32_t get_offset_of_isPaused_17() { return static_cast<int32_t>(offsetof(GamePlayManager_t85684135, ___isPaused_17)); }
-	inline bool get_isPaused_17() const { return ___isPaused_17; }
-	inline bool* get_address_of_isPaused_17() { return &___isPaused_17; }
-	inline void set_isPaused_17(bool value)
+	inline static int32_t get_offset_of_enemyTurnIndicator_17() { return static_cast<int32_t>(offsetof(GamePlayManager_t85684135, ___enemyTurnIndicator_17)); }
+	inline GameObject_t1756533147 * get_enemyTurnIndicator_17() const { return ___enemyTurnIndicator_17; }
+	inline GameObject_t1756533147 ** get_address_of_enemyTurnIndicator_17() { return &___enemyTurnIndicator_17; }
+	inline void set_enemyTurnIndicator_17(GameObject_t1756533147 * value)
 	{
-		___isPaused_17 = value;
+		___enemyTurnIndicator_17 = value;
+		Il2CppCodeGenWriteBarrier(&___enemyTurnIndicator_17, value);
+	}
+
+	inline static int32_t get_offset_of_audioSource_18() { return static_cast<int32_t>(offsetof(GamePlayManager_t85684135, ___audioSource_18)); }
+	inline AudioSource_t1135106623 * get_audioSource_18() const { return ___audioSource_18; }
+	inline AudioSource_t1135106623 ** get_address_of_audioSource_18() { return &___audioSource_18; }
+	inline void set_audioSource_18(AudioSource_t1135106623 * value)
+	{
+		___audioSource_18 = value;
+		Il2CppCodeGenWriteBarrier(&___audioSource_18, value);
+	}
+
+	inline static int32_t get_offset_of_isPaused_19() { return static_cast<int32_t>(offsetof(GamePlayManager_t85684135, ___isPaused_19)); }
+	inline bool get_isPaused_19() const { return ___isPaused_19; }
+	inline bool* get_address_of_isPaused_19() { return &___isPaused_19; }
+	inline void set_isPaused_19(bool value)
+	{
+		___isPaused_19 = value;
 	}
 };
 
@@ -221,16 +241,16 @@ struct GamePlayManager_t85684135_StaticFields
 {
 public:
 	// GamePlayManager GamePlayManager::_instance
-	GamePlayManager_t85684135 * ____instance_18;
+	GamePlayManager_t85684135 * ____instance_20;
 
 public:
-	inline static int32_t get_offset_of__instance_18() { return static_cast<int32_t>(offsetof(GamePlayManager_t85684135_StaticFields, ____instance_18)); }
-	inline GamePlayManager_t85684135 * get__instance_18() const { return ____instance_18; }
-	inline GamePlayManager_t85684135 ** get_address_of__instance_18() { return &____instance_18; }
-	inline void set__instance_18(GamePlayManager_t85684135 * value)
+	inline static int32_t get_offset_of__instance_20() { return static_cast<int32_t>(offsetof(GamePlayManager_t85684135_StaticFields, ____instance_20)); }
+	inline GamePlayManager_t85684135 * get__instance_20() const { return ____instance_20; }
+	inline GamePlayManager_t85684135 ** get_address_of__instance_20() { return &____instance_20; }
+	inline void set__instance_20(GamePlayManager_t85684135 * value)
 	{
-		____instance_18 = value;
-		Il2CppCodeGenWriteBarrier(&____instance_18, value);
+		____instance_20 = value;
+		Il2CppCodeGenWriteBarrier(&____instance_20, value);
 	}
 };
 

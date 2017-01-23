@@ -1,6 +1,9 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="ToggleButton">
+			<method name="ToggleOff"/>
+			<method name="ToggleOff"/>
+			<method name="ToggleOn"/>
 			<method name="ToggleOn"/>
 			<method name="ToggleOff"/>
 			<method name="ToggleOn"/>
@@ -10,9 +13,6 @@
 			<method name="ToggleOn"/>
 			<method name="ToggleOff"/>
 			<method name="ToggleOn"/>
-			<method name="ToggleOff"/>
-			<method name="ToggleOn"/>
-			<method name="ToggleOff"/>
 		</type>
 		<type fullname="SettingsMenu">
 			<method name="hideSettingsMenu"/>

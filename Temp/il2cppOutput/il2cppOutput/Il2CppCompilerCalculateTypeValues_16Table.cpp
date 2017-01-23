@@ -723,11 +723,12 @@ extern const int32_t g_FieldOffsetTable1689[5] =
 	VirtualButton_t2157404822::get_offset_of_m_Pressed_4(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1690 = { sizeof (EnemyAI_t2110961122), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1690[3] = 
+extern const int32_t g_FieldOffsetTable1690[4] = 
 {
 	EnemyAI_t2110961122::get_offset_of_player_11(),
 	EnemyAI_t2110961122::get_offset_of_gun_12(),
 	EnemyAI_t2110961122::get_offset_of_shootAngle_13(),
+	EnemyAI_t2110961122::get_offset_of_easy_14(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1691 = { sizeof (FollowPlayer_t1961594028), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable1691[2] = 
@@ -736,7 +737,7 @@ extern const int32_t g_FieldOffsetTable1691[2] =
 	FollowPlayer_t1961594028::get_offset_of_offset_3(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1692 = { sizeof (GamePlayManager_t85684135), -1, sizeof(GamePlayManager_t85684135_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1692[17] = 
+extern const int32_t g_FieldOffsetTable1692[19] = 
 {
 	GamePlayManager_t85684135::get_offset_of_enemy_2(),
 	GamePlayManager_t85684135::get_offset_of_player_3(),
@@ -746,15 +747,17 @@ extern const int32_t g_FieldOffsetTable1692[17] =
 	GamePlayManager_t85684135::get_offset_of_pauseMenuScreen_7(),
 	GamePlayManager_t85684135::get_offset_of_shotsCounter_8(),
 	GamePlayManager_t85684135::get_offset_of_playerStatistics_9(),
-	GamePlayManager_t85684135::get_offset_of_ZeroStars_10(),
-	GamePlayManager_t85684135::get_offset_of_OneStar_11(),
-	GamePlayManager_t85684135::get_offset_of_TwoStars_12(),
-	GamePlayManager_t85684135::get_offset_of_ThreeStars_13(),
-	GamePlayManager_t85684135::get_offset_of_playerTurnIndicator_14(),
-	GamePlayManager_t85684135::get_offset_of_enemyTurnIndicator_15(),
-	GamePlayManager_t85684135::get_offset_of_audioSource_16(),
-	GamePlayManager_t85684135::get_offset_of_isPaused_17(),
-	GamePlayManager_t85684135_StaticFields::get_offset_of__instance_18(),
+	GamePlayManager_t85684135::get_offset_of_enemyMinTilt_10(),
+	GamePlayManager_t85684135::get_offset_of_enemyMaxTilt_11(),
+	GamePlayManager_t85684135::get_offset_of_ZeroStars_12(),
+	GamePlayManager_t85684135::get_offset_of_OneStar_13(),
+	GamePlayManager_t85684135::get_offset_of_TwoStars_14(),
+	GamePlayManager_t85684135::get_offset_of_ThreeStars_15(),
+	GamePlayManager_t85684135::get_offset_of_playerTurnIndicator_16(),
+	GamePlayManager_t85684135::get_offset_of_enemyTurnIndicator_17(),
+	GamePlayManager_t85684135::get_offset_of_audioSource_18(),
+	GamePlayManager_t85684135::get_offset_of_isPaused_19(),
+	GamePlayManager_t85684135_StaticFields::get_offset_of__instance_20(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1693 = { sizeof (U3CSwapTurnCoroutineU3Ec__Iterator0_t1401080897), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable1693[4] = 

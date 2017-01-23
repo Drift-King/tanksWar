@@ -5008,8 +5008,6 @@ Il2CppCodeGenString* _stringLiteral4084037367;
 Il2CppCodeGenString* _stringLiteral3029318346;
 Il2CppCodeGenString* _stringLiteral2697392471;
 Il2CppCodeGenString* _stringLiteral2577726086;
-Il2CppCodeGenString* _stringLiteral2359576329;
-Il2CppCodeGenString* _stringLiteral1736259269;
 Il2CppCodeGenString* _stringLiteral192354598;
 Il2CppCodeGenString* _stringLiteral781750174;
 Il2CppCodeGenString* _stringLiteral4183081822;
@@ -5162,7 +5160,7 @@ Il2CppCodeGenString* _stringLiteral3025533088;
 Il2CppCodeGenString* _stringLiteral3687436746;
 Il2CppCodeGenString* _stringLiteral2779811765;
 Il2CppCodeGenString* _stringLiteral273729679;
-extern void** const g_MetadataUsages[5151] = 
+extern void** const g_MetadataUsages[5149] = 
 {
 	(void**)&Contraction_t1673853792_0_0_0_var,
 	(void**)&Level2Map_t3322505726_0_0_0_var,
@@ -10161,8 +10159,6 @@ extern void** const g_MetadataUsages[5151] =
 	(void**)&_stringLiteral3029318346,
 	(void**)&_stringLiteral2697392471,
 	(void**)&_stringLiteral2577726086,
-	(void**)&_stringLiteral2359576329,
-	(void**)&_stringLiteral1736259269,
 	(void**)&_stringLiteral192354598,
 	(void**)&_stringLiteral781750174,
 	(void**)&_stringLiteral4183081822,
@@ -14427,9 +14423,9 @@ extern const uint32_t MissingMemberException_get_Message_m2763732423_MetadataUsa
 extern const uint32_t MissingMemberException_GetObjectData_m2204792624_MetadataUsageId = 4108;
 extern const uint32_t MissingMethodException__ctor_m3898429715_MetadataUsageId = 4109;
 extern const uint32_t MissingMethodException_get_Message_m4217206450_MetadataUsageId = 4110;
-extern const uint32_t MissionSelector_HideAllSelectors_m3586241565_MetadataUsageId = 4111;
-extern const uint32_t MissionSelector_SelectMissionOne_m1584870450_MetadataUsageId = 4112;
-extern const uint32_t MissionSelector_SelectMissionTwo_m2976525968_MetadataUsageId = 4113;
+extern const uint32_t MissionSelector_SelectMissionOne_m1584870450_MetadataUsageId = 4111;
+extern const uint32_t MissionSelector_SelectMissionTwo_m2976525968_MetadataUsageId = 4112;
+extern const uint32_t MissionSelector_Start_m2532431450_MetadataUsageId = 4113;
 extern const uint32_t MobileInput_AddAxes_m16535716_MetadataUsageId = 4114;
 extern const uint32_t MobileInput_AddButton_m2140162749_MetadataUsageId = 4115;
 extern const uint32_t MobileInput_GetAxis_m638827402_MetadataUsageId = 4116;

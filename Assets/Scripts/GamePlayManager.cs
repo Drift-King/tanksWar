@@ -14,6 +14,8 @@ public class GamePlayManager : MonoBehaviour {
 	public GameObject pauseMenuScreen;
 	public Text shotsCounter;
 	public PlayerStatistics playerStatistics = new PlayerStatistics();
+	public float enemyMinTilt = 140f;
+	public float enemyMaxTilt = 170f;
 
 	// GameObjects to represent Final Score on Victory Summary Screen
 	public GameObject ZeroStars;
@@ -46,9 +48,15 @@ public class GamePlayManager : MonoBehaviour {
 	void Start () {
 		audioSource = GetComponent<AudioSource> ();
 		audioSource.loop = true;
+
 		victorySummary.SetActive (false);
 		defeatSummary.SetActive (false);
 		pauseMenuScreen.SetActive (false);
+		ZeroStars.SetActive (false);
+		OneStar.SetActive (false);
+		TwoStars.SetActive (false);
+		ThreeStars.SetActive (false);
+
 		enemy.GetComponentInChildren<Gun> ().gunFired += SwapTurn;
 		player.GetComponentInChildren<Gun> ().gunFired += SwapTurn;
 		player.GetComponent<PlayerHealth>().playerDied += PlayerHasDied;
@@ -82,7 +90,7 @@ public class GamePlayManager : MonoBehaviour {
 
 	IEnumerator SwapTurnCoroutine(){
 		if (player.hasTurn) {
-			enemy.tilt = Random.Range (170, 140);
+			enemy.tilt = Random.Range (enemyMaxTilt, enemyMinTilt);
 			playerStatistics.totalShots += 1;
 			shotsCounter.text = playerStatistics.totalShots.ToString();
 			Debug.Log ("Player shooted " + playerStatistics.totalShots + " times");

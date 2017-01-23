@@ -6,6 +6,7 @@ public class EnemyAI : PlayerControl {
 	private Transform player;
 	private Gun gun;
 	private float shootAngle = 30;
+	public bool easy = true;
 
 	// Use this for initialization
 	void Start () {
@@ -23,8 +24,11 @@ public class EnemyAI : PlayerControl {
 		var a = angle * Mathf.Deg2Rad;
 		dist += h / Mathf.Tan (a);
 
-		return Mathf.Sqrt (dist * Physics.gravity.magnitude / Mathf.Sin (2 * a)) * Random.Range (1.2f, 1.8f);
-
+		if (easy) {
+			return Mathf.Sqrt (dist * Physics.gravity.magnitude / Mathf.Sin (2 * a)) * Random.Range (1.2f, 1.8f);
+		} else {
+			return Mathf.Sqrt (dist * Physics.gravity.magnitude / Mathf.Sin (2 * a)) * 1.5f;
+		}
 	}
 
 

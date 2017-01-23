@@ -229,7 +229,6 @@ struct VolumeController_t3947347518;
 #include "AssemblyU2DCSharp_InactiveObject2742146790MethodDeclarations.h"
 #include "AssemblyU2DCSharp_MissionSelector1631497811.h"
 #include "AssemblyU2DCSharp_MissionSelector1631497811MethodDeclarations.h"
-#include "UnityEngine_ArrayTypes.h"
 #include "AssemblyU2DCSharp_NewGame808183124.h"
 #include "AssemblyU2DCSharp_NewGame808183124MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SceneManagement_SceneManager90660965MethodDeclarations.h"
@@ -301,6 +300,7 @@ struct VolumeController_t3947347518;
 #include "UnityEngine_UnityEngine_GUI4082743951MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Screen786852042MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Rect3681755626.h"
+#include "UnityEngine_ArrayTypes.h"
 #include "UnityEngine_UnityEngine_GUILayoutOption4183744904.h"
 #include "mscorlib_System_Single2076509932MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_GUILayoutUtility996096873MethodDeclarations.h"
@@ -701,6 +701,7 @@ extern "C"  void EnemyAI__ctor_m3271486257 (EnemyAI_t2110961122 * __this, const 
 {
 	{
 		__this->set_shootAngle_13((30.0f));
+		__this->set_easy_14((bool)1);
 		PlayerControl__ctor_m4206630767(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -746,6 +747,8 @@ extern "C"  float EnemyAI_CalculateAttackPower_m257584176 (EnemyAI_t2110961122 *
 	float V_3 = 0.0f;
 	Vector3_t2243707580  V_4;
 	memset(&V_4, 0, sizeof(V_4));
+	Vector3_t2243707580  V_5;
+	memset(&V_5, 0, sizeof(V_5));
 	{
 		Transform_t3275118058 * L_0 = ___target0;
 		NullCheck(L_0);
@@ -768,15 +771,36 @@ extern "C"  float EnemyAI_CalculateAttackPower_m257584176 (EnemyAI_t2110961122 *
 		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
 		float L_11 = tanf(L_10);
 		V_2 = ((float)((float)L_8+(float)((float)((float)L_9/(float)L_11))));
-		float L_12 = V_2;
-		Vector3_t2243707580  L_13 = Physics_get_gravity_m195764919(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_4 = L_13;
-		float L_14 = Vector3_get_magnitude_m860342598((&V_4), /*hidden argument*/NULL);
-		float L_15 = V_3;
-		float L_16 = sinf(((float)((float)(2.0f)*(float)L_15)));
-		float L_17 = sqrtf(((float)((float)((float)((float)L_12*(float)L_14))/(float)L_16)));
-		float L_18 = Random_Range_m2884721203(NULL /*static, unused*/, (1.2f), (1.8f), /*hidden argument*/NULL);
-		return ((float)((float)L_17*(float)L_18));
+		bool L_12 = __this->get_easy_14();
+		if (!L_12)
+		{
+			goto IL_0084;
+		}
+	}
+	{
+		float L_13 = V_2;
+		Vector3_t2243707580  L_14 = Physics_get_gravity_m195764919(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_4 = L_14;
+		float L_15 = Vector3_get_magnitude_m860342598((&V_4), /*hidden argument*/NULL);
+		float L_16 = V_3;
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_17 = sinf(((float)((float)(2.0f)*(float)L_16)));
+		float L_18 = sqrtf(((float)((float)((float)((float)L_13*(float)L_15))/(float)L_17)));
+		float L_19 = Random_Range_m2884721203(NULL /*static, unused*/, (1.2f), (1.8f), /*hidden argument*/NULL);
+		return ((float)((float)L_18*(float)L_19));
+	}
+
+IL_0084:
+	{
+		float L_20 = V_2;
+		Vector3_t2243707580  L_21 = Physics_get_gravity_m195764919(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_5 = L_21;
+		float L_22 = Vector3_get_magnitude_m860342598((&V_5), /*hidden argument*/NULL);
+		float L_23 = V_3;
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_24 = sinf(((float)((float)(2.0f)*(float)L_23)));
+		float L_25 = sqrtf(((float)((float)((float)((float)L_20*(float)L_22))/(float)L_24)));
+		return ((float)((float)L_25*(float)(1.5f)));
 	}
 }
 // System.Void EnemyAI::LateUpdate()
@@ -843,6 +867,8 @@ extern "C"  void GamePlayManager__ctor_m236275662 (GamePlayManager_t85684135 * _
 		PlayerStatistics_t1841391070 * L_0 = (PlayerStatistics_t1841391070 *)il2cpp_codegen_object_new(PlayerStatistics_t1841391070_il2cpp_TypeInfo_var);
 		PlayerStatistics__ctor_m2355440129(L_0, /*hidden argument*/NULL);
 		__this->set_playerStatistics_9(L_0);
+		__this->set_enemyMinTilt_10((140.0f));
+		__this->set_enemyMaxTilt_11((170.0f));
 		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -859,7 +885,7 @@ extern "C"  GamePlayManager_t85684135 * GamePlayManager_get_Instance_m2021271410
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		GamePlayManager_t85684135 * L_0 = ((GamePlayManager_t85684135_StaticFields*)GamePlayManager_t85684135_il2cpp_TypeInfo_var->static_fields)->get__instance_18();
+		GamePlayManager_t85684135 * L_0 = ((GamePlayManager_t85684135_StaticFields*)GamePlayManager_t85684135_il2cpp_TypeInfo_var->static_fields)->get__instance_20();
 		return L_0;
 	}
 }
@@ -876,7 +902,7 @@ extern "C"  void GamePlayManager_Awake_m3160410151 (GamePlayManager_t85684135 * 
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		GamePlayManager_t85684135 * L_0 = ((GamePlayManager_t85684135_StaticFields*)GamePlayManager_t85684135_il2cpp_TypeInfo_var->static_fields)->get__instance_18();
+		GamePlayManager_t85684135 * L_0 = ((GamePlayManager_t85684135_StaticFields*)GamePlayManager_t85684135_il2cpp_TypeInfo_var->static_fields)->get__instance_20();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
 		if (!L_1)
@@ -885,7 +911,7 @@ extern "C"  void GamePlayManager_Awake_m3160410151 (GamePlayManager_t85684135 * 
 		}
 	}
 	{
-		GamePlayManager_t85684135 * L_2 = ((GamePlayManager_t85684135_StaticFields*)GamePlayManager_t85684135_il2cpp_TypeInfo_var->static_fields)->get__instance_18();
+		GamePlayManager_t85684135 * L_2 = ((GamePlayManager_t85684135_StaticFields*)GamePlayManager_t85684135_il2cpp_TypeInfo_var->static_fields)->get__instance_20();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		bool L_3 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_2, __this, /*hidden argument*/NULL);
 		if (!L_3)
@@ -902,7 +928,7 @@ extern "C"  void GamePlayManager_Awake_m3160410151 (GamePlayManager_t85684135 * 
 
 IL_0030:
 	{
-		((GamePlayManager_t85684135_StaticFields*)GamePlayManager_t85684135_il2cpp_TypeInfo_var->static_fields)->set__instance_18(__this);
+		((GamePlayManager_t85684135_StaticFields*)GamePlayManager_t85684135_il2cpp_TypeInfo_var->static_fields)->set__instance_20(__this);
 	}
 
 IL_0036:
@@ -935,8 +961,8 @@ extern "C"  void GamePlayManager_Start_m2758210818 (GamePlayManager_t85684135 * 
 	}
 	{
 		AudioSource_t1135106623 * L_0 = Component_GetComponent_TisAudioSource_t1135106623_m3920278003(__this, /*hidden argument*/Component_GetComponent_TisAudioSource_t1135106623_m3920278003_MethodInfo_var);
-		__this->set_audioSource_16(L_0);
-		AudioSource_t1135106623 * L_1 = __this->get_audioSource_16();
+		__this->set_audioSource_18(L_0);
+		AudioSource_t1135106623 * L_1 = __this->get_audioSource_18();
 		NullCheck(L_1);
 		AudioSource_set_loop_m313035616(L_1, (bool)1, /*hidden argument*/NULL);
 		GameObject_t1756533147 * L_2 = __this->get_victorySummary_5();
@@ -948,16 +974,19 @@ extern "C"  void GamePlayManager_Start_m2758210818 (GamePlayManager_t85684135 * 
 		GameObject_t1756533147 * L_4 = __this->get_pauseMenuScreen_7();
 		NullCheck(L_4);
 		GameObject_SetActive_m2887581199(L_4, (bool)0, /*hidden argument*/NULL);
-		EnemyAI_t2110961122 * L_5 = __this->get_enemy_2();
+		GameObject_t1756533147 * L_5 = __this->get_ZeroStars_12();
 		NullCheck(L_5);
-		Gun_t1581089958 * L_6 = Component_GetComponentInChildren_TisGun_t1581089958_m3798702255(L_5, /*hidden argument*/Component_GetComponentInChildren_TisGun_t1581089958_m3798702255_MethodInfo_var);
-		IntPtr_t L_7;
-		L_7.set_m_value_0((void*)(void*)GamePlayManager_SwapTurn_m2700098104_MethodInfo_var);
-		GunFired_t3156990485 * L_8 = (GunFired_t3156990485 *)il2cpp_codegen_object_new(GunFired_t3156990485_il2cpp_TypeInfo_var);
-		GunFired__ctor_m545144776(L_8, __this, L_7, /*hidden argument*/NULL);
+		GameObject_SetActive_m2887581199(L_5, (bool)0, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_6 = __this->get_OneStar_13();
 		NullCheck(L_6);
-		Gun_add_gunFired_m3674359216(L_6, L_8, /*hidden argument*/NULL);
-		PlayerControl_t792727354 * L_9 = __this->get_player_3();
+		GameObject_SetActive_m2887581199(L_6, (bool)0, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_7 = __this->get_TwoStars_14();
+		NullCheck(L_7);
+		GameObject_SetActive_m2887581199(L_7, (bool)0, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_8 = __this->get_ThreeStars_15();
+		NullCheck(L_8);
+		GameObject_SetActive_m2887581199(L_8, (bool)0, /*hidden argument*/NULL);
+		EnemyAI_t2110961122 * L_9 = __this->get_enemy_2();
 		NullCheck(L_9);
 		Gun_t1581089958 * L_10 = Component_GetComponentInChildren_TisGun_t1581089958_m3798702255(L_9, /*hidden argument*/Component_GetComponentInChildren_TisGun_t1581089958_m3798702255_MethodInfo_var);
 		IntPtr_t L_11;
@@ -968,56 +997,65 @@ extern "C"  void GamePlayManager_Start_m2758210818 (GamePlayManager_t85684135 * 
 		Gun_add_gunFired_m3674359216(L_10, L_12, /*hidden argument*/NULL);
 		PlayerControl_t792727354 * L_13 = __this->get_player_3();
 		NullCheck(L_13);
-		PlayerHealth_t2894595013 * L_14 = Component_GetComponent_TisPlayerHealth_t2894595013_m2947238028(L_13, /*hidden argument*/Component_GetComponent_TisPlayerHealth_t2894595013_m2947238028_MethodInfo_var);
+		Gun_t1581089958 * L_14 = Component_GetComponentInChildren_TisGun_t1581089958_m3798702255(L_13, /*hidden argument*/Component_GetComponentInChildren_TisGun_t1581089958_m3798702255_MethodInfo_var);
 		IntPtr_t L_15;
-		L_15.set_m_value_0((void*)(void*)GamePlayManager_PlayerHasDied_m2060088855_MethodInfo_var);
-		PlayerDied_t2467274817 * L_16 = (PlayerDied_t2467274817 *)il2cpp_codegen_object_new(PlayerDied_t2467274817_il2cpp_TypeInfo_var);
-		PlayerDied__ctor_m3345075434(L_16, __this, L_15, /*hidden argument*/NULL);
+		L_15.set_m_value_0((void*)(void*)GamePlayManager_SwapTurn_m2700098104_MethodInfo_var);
+		GunFired_t3156990485 * L_16 = (GunFired_t3156990485 *)il2cpp_codegen_object_new(GunFired_t3156990485_il2cpp_TypeInfo_var);
+		GunFired__ctor_m545144776(L_16, __this, L_15, /*hidden argument*/NULL);
 		NullCheck(L_14);
-		PlayerHealth_add_playerDied_m3578242970(L_14, L_16, /*hidden argument*/NULL);
-		EnemyAI_t2110961122 * L_17 = __this->get_enemy_2();
+		Gun_add_gunFired_m3674359216(L_14, L_16, /*hidden argument*/NULL);
+		PlayerControl_t792727354 * L_17 = __this->get_player_3();
 		NullCheck(L_17);
 		PlayerHealth_t2894595013 * L_18 = Component_GetComponent_TisPlayerHealth_t2894595013_m2947238028(L_17, /*hidden argument*/Component_GetComponent_TisPlayerHealth_t2894595013_m2947238028_MethodInfo_var);
 		IntPtr_t L_19;
-		L_19.set_m_value_0((void*)(void*)GamePlayManager_EnemyHasDied_m2530580598_MethodInfo_var);
+		L_19.set_m_value_0((void*)(void*)GamePlayManager_PlayerHasDied_m2060088855_MethodInfo_var);
 		PlayerDied_t2467274817 * L_20 = (PlayerDied_t2467274817 *)il2cpp_codegen_object_new(PlayerDied_t2467274817_il2cpp_TypeInfo_var);
 		PlayerDied__ctor_m3345075434(L_20, __this, L_19, /*hidden argument*/NULL);
 		NullCheck(L_18);
 		PlayerHealth_add_playerDied_m3578242970(L_18, L_20, /*hidden argument*/NULL);
-		GlobalSettings_t4218635622 * L_21 = GlobalSettings_get_Instance_m4257028846(NULL /*static, unused*/, /*hidden argument*/NULL);
-		IntPtr_t L_22;
-		L_22.set_m_value_0((void*)(void*)GamePlayManager_ToggleMusic_m955571085_MethodInfo_var);
-		MusicToggled_t4291538686 * L_23 = (MusicToggled_t4291538686 *)il2cpp_codegen_object_new(MusicToggled_t4291538686_il2cpp_TypeInfo_var);
-		MusicToggled__ctor_m928302925(L_23, __this, L_22, /*hidden argument*/NULL);
+		EnemyAI_t2110961122 * L_21 = __this->get_enemy_2();
 		NullCheck(L_21);
-		GlobalSettings_add_musicToggled_m1876689216(L_21, L_23, /*hidden argument*/NULL);
-		GlobalSettings_t4218635622 * L_24 = GlobalSettings_get_Instance_m4257028846(NULL /*static, unused*/, /*hidden argument*/NULL);
-		IntPtr_t L_25;
-		L_25.set_m_value_0((void*)(void*)GamePlayManager_UpdateMusicVolume_m3821671856_MethodInfo_var);
-		VolumeChanged_t2370380177 * L_26 = (VolumeChanged_t2370380177 *)il2cpp_codegen_object_new(VolumeChanged_t2370380177_il2cpp_TypeInfo_var);
-		VolumeChanged__ctor_m1211125322(L_26, __this, L_25, /*hidden argument*/NULL);
-		NullCheck(L_24);
-		GlobalSettings_add_volumeChanged_m1669300018(L_24, L_26, /*hidden argument*/NULL);
-		PlayerControl_t792727354 * L_27 = __this->get_player_3();
-		NullCheck(L_27);
-		GameObject_t1756533147 * L_28 = Component_get_gameObject_m3105766835(L_27, /*hidden argument*/NULL);
+		PlayerHealth_t2894595013 * L_22 = Component_GetComponent_TisPlayerHealth_t2894595013_m2947238028(L_21, /*hidden argument*/Component_GetComponent_TisPlayerHealth_t2894595013_m2947238028_MethodInfo_var);
+		IntPtr_t L_23;
+		L_23.set_m_value_0((void*)(void*)GamePlayManager_EnemyHasDied_m2530580598_MethodInfo_var);
+		PlayerDied_t2467274817 * L_24 = (PlayerDied_t2467274817 *)il2cpp_codegen_object_new(PlayerDied_t2467274817_il2cpp_TypeInfo_var);
+		PlayerDied__ctor_m3345075434(L_24, __this, L_23, /*hidden argument*/NULL);
+		NullCheck(L_22);
+		PlayerHealth_add_playerDied_m3578242970(L_22, L_24, /*hidden argument*/NULL);
+		GlobalSettings_t4218635622 * L_25 = GlobalSettings_get_Instance_m4257028846(NULL /*static, unused*/, /*hidden argument*/NULL);
+		IntPtr_t L_26;
+		L_26.set_m_value_0((void*)(void*)GamePlayManager_ToggleMusic_m955571085_MethodInfo_var);
+		MusicToggled_t4291538686 * L_27 = (MusicToggled_t4291538686 *)il2cpp_codegen_object_new(MusicToggled_t4291538686_il2cpp_TypeInfo_var);
+		MusicToggled__ctor_m928302925(L_27, __this, L_26, /*hidden argument*/NULL);
+		NullCheck(L_25);
+		GlobalSettings_add_musicToggled_m1876689216(L_25, L_27, /*hidden argument*/NULL);
+		GlobalSettings_t4218635622 * L_28 = GlobalSettings_get_Instance_m4257028846(NULL /*static, unused*/, /*hidden argument*/NULL);
+		IntPtr_t L_29;
+		L_29.set_m_value_0((void*)(void*)GamePlayManager_UpdateMusicVolume_m3821671856_MethodInfo_var);
+		VolumeChanged_t2370380177 * L_30 = (VolumeChanged_t2370380177 *)il2cpp_codegen_object_new(VolumeChanged_t2370380177_il2cpp_TypeInfo_var);
+		VolumeChanged__ctor_m1211125322(L_30, __this, L_29, /*hidden argument*/NULL);
 		NullCheck(L_28);
-		Transform_t3275118058 * L_29 = GameObject_get_transform_m909382139(L_28, /*hidden argument*/NULL);
-		NullCheck(L_29);
-		Transform_t3275118058 * L_30 = Transform_FindChild_m2677714886(L_29, _stringLiteral2089363600, /*hidden argument*/NULL);
-		NullCheck(L_30);
-		GameObject_t1756533147 * L_31 = Component_get_gameObject_m3105766835(L_30, /*hidden argument*/NULL);
-		__this->set_playerTurnIndicator_14(L_31);
-		EnemyAI_t2110961122 * L_32 = __this->get_enemy_2();
+		GlobalSettings_add_volumeChanged_m1669300018(L_28, L_30, /*hidden argument*/NULL);
+		PlayerControl_t792727354 * L_31 = __this->get_player_3();
+		NullCheck(L_31);
+		GameObject_t1756533147 * L_32 = Component_get_gameObject_m3105766835(L_31, /*hidden argument*/NULL);
 		NullCheck(L_32);
-		GameObject_t1756533147 * L_33 = Component_get_gameObject_m3105766835(L_32, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_33 = GameObject_get_transform_m909382139(L_32, /*hidden argument*/NULL);
 		NullCheck(L_33);
-		Transform_t3275118058 * L_34 = GameObject_get_transform_m909382139(L_33, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_34 = Transform_FindChild_m2677714886(L_33, _stringLiteral2089363600, /*hidden argument*/NULL);
 		NullCheck(L_34);
-		Transform_t3275118058 * L_35 = Transform_FindChild_m2677714886(L_34, _stringLiteral2089363600, /*hidden argument*/NULL);
-		NullCheck(L_35);
-		GameObject_t1756533147 * L_36 = Component_get_gameObject_m3105766835(L_35, /*hidden argument*/NULL);
-		__this->set_enemyTurnIndicator_15(L_36);
+		GameObject_t1756533147 * L_35 = Component_get_gameObject_m3105766835(L_34, /*hidden argument*/NULL);
+		__this->set_playerTurnIndicator_16(L_35);
+		EnemyAI_t2110961122 * L_36 = __this->get_enemy_2();
+		NullCheck(L_36);
+		GameObject_t1756533147 * L_37 = Component_get_gameObject_m3105766835(L_36, /*hidden argument*/NULL);
+		NullCheck(L_37);
+		Transform_t3275118058 * L_38 = GameObject_get_transform_m909382139(L_37, /*hidden argument*/NULL);
+		NullCheck(L_38);
+		Transform_t3275118058 * L_39 = Transform_FindChild_m2677714886(L_38, _stringLiteral2089363600, /*hidden argument*/NULL);
+		NullCheck(L_39);
+		GameObject_t1756533147 * L_40 = Component_get_gameObject_m3105766835(L_39, /*hidden argument*/NULL);
+		__this->set_enemyTurnIndicator_17(L_40);
 		GamePlayManager_StartGame_m3047174576(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -1035,7 +1073,7 @@ extern "C"  void GamePlayManager_StartGame_m3047174576 (GamePlayManager_t8568413
 		}
 	}
 	{
-		AudioSource_t1135106623 * L_2 = __this->get_audioSource_16();
+		AudioSource_t1135106623 * L_2 = __this->get_audioSource_18();
 		NullCheck(L_2);
 		AudioSource_Play_m353744792(L_2, /*hidden argument*/NULL);
 	}
@@ -1193,10 +1231,10 @@ extern "C"  void GamePlayManager_setTurnIndicator_m4006453220 (GamePlayManager_t
 		}
 	}
 	{
-		GameObject_t1756533147 * L_5 = __this->get_playerTurnIndicator_14();
+		GameObject_t1756533147 * L_5 = __this->get_playerTurnIndicator_16();
 		NullCheck(L_5);
 		GameObject_SetActive_m2887581199(L_5, (bool)1, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_6 = __this->get_enemyTurnIndicator_15();
+		GameObject_t1756533147 * L_6 = __this->get_enemyTurnIndicator_17();
 		NullCheck(L_6);
 		GameObject_SetActive_m2887581199(L_6, (bool)0, /*hidden argument*/NULL);
 		goto IL_005a;
@@ -1204,10 +1242,10 @@ extern "C"  void GamePlayManager_setTurnIndicator_m4006453220 (GamePlayManager_t
 
 IL_0042:
 	{
-		GameObject_t1756533147 * L_7 = __this->get_playerTurnIndicator_14();
+		GameObject_t1756533147 * L_7 = __this->get_playerTurnIndicator_16();
 		NullCheck(L_7);
 		GameObject_SetActive_m2887581199(L_7, (bool)0, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_8 = __this->get_enemyTurnIndicator_15();
+		GameObject_t1756533147 * L_8 = __this->get_enemyTurnIndicator_17();
 		NullCheck(L_8);
 		GameObject_SetActive_m2887581199(L_8, (bool)1, /*hidden argument*/NULL);
 	}
@@ -1242,7 +1280,7 @@ extern "C"  void GamePlayManager_ToggleMusic_m955571085 (GamePlayManager_t856841
 		}
 	}
 	{
-		AudioSource_t1135106623 * L_2 = __this->get_audioSource_16();
+		AudioSource_t1135106623 * L_2 = __this->get_audioSource_18();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		bool L_3 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_2, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
 		if (!L_3)
@@ -1251,7 +1289,7 @@ extern "C"  void GamePlayManager_ToggleMusic_m955571085 (GamePlayManager_t856841
 		}
 	}
 	{
-		AudioSource_t1135106623 * L_4 = __this->get_audioSource_16();
+		AudioSource_t1135106623 * L_4 = __this->get_audioSource_18();
 		NullCheck(L_4);
 		AudioSource_Play_m353744792(L_4, /*hidden argument*/NULL);
 	}
@@ -1272,7 +1310,7 @@ IL_003a:
 		}
 	}
 	{
-		AudioSource_t1135106623 * L_7 = __this->get_audioSource_16();
+		AudioSource_t1135106623 * L_7 = __this->get_audioSource_18();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		bool L_8 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_7, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
 		if (!L_8)
@@ -1281,7 +1319,7 @@ IL_003a:
 		}
 	}
 	{
-		AudioSource_t1135106623 * L_9 = __this->get_audioSource_16();
+		AudioSource_t1135106623 * L_9 = __this->get_audioSource_18();
 		NullCheck(L_9);
 		AudioSource_Stop_m3452679614(L_9, /*hidden argument*/NULL);
 	}
@@ -1303,7 +1341,7 @@ extern "C"  void GamePlayManager_UpdateMusicVolume_m3821671856 (GamePlayManager_
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		AudioSource_t1135106623 * L_0 = __this->get_audioSource_16();
+		AudioSource_t1135106623 * L_0 = __this->get_audioSource_18();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
 		if (!L_1)
@@ -1312,7 +1350,7 @@ extern "C"  void GamePlayManager_UpdateMusicVolume_m3821671856 (GamePlayManager_
 		}
 	}
 	{
-		AudioSource_t1135106623 * L_2 = __this->get_audioSource_16();
+		AudioSource_t1135106623 * L_2 = __this->get_audioSource_18();
 		GlobalSettings_t4218635622 * L_3 = GlobalSettings_get_Instance_m4257028846(NULL /*static, unused*/, /*hidden argument*/NULL);
 		NullCheck(L_3);
 		float L_4 = L_3->get_volume_5();
@@ -1329,7 +1367,7 @@ IL_0026:
 extern "C"  void GamePlayManager_Update_m783774475 (GamePlayManager_t85684135 * __this, const MethodInfo* method)
 {
 	{
-		bool L_0 = __this->get_isPaused_17();
+		bool L_0 = __this->get_isPaused_19();
 		if (!L_0)
 		{
 			goto IL_001a;
@@ -1342,7 +1380,7 @@ extern "C"  void GamePlayManager_Update_m783774475 (GamePlayManager_t85684135 * 
 
 IL_001a:
 	{
-		bool L_1 = __this->get_isPaused_17();
+		bool L_1 = __this->get_isPaused_19();
 		if (L_1)
 		{
 			goto IL_002f;
@@ -1598,11 +1636,11 @@ extern "C"  bool U3CSwapTurnCoroutineU3Ec__Iterator0_MoveNext_m674880538 (U3CSwa
 		}
 		if (L_1 == 1)
 		{
-			goto IL_0168;
+			goto IL_0173;
 		}
 	}
 	{
-		goto IL_0192;
+		goto IL_019d;
 	}
 
 IL_0021:
@@ -1614,151 +1652,157 @@ IL_0021:
 		bool L_4 = L_3->get_hasTurn_3();
 		if (!L_4)
 		{
-			goto IL_00c2;
+			goto IL_00cd;
 		}
 	}
 	{
 		GamePlayManager_t85684135 * L_5 = __this->get_U24this_0();
 		NullCheck(L_5);
 		EnemyAI_t2110961122 * L_6 = L_5->get_enemy_2();
-		int32_t L_7 = Random_Range_m694320887(NULL /*static, unused*/, ((int32_t)170), ((int32_t)140), /*hidden argument*/NULL);
+		GamePlayManager_t85684135 * L_7 = __this->get_U24this_0();
+		NullCheck(L_7);
+		float L_8 = L_7->get_enemyMaxTilt_11();
+		GamePlayManager_t85684135 * L_9 = __this->get_U24this_0();
+		NullCheck(L_9);
+		float L_10 = L_9->get_enemyMinTilt_10();
+		float L_11 = Random_Range_m2884721203(NULL /*static, unused*/, L_8, L_10, /*hidden argument*/NULL);
 		NullCheck(L_6);
-		((PlayerControl_t792727354 *)L_6)->set_tilt_8((((float)((float)L_7))));
-		GamePlayManager_t85684135 * L_8 = __this->get_U24this_0();
-		NullCheck(L_8);
-		PlayerStatistics_t1841391070 * L_9 = L_8->get_playerStatistics_9();
-		PlayerStatistics_t1841391070 * L_10 = L_9;
-		NullCheck(L_10);
-		int32_t L_11 = L_10->get_totalShots_0();
-		NullCheck(L_10);
-		L_10->set_totalShots_0(((int32_t)((int32_t)L_11+(int32_t)1)));
+		((PlayerControl_t792727354 *)L_6)->set_tilt_8(L_11);
 		GamePlayManager_t85684135 * L_12 = __this->get_U24this_0();
 		NullCheck(L_12);
-		Text_t356221433 * L_13 = L_12->get_shotsCounter_8();
-		GamePlayManager_t85684135 * L_14 = __this->get_U24this_0();
+		PlayerStatistics_t1841391070 * L_13 = L_12->get_playerStatistics_9();
+		PlayerStatistics_t1841391070 * L_14 = L_13;
 		NullCheck(L_14);
-		PlayerStatistics_t1841391070 * L_15 = L_14->get_playerStatistics_9();
-		NullCheck(L_15);
-		int32_t* L_16 = L_15->get_address_of_totalShots_0();
-		String_t* L_17 = Int32_ToString_m2960866144(L_16, /*hidden argument*/NULL);
-		NullCheck(L_13);
-		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_13, L_17);
+		int32_t L_15 = L_14->get_totalShots_0();
+		NullCheck(L_14);
+		L_14->set_totalShots_0(((int32_t)((int32_t)L_15+(int32_t)1)));
+		GamePlayManager_t85684135 * L_16 = __this->get_U24this_0();
+		NullCheck(L_16);
+		Text_t356221433 * L_17 = L_16->get_shotsCounter_8();
 		GamePlayManager_t85684135 * L_18 = __this->get_U24this_0();
 		NullCheck(L_18);
 		PlayerStatistics_t1841391070 * L_19 = L_18->get_playerStatistics_9();
 		NullCheck(L_19);
-		int32_t L_20 = L_19->get_totalShots_0();
-		int32_t L_21 = L_20;
-		Il2CppObject * L_22 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_21);
+		int32_t* L_20 = L_19->get_address_of_totalShots_0();
+		String_t* L_21 = Int32_ToString_m2960866144(L_20, /*hidden argument*/NULL);
+		NullCheck(L_17);
+		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_17, L_21);
+		GamePlayManager_t85684135 * L_22 = __this->get_U24this_0();
+		NullCheck(L_22);
+		PlayerStatistics_t1841391070 * L_23 = L_22->get_playerStatistics_9();
+		NullCheck(L_23);
+		int32_t L_24 = L_23->get_totalShots_0();
+		int32_t L_25 = L_24;
+		Il2CppObject * L_26 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_25);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_23 = String_Concat_m2000667605(NULL /*static, unused*/, _stringLiteral3018655801, L_22, _stringLiteral2618666868, /*hidden argument*/NULL);
+		String_t* L_27 = String_Concat_m2000667605(NULL /*static, unused*/, _stringLiteral3018655801, L_26, _stringLiteral2618666868, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
-		Debug_Log_m920475918(NULL /*static, unused*/, L_23, /*hidden argument*/NULL);
+		Debug_Log_m920475918(NULL /*static, unused*/, L_27, /*hidden argument*/NULL);
 	}
 
-IL_00c2:
+IL_00cd:
 	{
-		GamePlayManager_t85684135 * L_24 = __this->get_U24this_0();
-		NullCheck(L_24);
-		PlayerControl_t792727354 * L_25 = L_24->get_player_3();
-		GamePlayManager_t85684135 * L_26 = __this->get_U24this_0();
-		NullCheck(L_26);
-		PlayerControl_t792727354 * L_27 = L_26->get_player_3();
-		NullCheck(L_27);
-		bool L_28 = L_27->get_hasTurn_3();
-		NullCheck(L_25);
-		L_25->set_hasTurn_3((bool)((((int32_t)L_28) == ((int32_t)0))? 1 : 0));
-		GamePlayManager_t85684135 * L_29 = __this->get_U24this_0();
-		NullCheck(L_29);
-		CameraFollow_t1493855402 * L_30 = L_29->get_cameraFollow_4();
-		GamePlayManager_t85684135 * L_31 = __this->get_U24this_0();
+		GamePlayManager_t85684135 * L_28 = __this->get_U24this_0();
+		NullCheck(L_28);
+		PlayerControl_t792727354 * L_29 = L_28->get_player_3();
+		GamePlayManager_t85684135 * L_30 = __this->get_U24this_0();
+		NullCheck(L_30);
+		PlayerControl_t792727354 * L_31 = L_30->get_player_3();
 		NullCheck(L_31);
-		PlayerControl_t792727354 * L_32 = L_31->get_player_3();
-		NullCheck(L_32);
-		bool L_33 = L_32->get_hasTurn_3();
-		G_B5_0 = L_30;
-		if (!L_33)
+		bool L_32 = L_31->get_hasTurn_3();
+		NullCheck(L_29);
+		L_29->set_hasTurn_3((bool)((((int32_t)L_32) == ((int32_t)0))? 1 : 0));
+		GamePlayManager_t85684135 * L_33 = __this->get_U24this_0();
+		NullCheck(L_33);
+		CameraFollow_t1493855402 * L_34 = L_33->get_cameraFollow_4();
+		GamePlayManager_t85684135 * L_35 = __this->get_U24this_0();
+		NullCheck(L_35);
+		PlayerControl_t792727354 * L_36 = L_35->get_player_3();
+		NullCheck(L_36);
+		bool L_37 = L_36->get_hasTurn_3();
+		G_B5_0 = L_34;
+		if (!L_37)
 		{
-			G_B6_0 = L_30;
-			goto IL_011a;
+			G_B6_0 = L_34;
+			goto IL_0125;
 		}
 	}
 	{
-		GamePlayManager_t85684135 * L_34 = __this->get_U24this_0();
-		NullCheck(L_34);
-		PlayerControl_t792727354 * L_35 = L_34->get_player_3();
-		NullCheck(L_35);
-		Transform_t3275118058 * L_36 = Component_get_transform_m2697483695(L_35, /*hidden argument*/NULL);
-		G_B7_0 = L_36;
+		GamePlayManager_t85684135 * L_38 = __this->get_U24this_0();
+		NullCheck(L_38);
+		PlayerControl_t792727354 * L_39 = L_38->get_player_3();
+		NullCheck(L_39);
+		Transform_t3275118058 * L_40 = Component_get_transform_m2697483695(L_39, /*hidden argument*/NULL);
+		G_B7_0 = L_40;
 		G_B7_1 = G_B5_0;
-		goto IL_012a;
+		goto IL_0135;
 	}
 
-IL_011a:
+IL_0125:
 	{
-		GamePlayManager_t85684135 * L_37 = __this->get_U24this_0();
-		NullCheck(L_37);
-		EnemyAI_t2110961122 * L_38 = L_37->get_enemy_2();
-		NullCheck(L_38);
-		Transform_t3275118058 * L_39 = Component_get_transform_m2697483695(L_38, /*hidden argument*/NULL);
-		G_B7_0 = L_39;
+		GamePlayManager_t85684135 * L_41 = __this->get_U24this_0();
+		NullCheck(L_41);
+		EnemyAI_t2110961122 * L_42 = L_41->get_enemy_2();
+		NullCheck(L_42);
+		Transform_t3275118058 * L_43 = Component_get_transform_m2697483695(L_42, /*hidden argument*/NULL);
+		G_B7_0 = L_43;
 		G_B7_1 = G_B6_0;
 	}
 
-IL_012a:
+IL_0135:
 	{
 		NullCheck(G_B7_1);
 		CameraFollow_SetPlayerToFollow_m811732247(G_B7_1, G_B7_0, /*hidden argument*/NULL);
-		GamePlayManager_t85684135 * L_40 = __this->get_U24this_0();
-		NullCheck(L_40);
-		PlayerControl_t792727354 * L_41 = L_40->get_player_3();
-		NullCheck(L_41);
-		bool L_42 = L_41->get_hasTurn_3();
-		if (L_42)
+		GamePlayManager_t85684135 * L_44 = __this->get_U24this_0();
+		NullCheck(L_44);
+		PlayerControl_t792727354 * L_45 = L_44->get_player_3();
+		NullCheck(L_45);
+		bool L_46 = L_45->get_hasTurn_3();
+		if (L_46)
 		{
-			goto IL_0168;
+			goto IL_0173;
 		}
 	}
 	{
-		WaitForSeconds_t3839502067 * L_43 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
-		WaitForSeconds__ctor_m1990515539(L_43, (2.0f), /*hidden argument*/NULL);
-		__this->set_U24current_1(L_43);
-		bool L_44 = __this->get_U24disposing_2();
-		if (L_44)
+		WaitForSeconds_t3839502067 * L_47 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m1990515539(L_47, (2.0f), /*hidden argument*/NULL);
+		__this->set_U24current_1(L_47);
+		bool L_48 = __this->get_U24disposing_2();
+		if (L_48)
 		{
-			goto IL_0163;
+			goto IL_016e;
 		}
 	}
 	{
 		__this->set_U24PC_3(1);
 	}
 
-IL_0163:
+IL_016e:
 	{
-		goto IL_0194;
+		goto IL_019f;
 	}
 
-IL_0168:
+IL_0173:
 	{
-		GamePlayManager_t85684135 * L_45 = __this->get_U24this_0();
-		NullCheck(L_45);
-		EnemyAI_t2110961122 * L_46 = L_45->get_enemy_2();
-		GamePlayManager_t85684135 * L_47 = __this->get_U24this_0();
-		NullCheck(L_47);
-		EnemyAI_t2110961122 * L_48 = L_47->get_enemy_2();
-		NullCheck(L_48);
-		bool L_49 = ((PlayerControl_t792727354 *)L_48)->get_hasTurn_3();
-		NullCheck(L_46);
-		((PlayerControl_t792727354 *)L_46)->set_hasTurn_3((bool)((((int32_t)L_49) == ((int32_t)0))? 1 : 0));
+		GamePlayManager_t85684135 * L_49 = __this->get_U24this_0();
+		NullCheck(L_49);
+		EnemyAI_t2110961122 * L_50 = L_49->get_enemy_2();
+		GamePlayManager_t85684135 * L_51 = __this->get_U24this_0();
+		NullCheck(L_51);
+		EnemyAI_t2110961122 * L_52 = L_51->get_enemy_2();
+		NullCheck(L_52);
+		bool L_53 = ((PlayerControl_t792727354 *)L_52)->get_hasTurn_3();
+		NullCheck(L_50);
+		((PlayerControl_t792727354 *)L_50)->set_hasTurn_3((bool)((((int32_t)L_53) == ((int32_t)0))? 1 : 0));
 		__this->set_U24PC_3((-1));
 	}
 
-IL_0192:
+IL_019d:
 	{
 		return (bool)0;
 	}
 
-IL_0194:
+IL_019f:
 	{
 		return (bool)1;
 	}
@@ -1960,7 +2004,7 @@ IL_0095:
 		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral2086540134, /*hidden argument*/NULL);
 		GamePlayManager_t85684135 * L_39 = __this->get_U24this_1();
 		NullCheck(L_39);
-		GameObject_t1756533147 * L_40 = L_39->get_ThreeStars_13();
+		GameObject_t1756533147 * L_40 = L_39->get_ThreeStars_15();
 		NullCheck(L_40);
 		GameObject_SetActive_m2887581199(L_40, (bool)1, /*hidden argument*/NULL);
 		goto IL_01f7;
@@ -1986,7 +2030,7 @@ IL_014c:
 		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral2086573893, /*hidden argument*/NULL);
 		GamePlayManager_t85684135 * L_43 = __this->get_U24this_1();
 		NullCheck(L_43);
-		GameObject_t1756533147 * L_44 = L_43->get_TwoStars_12();
+		GameObject_t1756533147 * L_44 = L_43->get_TwoStars_14();
 		NullCheck(L_44);
 		GameObject_SetActive_m2887581199(L_44, (bool)1, /*hidden argument*/NULL);
 		goto IL_01f7;
@@ -2012,7 +2056,7 @@ IL_0194:
 		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral194052981, /*hidden argument*/NULL);
 		GamePlayManager_t85684135 * L_47 = __this->get_U24this_1();
 		NullCheck(L_47);
-		GameObject_t1756533147 * L_48 = L_47->get_OneStar_11();
+		GameObject_t1756533147 * L_48 = L_47->get_OneStar_13();
 		NullCheck(L_48);
 		GameObject_SetActive_m2887581199(L_48, (bool)1, /*hidden argument*/NULL);
 		goto IL_01f7;
@@ -2024,7 +2068,7 @@ IL_01dc:
 		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral2086645891, /*hidden argument*/NULL);
 		GamePlayManager_t85684135 * L_49 = __this->get_U24this_1();
 		NullCheck(L_49);
-		GameObject_t1756533147 * L_50 = L_49->get_ZeroStars_10();
+		GameObject_t1756533147 * L_50 = L_49->get_ZeroStars_12();
 		NullCheck(L_50);
 		GameObject_SetActive_m2887581199(L_50, (bool)1, /*hidden argument*/NULL);
 	}
@@ -2985,71 +3029,76 @@ extern "C"  void MissionSelector__ctor_m1810040822 (MissionSelector_t1631497811 
 		return;
 	}
 }
-// System.Void MissionSelector::HideAllSelectors()
-extern Il2CppCodeGenString* _stringLiteral2359576329;
-extern const uint32_t MissionSelector_HideAllSelectors_m3586241565_MetadataUsageId;
-extern "C"  void MissionSelector_HideAllSelectors_m3586241565 (MissionSelector_t1631497811 * __this, const MethodInfo* method)
+// System.Void MissionSelector::Start()
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral4084037367;
+extern Il2CppCodeGenString* _stringLiteral192354598;
+extern const uint32_t MissionSelector_Start_m2532431450_MetadataUsageId;
+extern "C"  void MissionSelector_Start_m2532431450 (MissionSelector_t1631497811 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (MissionSelector_HideAllSelectors_m3586241565_MetadataUsageId);
+		il2cpp_codegen_initialize_method (MissionSelector_Start_m2532431450_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	GameObjectU5BU5D_t3057952154* V_0 = NULL;
-	GameObject_t1756533147 * V_1 = NULL;
-	GameObjectU5BU5D_t3057952154* V_2 = NULL;
-	int32_t V_3 = 0;
 	{
-		GameObjectU5BU5D_t3057952154* L_0 = GameObject_FindGameObjectsWithTag_m2154478296(NULL /*static, unused*/, _stringLiteral2359576329, /*hidden argument*/NULL);
-		V_0 = L_0;
-		GameObjectU5BU5D_t3057952154* L_1 = V_0;
-		if (!L_1)
+		MissionSelector_HideAllSelectors_m3586241565(__this, /*hidden argument*/NULL);
+		GlobalSettings_t4218635622 * L_0 = GlobalSettings_get_Instance_m4257028846(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		String_t* L_1 = L_0->get_sceneToLoad_8();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_2 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_1, _stringLiteral4084037367, /*hidden argument*/NULL);
+		if (!L_2)
 		{
-			goto IL_0032;
+			goto IL_0030;
 		}
 	}
 	{
-		GameObjectU5BU5D_t3057952154* L_2 = V_0;
-		V_2 = L_2;
-		V_3 = 0;
-		goto IL_0029;
-	}
-
-IL_001a:
-	{
-		GameObjectU5BU5D_t3057952154* L_3 = V_2;
-		int32_t L_4 = V_3;
+		GameObject_t1756533147 * L_3 = __this->get_missionOneSelector_2();
 		NullCheck(L_3);
-		int32_t L_5 = L_4;
-		GameObject_t1756533147 * L_6 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_5));
-		V_1 = L_6;
-		GameObject_t1756533147 * L_7 = V_1;
-		NullCheck(L_7);
-		GameObject_SetActive_m2887581199(L_7, (bool)0, /*hidden argument*/NULL);
-		int32_t L_8 = V_3;
-		V_3 = ((int32_t)((int32_t)L_8+(int32_t)1));
+		GameObject_SetActive_m2887581199(L_3, (bool)1, /*hidden argument*/NULL);
+		goto IL_0055;
 	}
 
-IL_0029:
+IL_0030:
 	{
-		int32_t L_9 = V_3;
-		GameObjectU5BU5D_t3057952154* L_10 = V_2;
-		NullCheck(L_10);
-		if ((((int32_t)L_9) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_10)->max_length)))))))
+		GlobalSettings_t4218635622 * L_4 = GlobalSettings_get_Instance_m4257028846(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		String_t* L_5 = L_4->get_sceneToLoad_8();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_6 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_5, _stringLiteral192354598, /*hidden argument*/NULL);
+		if (!L_6)
 		{
-			goto IL_001a;
+			goto IL_0055;
 		}
 	}
-
-IL_0032:
 	{
+		GameObject_t1756533147 * L_7 = __this->get_missionTwoSelector_3();
+		NullCheck(L_7);
+		GameObject_SetActive_m2887581199(L_7, (bool)1, /*hidden argument*/NULL);
+	}
+
+IL_0055:
+	{
+		return;
+	}
+}
+// System.Void MissionSelector::HideAllSelectors()
+extern "C"  void MissionSelector_HideAllSelectors_m3586241565 (MissionSelector_t1631497811 * __this, const MethodInfo* method)
+{
+	{
+		GameObject_t1756533147 * L_0 = __this->get_missionOneSelector_2();
+		NullCheck(L_0);
+		GameObject_SetActive_m2887581199(L_0, (bool)0, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_1 = __this->get_missionTwoSelector_3();
+		NullCheck(L_1);
+		GameObject_SetActive_m2887581199(L_1, (bool)0, /*hidden argument*/NULL);
 		return;
 	}
 }
 // System.Void MissionSelector::SelectMissionOne()
 extern Il2CppCodeGenString* _stringLiteral4084037367;
-extern Il2CppCodeGenString* _stringLiteral1736259269;
 extern const uint32_t MissionSelector_SelectMissionOne_m1584870450_MetadataUsageId;
 extern "C"  void MissionSelector_SelectMissionOne_m1584870450 (MissionSelector_t1631497811 * __this, const MethodInfo* method)
 {
@@ -3064,19 +3113,14 @@ extern "C"  void MissionSelector_SelectMissionOne_m1584870450 (MissionSelector_t
 		NullCheck(L_0);
 		L_0->set_sceneToLoad_8(_stringLiteral4084037367);
 		MissionSelector_HideAllSelectors_m3586241565(__this, /*hidden argument*/NULL);
-		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_1 = __this->get_missionOneSelector_2();
 		NullCheck(L_1);
-		Transform_t3275118058 * L_2 = Transform_Find_m3323476454(L_1, _stringLiteral1736259269, /*hidden argument*/NULL);
-		NullCheck(L_2);
-		GameObject_t1756533147 * L_3 = Component_get_gameObject_m3105766835(L_2, /*hidden argument*/NULL);
-		NullCheck(L_3);
-		GameObject_SetActive_m2887581199(L_3, (bool)1, /*hidden argument*/NULL);
+		GameObject_SetActive_m2887581199(L_1, (bool)1, /*hidden argument*/NULL);
 		return;
 	}
 }
 // System.Void MissionSelector::SelectMissionTwo()
 extern Il2CppCodeGenString* _stringLiteral192354598;
-extern Il2CppCodeGenString* _stringLiteral1736259269;
 extern const uint32_t MissionSelector_SelectMissionTwo_m2976525968_MetadataUsageId;
 extern "C"  void MissionSelector_SelectMissionTwo_m2976525968 (MissionSelector_t1631497811 * __this, const MethodInfo* method)
 {
@@ -3091,13 +3135,9 @@ extern "C"  void MissionSelector_SelectMissionTwo_m2976525968 (MissionSelector_t
 		NullCheck(L_0);
 		L_0->set_sceneToLoad_8(_stringLiteral192354598);
 		MissionSelector_HideAllSelectors_m3586241565(__this, /*hidden argument*/NULL);
-		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_1 = __this->get_missionTwoSelector_3();
 		NullCheck(L_1);
-		Transform_t3275118058 * L_2 = Transform_Find_m3323476454(L_1, _stringLiteral1736259269, /*hidden argument*/NULL);
-		NullCheck(L_2);
-		GameObject_t1756533147 * L_3 = Component_get_gameObject_m3105766835(L_2, /*hidden argument*/NULL);
-		NullCheck(L_3);
-		GameObject_SetActive_m2887581199(L_3, (bool)1, /*hidden argument*/NULL);
+		GameObject_SetActive_m2887581199(L_1, (bool)1, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -3177,7 +3217,7 @@ extern "C"  void PauseGame_Pause_m3165672237 (PauseGame_t2280645372 * __this, co
 		GameObject_SetActive_m2887581199(L_0, (bool)1, /*hidden argument*/NULL);
 		GamePlayManager_t85684135 * L_1 = GamePlayManager_get_Instance_m2021271410(NULL /*static, unused*/, /*hidden argument*/NULL);
 		NullCheck(L_1);
-		L_1->set_isPaused_17((bool)1);
+		L_1->set_isPaused_19((bool)1);
 		return;
 	}
 }
@@ -3187,7 +3227,7 @@ extern "C"  void PauseGame_Resume_m2598781468 (PauseGame_t2280645372 * __this, c
 	{
 		GamePlayManager_t85684135 * L_0 = GamePlayManager_get_Instance_m2021271410(NULL /*static, unused*/, /*hidden argument*/NULL);
 		NullCheck(L_0);
-		L_0->set_isPaused_17((bool)0);
+		L_0->set_isPaused_19((bool)0);
 		GameObject_t1756533147 * L_1 = __this->get_pauseMenu_2();
 		NullCheck(L_1);
 		GameObject_SetActive_m2887581199(L_1, (bool)0, /*hidden argument*/NULL);

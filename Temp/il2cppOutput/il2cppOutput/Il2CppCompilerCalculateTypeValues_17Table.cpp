@@ -85,6 +85,11 @@ extern const int32_t g_FieldOffsetTable1703[4] =
 	0,
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1704 = { sizeof (MissionSelector_t1631497811), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1704[2] = 
+{
+	MissionSelector_t1631497811::get_offset_of_missionOneSelector_2(),
+	MissionSelector_t1631497811::get_offset_of_missionTwoSelector_3(),
+};
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1705 = { sizeof (MobileInput_t2607665220), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1706 = { sizeof (NewGame_t808183124), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1707 = { sizeof (PauseGame_t2280645372), -1, 0, 0 };
