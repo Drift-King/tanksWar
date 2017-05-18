@@ -29,7 +29,7 @@ public class EnemyAI : PlayerControl {
 			return Mathf.Sqrt (dist * Physics.gravity.magnitude / Mathf.Sin (2 * a)) * Random.Range (1.2f, 1.8f);
 		} else {
 			Debug.Log ("NOT EASY...");
-			return Mathf.Sqrt (dist * Physics.gravity.magnitude / Mathf.Sin (2 * a)) * 1.7f;
+			return Mathf.Sqrt (dist * Physics.gravity.magnitude / Mathf.Sin (2 * a)) * Random.Range (1.6f, 1.8f);
 		}
 	}
 

@@ -18,7 +18,7 @@ public class PlayerControl : MonoBehaviour {
 
 	void Awake () {
 		anim = GetComponent<Animator> ();
-		pivot = transform.FindChild ("Pivot");
+		pivot = transform.Find ("Pivot");
 		rigidBody = GetComponent<Rigidbody2D> ();
 	}
 

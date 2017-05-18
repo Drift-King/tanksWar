@@ -45,7 +45,7 @@ public class Gun : MonoBehaviour
 			if (attackTriggered == false) {
 
 				if(CrossPlatformInputManager.GetButtonDown("Shoot")){
-					attackBarAnim.SetTime (1);
+//					attackBarAnim.SetTime (1);
 					attackBarAnim.SetBool ("Attacking", true);
 					fireTime = Time.time;
 

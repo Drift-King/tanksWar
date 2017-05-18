@@ -69,8 +69,8 @@ public class GamePlayManager : MonoBehaviour {
 		pauseToggle += PauseGameToggle;
 		GlobalSettings.Instance.musicToggled += ToggleMusic;
 		GlobalSettings.Instance.volumeChanged += UpdateMusicVolume;
-		playerTurnIndicator = player.gameObject.transform.FindChild ("currentTurn").gameObject;
-		enemyTurnIndicator = enemy.gameObject.transform.FindChild ("currentTurn").gameObject;
+		playerTurnIndicator = player.gameObject.transform.Find ("currentTurn").gameObject;
+		enemyTurnIndicator = enemy.gameObject.transform.Find ("currentTurn").gameObject;
 
 		StartGame ();
 	}
